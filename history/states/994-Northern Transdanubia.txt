@@ -1,0 +1,31 @@
+state={
+	id=994
+	name="STATE_994"
+
+	history={
+		owner = HUN
+		victory_points = {
+			6720 7
+		}
+		victory_points = {
+			701 4 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = HUN
+
+	}
+
+	provinces={
+		686 701 3683 6703 6720 9676 11627 11663 
+	}
+	manpower=1298802
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
