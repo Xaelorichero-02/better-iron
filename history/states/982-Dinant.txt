@@ -1,0 +1,26 @@
+state={
+	id=982
+	name="STATE_982"
+
+	history={
+		owner = BEL
+		victory_points = {
+			9444 2
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		9444 13469 
+	}
+	manpower=85000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+state={
+	id=983
+	name="STATE_983"
+
+	history={
+		owner = BEL
+		victory_points = {
+			13474 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		13474 
+	}
+	manpower=35039
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

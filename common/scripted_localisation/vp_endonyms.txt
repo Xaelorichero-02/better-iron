@@ -1,0 +1,50 @@
+defined_text = {
+	name = GetVictoryPointName_557
+	text = {
+		localization_key = VICTORY_POINTS_557
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = VICTORY_POINTS_557_GER
+	}
+}
+defined_text = {
+	name = GetVictoryPointName_3414
+	text = {
+		localization_key = VICTORY_POINTS_3414
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = VICTORY_POINTS_3414_GER
+	}
+}
+defined_text = {
+	name = GetVictoryPointName_3569
+	text = {
+		localization_key = VICTORY_POINTS_3569
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = VICTORY_POINTS_3569_GER
+	}
+}
+defined_text = {
+	name = GetVictoryPointName_3583
+	text = {
+		localization_key = VICTORY_POINTS_3583
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = VICTORY_POINTS_3583_GER
+	}
+}
+defined_text = {
+	name = GetVictoryPointName_3585
+	text = {
+		localization_key = VICTORY_POINTS_3585
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = VICTORY_POINTS_3585_GER
+	}
+}

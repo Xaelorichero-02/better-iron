@@ -1,0 +1,72 @@
+leader_traits = {
+
+	navy_chief_maneuver_1_undistinguished_suit_hoi3 = { # Naval units move 5% faster
+		sprite = 3
+		naval_speed_factor = 0.05
+		communism_drift = 0.01
+		experience_gain_navy = @chief_experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+	navy_chief_maneuver_2_undistinguished_suit_hoi3 = { # Naval units move 10% faster
+		sprite = 3
+		naval_speed_factor = 0.1
+		communism_drift = 0.03
+		experience_gain_navy = @chief_experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+	navy_chief_maneuver_3_undistinguished_suit_hoi3 = { # Naval units move 15% faster
+		sprite = 3
+		naval_speed_factor = 0.15
+		communism_drift = 0.05
+		experience_gain_navy = @chief_experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+}

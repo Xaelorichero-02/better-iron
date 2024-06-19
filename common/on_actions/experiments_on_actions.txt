@@ -1,0 +1,15 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = experiments
+						option = YES
+					}
+				}
+				set_global_flag = experiments_flag
+			}
+		}
+	}
+}

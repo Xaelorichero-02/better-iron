@@ -1,0 +1,30 @@
+state={
+	id=990
+	name="STATE_990"
+	resources={
+		steel=11.000
+	}
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = GER
+		set_demilitarized_zone = yes
+		1936.3.7 = {
+			set_demilitarized_zone = no
+
+		}
+
+	}
+
+	provinces={
+		563 3558 11547 11560 13482 13486 13487 
+	}
+	manpower=454160
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

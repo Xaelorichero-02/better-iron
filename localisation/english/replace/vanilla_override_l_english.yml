@@ -1,0 +1,27 @@
+﻿l_english:
+ ARG_support_the_farmers_decisions_desc:0 "As we set a standard of equality for all in our new communist state, it is of great importance that we do not forget the proleteriat who have worked long and hard in the fields of [ROOT.GetNameDef]'s farms. We should funnel money into supporting the farmers to ensure that they have just as much chance for a good quality of life as those who live in the cities."
+ CZE_planning_bonus:0 "Joint Planning"
+ CZE_air_focus:0 "Air is Our Sea"
+ SS_recruitment:0 "Schutzstaffel Rekrutierung"
+ GER_military_buildup:0 "Wehrmacht und Schutzstaffel Unternehmen"
+ volunteer_corps_focus:0 "Foreign Expeditions"
+ FIN_carl_mannerheim:0 "Carl Gustaf Emil Mannerheim"
+
+ modifier_production_cost_max_ship_hull_light:0 "Light Ship Max Cost"
+ modifier_production_cost_max_ship_hull_submarine:0 "Submarine Max Cost"
+
+#Fixes from now on
+ PAR_rekindle_old_gripes:0 "Beneath the Shadow of the Triple Alliance"
+ PAR_rekindle_old_gripes_desc:0 "60% of the population died during the war of the Triple Alliance and our country never recovered. Only expansion can bring stability and prosperity to our people; no longer will we live under the shadow of that cursed alliance."
+
+ YUG_croatian_opposition:0 "Croatian Opposition"
+ YUG_croatian_opposition_desc:0 "The political representatives of Croatia have been pushing for a federal organization of the Kingdom. Unless their demands are met, they will continue to oppose every move by the central government. They might even launch an uprising if they believe the time is right."
+ YUG_slovene_nationalism:0 "Slovene Nationalism"
+ YUG_slovene_nationalism_desc:0 "Slovenes have long since wanted their own state. Although they have accepted our rule, they are not particularly enthusiastic about it. Slovene industrialists rarely invest in local businesses and seem to prefer to spend their money abroad."
+ YUG_slovene_nationalism_2:0 "Slovene Self-Government"
+ YUG_slovene_nationalism_2_desc:0 "The devolved Government of Slovenia is much more willing to work with us to rebuild our military, but the concessions made to them mean that we have less control over how their factories are run."
+ YUG_macedonian_opposition:0 "Macedonian Opposition"
+ YUG_macedonian_opposition_desc:0 "The Macedonians have not quite accepted their identity as Serbs and keep demanding special rights. Political support from Bulgaria no doubt plays a role."
+ YUG_macedonian_opposition_1:0 "Mild Macedonian Opposition"
+ YUG_macedonian_opposition_1_desc:0 "Through granting some mild political concessions to the Macedonians and ceasing our efforts to enforce a Serbian identity on them, tensions in Macedonia have somewhat eased off for the time."
+ elect_anastasia_tt:0 "Elect Queen Anastasia via event."

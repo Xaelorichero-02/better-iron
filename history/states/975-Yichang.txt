@@ -1,0 +1,40 @@
+state={
+	id=975
+	name="STATE_975"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			7948 3
+		}
+		1938.10.25 = {
+			buildings = {
+				infrastructure = 3
+			}
+			JAP = {
+				set_province_controller = 7167
+				set_province_controller = 7637
+				set_province_controller = 9959
+				set_province_controller = 10462
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		7019 7596 7609 7948 8072 10474 12408 
+	}
+	manpower=1430329
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,40 @@
+defined_text = {
+	name = GetStateName_9
+	text = {
+		localization_key = STATE_9
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = STATE_9_GER
+	}
+}
+defined_text = {
+	name = GetStateName_69
+	text = {
+		localization_key = STATE_69
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = STATE_69_GER
+	}
+}
+defined_text = {
+	name = GetStateName_74
+	text = {
+		localization_key = STATE_74
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = STATE_74_GER
+	}
+}
+defined_text = {
+	name = GetStateName_75
+	text = {
+		localization_key = STATE_75
+	}
+	text = {
+		trigger = { is_german_tag = yes }
+		localization_key = STATE_75_GER
+	}
+}

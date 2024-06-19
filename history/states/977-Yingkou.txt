@@ -1,0 +1,33 @@
+state={
+	id=977
+	name="STATE_977"
+
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			air_base = 1
+			964 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			964 2
+		}
+
+	}
+
+	provinces={
+		964 3783 3970 6860 6918 6981 9854 
+	}
+	manpower=1026462
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

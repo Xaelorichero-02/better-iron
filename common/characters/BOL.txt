@@ -1,0 +1,719 @@
+characters = {
+
+	BOL_indigenous_council = { 
+		name = BOL_indigenous_council
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Plurinational_Council.dds"
+			}
+		}
+	}
+
+	BOL_jose_luis_tejada_sorzano = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { JUNO_unpopular_economist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	BOL_oscar_unzaga_de_la_vega = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Oscar_Unzaga_de_la_Vaga.dds"
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			traits = { JUNO_bolivian_falange }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	BOL_gustavo_adolfo_navarro = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Gustavo_Adolfo_Navarro.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { JUNO_revolutionary_writer }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	BOL_jorge_blanco = { #advisor instead of country leader
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_south_america_2
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_jorge_blanco
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				ideological_crusader
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_severino_ruiztagle = { #advisor instead of country leader
+		portraits = {
+			civilian = {
+				small = GFX_idea_generic_political_advisor_south_america_4
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_severino_ruiztagle
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				JUNO_socialist_economist
+			}
+			ai_will_do = {
+				factor = 0.000
+				modifier = {
+					factor = 1.000
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+		}
+	}
+
+	BOL_eusebio_ayala = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_south_america_1"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = BOL_eusebio_ayala
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_tomas_monje_gutierrez = {
+		portraits = {
+			civilian = {
+				small = "GFX_idea_generic_political_advisor_south_america_2"
+			}
+			army = {
+				small = "GFX_idea_generic_army_south_america_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_tomas_monje_gutierrez
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				ICE_judge_and_editor
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = high_command_hc
+			idea_token = BOL_tomas_monje_gutierrez
+			ledger = army
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_gil_ibarra_juarez = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_south_america_3"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = BOL_gil_ibarra_juarez
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_gualberto_villarroel_lopez = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Gualberto_Villarroel.dds"
+				small = "gfx/advisors/BOL/Portrait_Bolivia_Gualberto_Villarroel.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BOL_gualberto_villarroel_lopez
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { ranger brilliant_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	BOL_jose_santos_quinteros = {
+		portraits = {
+			civilian = {
+				small = "GFX_idea_generic_political_advisor_south_america_1"
+			}
+			army = {
+				small = "GFX_idea_generic_air_south_america_3"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_jose_santos_quinteros
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				JUNO_educational_reformer
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = BOL_jose_santos_quinteros_ac
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_fabian_vaca_chavez = {
+		portraits = {
+			civilian = {
+				small = "GFX_idea_generic_political_advisor_south_america_3"
+			}
+			army = {
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_fabian_vaca_chavez
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				SWE_foreign_minister
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BOL_fabian_vaca_chavez_hc
+			ledger = navy
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_david_toro_ruilova = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_David_Toro.dds"
+			}
+			army = {
+				small = "gfx/advisors/BOL/Portrait_Bolivia_David_Toro.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { JUNO_military_socialist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = BOL_david_toro_ruilova
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_german_busch_beccera = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_German_Busch.dds"
+			}
+			army = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_German_Busch.dds"
+				small = "gfx/advisors/BOL/Portrait_Bolivia_German_Busch.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { enigmatic JUNO_military_socialist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { trait_mountaineer skilled_staffer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BOL_german_busch_beccera
+			allowed = {
+				original_tag = BOL
+			}
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			visible = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			traits = {
+				army_infantry_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_enrique_baldivieso_aparicio = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_south_america_1"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BOL_enrique_baldivieso_aparicio
+			ledger = army
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	BOL_roberto_hinojosa = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_south_america_4"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BOL_roberto_hinojosa
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_carlos_altamirano = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_south_america_5"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BOL_carlos_altamirano
+			ledger = army
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_julian_montellano_carrasco = {
+		portraits = {
+			civilian = {
+				small = "GFX_idea_generic_political_advisor_south_america_2"
+			}
+			army = {
+				small = "GFX_idea_generic_navy_south_america_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_julian_montellano_carrasco
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				traditionalist_theorist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BOL_julian_montellano_carrasco_hc
+			ledger = navy
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	# Will not be recruited if you have the dlc
+	BOL_hector_bilbao_roja = {
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BOL_hector_bilbao_roja
+			ledger = air
+
+			allowed = {
+				original_tag = BOL
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+
+	BOL_bernardino_bilbao_rioja = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_south_america_1"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BOL_bernardino_bilbao_rioja
+			ledger = air
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = BOL_bernardino_bilbao_rioja_ac
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	BOL_alberto_ostria_gutierrez = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_south_america_1"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BOL_alberto_ostria_gutierrez
+			ledger = navy
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				naval_theorist
+			}
+		}
+	}
+
+	BOL_enrique_finot = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_enrique_finot
+			allowed  = {
+				original_tag  = BOL
+			}
+			traits  = {
+				fortification_engineer
+				JUNO_nationalizing_foreign_minister 
+			}
+		}
+	}
+
+	BOL_carlos_quintanilla = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Carlos_Quintanilla.dds"
+				small = "gfx/advisors/BOL/Portrait_Bolivia_Carlos_Quintanilla.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BOL_carlos_quintanilla
+			allowed = {
+				original_tag = BOL
+			}
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits = {
+				army_entrenchment_1
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer	hill_fighter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+	BOL_carlos_blanco_galindo = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Carlos_Blanco_Galindo.dds"
+				small = "gfx/advisors/BOL/Portrait_Bolivia_Carlos_Blanco_Galindo.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BOL_carlos_blanco_galindo
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { old_guard inflexible_strategist }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}		
+	}
+
+	BOL_enrique_penaranda = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Enrique_Penaranda.dds"
+				small = "gfx/advisors/BOL/Portrait_Bolivia_Enrique_Penaranda.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BOL_Enrique_Penaranda
+			allowed = {
+				original_tag = BOL
+			}
+			visible = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			available = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			traits = {
+				army_commando_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}		
+	}
+
+	BOL_jose_maria_gutierrez = {
+		portraits = {
+			civilian = {
+				small = "GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BOL_jose_maria_gutierrez
+			allowed  = {
+				original_tag  = BOL
+			}
+			traits  = {
+				armaments_organizer 
+			}
+		}
+	}
+
+}

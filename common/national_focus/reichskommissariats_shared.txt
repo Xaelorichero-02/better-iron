@@ -1,0 +1,428 @@
+shared_focus = {
+	id = RKS_a_new_state
+	icon = GFX_focus_ger_reichskommisariats
+	x = 25
+	y = 0
+
+	allow_branch = {
+		is_puppet_of = GER
+		has_government = fascism
+	}
+
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.1
+		add_popularity = { ideology = democratic popularity = -0.1 }
+		add_popularity = { ideology = communism popularity = -0.1 }
+	}
+}
+
+shared_focus = {
+	id = RKS_all_power_to_the_reichskomissar
+	icon = GFX_goal_support_fascism
+	prerequisite = { focus = RKS_a_new_state }
+	x = 0
+	y = 1
+	relative_position_id = RKS_a_new_state
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 300
+		add_popularity = { ideology = democratic popularity = -0.1 }
+		add_popularity = { ideology = communism popularity = -0.1 }
+	}
+}
+
+shared_focus = {
+	id = RKS_german_high_command
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = RKS_all_power_to_the_reichskomissar }
+	x = 0
+	y = 1
+	relative_position_id = RKS_all_power_to_the_reichskomissar
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = general_staff
+	}
+}
+
+shared_focus = {
+	id = RKS_persecute_the_enemies_of_berlin
+	icon = GFX_focus_CZE_german_puppet
+	prerequisite = { focus = RKS_german_high_command }
+	x = 0
+	y = 1
+	relative_position_id = RKS_german_high_command
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = RKS_german_supplies
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = RKS_persecute_the_enemies_of_berlin }
+	x = 0
+	y = 1
+	relative_position_id = RKS_persecute_the_enemies_of_berlin
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 200
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 200
+			producer = GER
+		}
+	}
+}
+
+shared_focus = {
+	id = RKS_german_planes
+	icon = GFX_goal_generic_air_fighter
+	prerequisite = { focus = RKS_german_supplies }
+	x = -2
+	y = 1
+	relative_position_id = RKS_german_supplies
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 200
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = CAS_equipment_1
+			amount = 100
+			producer = GER
+		}
+	}
+}
+
+shared_focus = {
+	id = RKS_the_jewel_of_the_blitzkrieg
+	icon = GFX_goal_generic_army_tanks
+	prerequisite = { focus = RKS_german_supplies }
+	x = 2
+	y = 1
+	relative_position_id = RKS_german_supplies
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 400
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment_2
+			amount = 200
+			producer = GER
+		}
+	}
+}
+
+shared_focus = {
+	id = RKS_forced_labor
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = RKS_german_supplies }
+	x = 0
+	y = 1
+	relative_position_id = RKS_german_supplies
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas  = RKS_forced_labor_idea
+	}
+}
+
+shared_focus = {
+	id = RKS_ss_recruitment
+	icon = GFX_goal_generic_secret_weapon
+	prerequisite = { focus = RKS_forced_labor }
+	x = 0
+	y = 1
+	relative_position_id = RKS_forced_labor
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+		GER = {
+			has_idea = heinrich_himmler
+		}
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 20
+		add_ideas = RKS_army_idea
+	}
+}
+
+shared_focus = {
+	id = RKS_forced_recruitment
+	icon = GFX_goal_generic_war_with_comintern
+	prerequisite = { focus = RKS_ss_recruitment }
+	x = 0
+	y = 1
+	relative_position_id = RKS_ss_recruitment
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RKS_army_idea
+			add_idea = RKS_army_idea_2
+		}
+	}
+}
+
+shared_focus = {
+	id = RKS_anti_bolshevism
+	icon = GFX_goal_anti_comintern_pact
+	prerequisite = { focus = RKS_forced_recruitment }
+	x = 0
+	y = 1
+	relative_position_id = RKS_forced_recruitment
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+		has_war_support > 0.6
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RKS_army_idea_2
+			add_idea = RKS_army_idea_3
+		}
+	}
+}
+
+shared_focus = {
+	id = RKS_wunderwaffe
+	icon = GFX_focus_wonderweapons
+	prerequisite = { focus = RKS_anti_bolshevism }
+	x = 0
+	y = 1
+	relative_position_id = RKS_anti_bolshevism
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 100
+	}
+
+	available = {
+		has_government = fascism
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = secret_bonus
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+			category = rocketry
+		}
+	}
+}

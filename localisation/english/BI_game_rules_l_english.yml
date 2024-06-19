@@ -1,0 +1,6 @@
+﻿l_english:
+ RULE_EXPERIMENTS:0 "Experimental Features"
+ RULE_EXPERIMENTS_YES_DESC:0 "§RThis can break the game!§!"
+ RULE_EXPERIMENTS_NO_DESC:0 ""
+ RULE_OPTION_ENABLED:0 "Enabled"
+ RULE_OPTION_DISABLED:0 "Disabled"

@@ -1,0 +1,38 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_report_event_BEL_joining_the_axis"
+		texturefile = "gfx/event_pictures/BEL_joining_the_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_report_event_BEL_1936_elections"
+		texturefile = "gfx/event_pictures/BEL_1936_elections.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_commusupport"
+		texturefile = "gfx/event_pictures/report_event_commusupport.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_goodharvest"
+		texturefile = "gfx/event_pictures/report_event_goodharvest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_nofight"
+		texturefile = "gfx/event_pictures/report_event_nofight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_1941winter"
+		texturefile = "gfx/event_pictures/report_event_1941winter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_estalliance"
+		texturefile = "gfx/event_pictures/report_event_estalliance.dds"
+	}
+
+}

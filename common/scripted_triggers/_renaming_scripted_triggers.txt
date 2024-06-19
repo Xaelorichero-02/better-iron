@@ -1,0 +1,199 @@
+is_arab_tag = {
+	custom_trigger_tooltip = {
+		tooltip = is_arab_tag
+		OR = {
+			is_controlled_by = EGY
+			is_controlled_by = YEM
+			is_controlled_by = OMA
+			is_controlled_by = TRU
+			is_controlled_by = SYR
+			is_controlled_by = IRQ
+			is_controlled_by = PAL
+			is_controlled_by = ALG
+			is_controlled_by = TUN
+			is_controlled_by = MOR
+			is_controlled_by = LBA
+			is_controlled_by = SAU
+			is_controlled_by = UAE
+			is_controlled_by = QAT
+			is_controlled_by = KUW
+			is_controlled_by = JOR
+		}
+	}
+}
+is_portuguese_tag = {
+	custom_trigger_tooltip = {
+		tooltip = is_portuguese_tag
+		OR = {
+			is_controlled_by = POR
+			is_controlled_by = GLC
+			is_controlled_by = BRA
+		}
+	}
+}
+is_chinese_tag = {
+	OR = {
+		is_controlled_by = PRC
+		is_controlled_by = CHI
+		is_controlled_by = GXC
+		is_controlled_by = MAN
+		is_controlled_by = SHX
+		is_controlled_by = SIK
+		is_controlled_by = XSM
+		is_controlled_by = YUN
+	}
+}
+is_mongolian_tag = {
+	OR = {
+		is_controlled_by = MON
+		is_controlled_by = BYA
+		is_controlled_by = MEN
+	}
+}
+is_dutch_tag = {
+	OR = {
+		is_controlled_by = HOL
+		is_controlled_by = SUR
+	}
+}
+is_english_tag = {
+	OR = {
+		is_controlled_by = USA
+		is_controlled_by = CSA
+		is_controlled_by = USB
+		is_controlled_by = HAW
+		is_controlled_by = ENG
+		is_controlled_by = AST
+		is_controlled_by = NZL
+		is_controlled_by = SAF
+		is_controlled_by = JAM
+		is_controlled_by = GYA
+		is_controlled_by = TRI
+	}
+}
+is_french_tag = {
+	OR = {
+		is_controlled_by = FRA
+		is_controlled_by = QUE
+		is_controlled_by = HAI
+	}
+}
+is_german_tag = {
+	OR = {
+		is_controlled_by = GER
+		is_controlled_by = AUS
+		is_controlled_by = DNZ
+		is_controlled_by = BAY
+		is_controlled_by = WUR
+		is_controlled_by = HAN
+		is_controlled_by = SHL
+		is_controlled_by = MEK
+		is_controlled_by = PRE
+	}
+}
+is_italian_tag = {
+	OR = {
+		is_controlled_by = ITA
+		is_controlled_by = RSI
+		is_controlled_by = RSD
+		is_controlled_by = TTS
+		is_controlled_by = TOS
+		is_controlled_by = LBV
+		is_controlled_by = SPM
+	}
+}
+is_polish_tag = {
+	OR = {
+		is_controlled_by = POL
+		#is_controlled_by = GAL
+	}
+}
+is_russian_tag = {
+	OR = {
+		is_controlled_by = SOV
+		is_controlled_by = BLR
+		is_controlled_by = DON
+		is_controlled_by = KUB
+	}
+}
+is_south_slav_tag = {
+	OR = {
+		is_controlled_by = SER
+		is_controlled_by = CRO
+		is_controlled_by = BOS
+		is_controlled_by = MNT
+		is_controlled_by = SLV
+		is_controlled_by = HRZ
+	}
+}
+is_bulgarian_tag = {
+	OR = {
+		is_controlled_by = BUL
+		is_controlled_by = MAC
+	}
+}
+is_spanish_tag = {
+	OR = {
+		is_controlled_by = SPR
+		is_controlled_by = SPB
+		is_controlled_by = SPC
+		is_controlled_by = SPA
+		is_controlled_by = MEX
+		is_controlled_by = CUB
+		is_controlled_by = DOM
+		is_controlled_by = PAN
+		is_controlled_by = YUC
+		is_controlled_by = COS
+		is_controlled_by = NIC
+		is_controlled_by = HON
+		is_controlled_by = ELS
+		is_controlled_by = GUA
+		is_controlled_by = ARG
+		is_controlled_by = BOL
+		is_controlled_by = CHL
+		is_controlled_by = COL
+		is_controlled_by = ECU
+		is_controlled_by = FOP
+		is_controlled_by = PAR
+		is_controlled_by = PRU
+		is_controlled_by = URG
+		is_controlled_by = VEN
+	}
+}
+is_indian_tag = {
+	OR = {
+		is_controlled_by = RAJ
+		is_controlled_by = PAK
+		is_controlled_by = BAN
+	}
+}
+is_persian_tag = {
+	OR = {
+		is_controlled_by = PER
+		is_controlled_by = AFG
+	}
+}
+is_malay_tag = {
+	OR = {
+		is_controlled_by = INS
+		is_controlled_by = MAL
+	}
+}
+is_czechoslovak_tag = {
+	OR = {
+		is_controlled_by = CZE
+		is_controlled_by = SLO
+	}
+}
+is_romanian_tag = {
+	OR = {
+		is_controlled_by = ROM
+		is_controlled_by = TRA
+	}
+}
+is_greek_tag = {
+	OR = {
+		is_controlled_by = GRE
+		is_controlled_by = CYP
+	}
+}

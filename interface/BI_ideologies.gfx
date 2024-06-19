@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	#Generic
+
+	#Countrx Specific
+
+	SpriteType = {
+		name = "GFX_YUG_despotism"
+		texturefile = "gfx/interface/ideologies/YUG_despotism.dds"
+	}
+
+}

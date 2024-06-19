@@ -1,0 +1,99 @@
+﻿###########################
+# Better Iron BI_news Events
+###########################
+
+add_namespace = BI_news
+
+# Defensive Pact Between France an Belgium Broken (fascist)
+news_event = {
+	id = BI_news.1
+	title = BI_news.1.t
+	desc = BI_news.1.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.1.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRA
+					tag = ENG
+				}
+			}
+		}
+	}
+	option = {
+		name = BI_news.1.b
+		trigger = {
+			OR = {
+				tag = FRA
+				tag = ENG
+			}
+		}
+	}
+}
+
+# Defensive Pact Between France an Belgium Broken (neutrality effort)
+news_event = {
+	id = BI_news.2
+	title = BI_news.2.t
+	desc = BI_news.2.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.2.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRA
+					tag = ENG
+				}
+			}
+		}
+	}
+	option = {
+		name = BI_news.2.b
+		trigger = {
+			OR = {
+				tag = FRA
+				tag = ENG
+			}
+		}
+	}
+}
+
+# France Gives Cameroon to Belgium
+news_event = {
+	id = BI_news.3
+	title = BI_news.3.t
+	desc = BI_news.3.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = BI_news.3.a
+	}
+}
+
+# German-Austria Proclaimed
+news_event = {
+	id = BI_news.4
+	title = BI_news.4.t
+	desc = BI_news.4.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = BI_news.4.a
+	}
+}

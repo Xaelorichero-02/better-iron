@@ -1,0 +1,286 @@
+﻿###########################
+# Belgian Events
+###########################
+
+add_namespace = belgium
+
+# Belgian Elections of '36
+country_event = {
+	id = belgium.1
+	title = belgium.1.t
+	desc = belgium.1.d
+	picture = GFX_report_event_BEL_1936_elections
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = belgium.1.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "1936.5.24"
+			election_frequency = 36
+		}
+		complete_national_focus = BEL_catholics_won
+		hidden_effect = {
+			country_event = { # National Bank Scandal
+				id = belgium.2
+				days = 322
+				random_days = 226
+			}
+		}
+	}
+	option = {
+		name = belgium.1.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "1936.5.24"
+			election_frequency = 36
+		}
+		add_country_leader_role = {
+			character = BEL_paul_emilie_janson
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				expire = "1965.1.1.1"
+				traits = { democratic_reformer }
+			}
+		}
+		complete_national_focus = BEL_libs_won
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BEL_paul_van_zeeland
+				ideology = conservatism
+			}
+		}
+	}
+	option = {
+		name = belgium.1.c
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "1936.5.24"
+			election_frequency = 36
+		}
+		add_country_leader_role = {
+			character = BEL_paul_henri_spaak
+			promote_leader = yes
+			country_leader = {
+				ideology = socialism
+				expire = "1965.1.1.1"
+				traits = { captain_of_industry }
+			}
+		}
+		complete_national_focus = BEL_labour_won
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BEL_paul_van_zeeland
+				ideology = conservatism
+			}
+		}
+	}
+	option = {
+		name = belgium.1.e
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1936.5.24"
+			election_frequency = 36
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.6
+		}
+		complete_national_focus = BEL_rex_won
+	}
+}
+
+# Degrelle Accusses van Zeeland of Corruption
+country_event = {
+	id = belgium.2
+	title = belgium.2.t
+	desc = belgium.2.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = belgium.2.a
+		add_political_power = -50
+		add_country_leader_role = {
+			character = BEL_paul_henri_spaak
+			promote_leader = yes
+			country_leader = {
+				ideology = socialism
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+		complete_national_focus = BEL_labour_won
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BEL_paul_van_zeeland
+				ideology = conservatism
+			}
+		}
+	}
+	option = {
+		name = belgium.2.b
+		add_political_power = -75
+		add_country_leader_role = {
+			character = BEL_hubert_pierlot
+			promote_leader = yes
+			country_leader = {
+				ideology = conservatism
+				expire = "1965.1.1.1"
+				traits = { SWE_minister_of_agriculture }
+			}
+		}
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BEL_paul_van_zeeland
+				ideology = conservatism
+			}
+		}
+	}
+	option = {
+		name = belgium.2.c
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "1936.5.24"
+			election_frequency = 36
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.6
+		}
+		complete_national_focus = BEL_rex_won
+	}
+	option = {
+		name = belgium.2.d
+		add_stability = -0.05
+		add_political_power = -250
+	}
+}
+
+# French Response to Belgian Aligment with Germany
+country_event = {
+	id = belgium.4
+	title = belgium.4.t
+	desc = belgium.4.d
+	picture = GFX_report_event_BEL_joining_the_axis
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = belgium.4.a
+		add_war_support = 0.01
+		diplomatic_relation = {
+			country = BEL
+			relation = guarantee
+			active = no
+		}
+		hidden_effect = {
+			BEL = { news_event = BI_news.1 }
+			FRA = { news_event = BI_news.1 }
+			LUX = { news_event = BI_news.1 }
+			HOL = { news_event = BI_news.1 }
+			GER = { news_event = BI_news.1 }
+			ENG = { news_event = BI_news.1 }
+			ITA = { news_event = BI_news.1 }
+		}
+	}
+	option = {
+		name = belgium.4.b
+		add_political_power = -10
+	}
+}
+
+# Belgian Demand on Cameroon
+country_event = {
+	id = belgium.5
+	title = belgium.5.t
+	desc = belgium.5.d
+	picture = GFX_report_event_BEL_joining_the_axis
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = belgium.5.a
+		BCM = {
+			transfer_state = 773
+			transfer_state = 774
+			transfer_state = 660
+			transfer_state = 539
+			transfer_state = 772
+		}
+		BEL = {
+			set_autonomy = {
+				target = BCM
+				autonomous_state = autonomy_integrated_puppet
+				freedom_level = 0.8
+			}
+		}
+		hidden_effect = {
+			BEL = { news_event = BI_news.3 }
+			FRA = { news_event = BI_news.3 }
+			LUX = { news_event = BI_news.3 }
+			HOL = { news_event = BI_news.3 }
+			GER = { news_event = BI_news.3 }
+			ENG = { news_event = BI_news.3 }
+			ITA = { news_event = BI_news.3 }
+		}
+	}
+	option = {
+		name = belgium.5.b
+	}
+}
+
+# van Zeeland retires (decision)
+country_event = {
+	id = belgium.6
+	title = belgium.6.t
+	desc = belgium.6.d
+	picture = GFX_report_event_BEL_joining_the_axis
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = belgium.6.a
+		add_country_leader_role = {
+			character = BEL_hubert_pierlot
+			promote_leader = yes
+			country_leader = {
+				ideology = conservatism
+				expire = "1965.1.1.1"
+				traits = { SWE_minister_of_agriculture }
+			}
+		}
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BEL_paul_van_zeeland
+				ideology = conservatism
+			}
+		}
+	}
+	option = {
+		name = belgium.6.b
+		add_country_leader_role = {
+			character = BEL_albert_edouard_janssen
+			promote_leader = yes
+			country_leader = {
+				ideology = conservatism
+				expire = "1965.1.1.1"
+				traits = { the_banker }
+			}
+		}
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BEL_paul_van_zeeland
+				ideology = conservatism
+			}
+		}
+	}
+}

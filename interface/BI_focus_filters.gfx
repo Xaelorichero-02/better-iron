@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_FOCUS_FILTER_DIPLOMATIC"
+		texturefile = "gfx/interface/focusview/filter/diplomacy_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FOCUS_FILTER_ESPIONAGE"
+		texturefile = "gfx/interface/focusview/filter/espionage_icon.dds"
+	}
+
+}

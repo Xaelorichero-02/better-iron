@@ -1,0 +1,99 @@
+ideas = {
+
+	country = {
+		RKS_forced_labor = {
+			picture = ast_all_in
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		RKS_army_idea = {
+			picture = SS_recruitment
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				resistance_damage_to_garrison = -0.1
+			}
+			cancel = {
+				NOT = { has_government = fascism }
+			}
+		}
+
+		RKS_army_idea_2 = {
+			picture = SS_recruitment
+			name = RKS_army_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.07
+				resistance_damage_to_garrison = -0.1
+				war_support_factor = -0.15
+			}
+			cancel = {
+				NOT = { has_government = fascism }
+			}
+		}
+
+		RKS_army_idea_3 = {
+			picture = SS_recruitment
+			name = RKS_army_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.07
+				resistance_damage_to_garrison = -0.1
+				war_support_factor = -0.1
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				training_time_army_factor = -0.1
+			}
+			cancel = {
+				NOT = { has_government = fascism }
+			}
+		}
+	}
+}

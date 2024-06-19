@@ -1,0 +1,29 @@
+state={
+	id=970
+	name="STATE_970"
+	resources={
+		oil=11
+	}
+
+	history={
+		owner = BOL
+		buildings = {
+			infrastructure = 1
+			12979 = {
+				bunker = 1
+			}
+
+		}
+		add_core_of = BOL
+		add_core_of = PAR
+
+	}
+
+	provinces={
+		2160 12902 12916 12979 
+	}
+	manpower=16990
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

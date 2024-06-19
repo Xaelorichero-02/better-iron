@@ -1,0 +1,40 @@
+leader_traits = {
+
+	wunderwaffe_enthusiast = {
+		random = no
+		sprite = 14
+		research_speed_factor = -0.02
+		political_power_factor = -0.1
+		war_support_weekly = 0.001
+	}
+
+	expansionist_fanatic = {
+		random = no
+		sprite = 7
+		annex_cost_factor = -0.05
+		justify_war_goal_time = -0.15
+		enemy_declare_war_tension = -0.2
+		civil_war_involvement_tension = -0.15
+		enemy_justify_war_goal_time = -0.25
+	}
+
+	vegetarian = {
+		random = no
+		sprite = 19
+		recon_factor_while_entrenched = 0.05
+	}
+
+	dislikes_france = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "FRA"
+			value = 200
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

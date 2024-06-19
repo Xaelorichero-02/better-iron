@@ -1,0 +1,146 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					9 = {
+						is_german_tag = yes
+					}
+				}
+				9 = { set_state_name = STATE_9_GER }
+				set_province_name = { id = 6418 name = VICTORY_POINTS_6418_GER }
+				set_province_name = { id = 9541 name = VICTORY_POINTS_9541_GER }
+				set_province_name = { id = 9569 name = VICTORY_POINTS_9569_GER }
+				set_province_name = { id = 11542 name = VICTORY_POINTS_11542_GER }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						9 = {
+							is_czechoslovak_tag = yes
+						}
+					}
+					9 = { set_state_name = STATE_9_CZE }
+					set_province_name = { id = 6418 name = VICTORY_POINTS_6418_CZE }
+					set_province_name = { id = 9541 name = VICTORY_POINTS_9541_CZE }
+					set_province_name = { id = 9569 name = VICTORY_POINTS_9569_CZE }
+					set_province_name = { id = 11542 name = VICTORY_POINTS_11542_CZE }
+				}
+				else = {
+					9 = { set_state_name = STATE_9 }
+					set_province_name = { id = 6418 name = VICTORY_POINTS_6418 }
+					set_province_name = { id = 9541 name = VICTORY_POINTS_9541 }
+					set_province_name = { id = 9569 name = VICTORY_POINTS_9569 }
+					set_province_name = { id = 11542 name = VICTORY_POINTS_11542 }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					28 = {
+						is_german_tag = yes
+					}
+				}
+				28 = { set_state_name = STATE_28_GER }
+				set_province_name = { id = 549 name = VICTORY_POINTS_549_GER }
+				set_province_name = { id = 678 name = VICTORY_POINTS_678_GER }
+				set_province_name = { id = 6529 name = VICTORY_POINTS_6529_GER }
+				set_province_name = { id = 9503 name = VICTORY_POINTS_9503_GER }
+				else = {
+					28 = { set_state_name = STATE_28 }
+					set_province_name = { id = 549 name = VICTORY_POINTS_549 }
+					set_province_name = { id = 678 name = VICTORY_POINTS_678 }
+					set_province_name = { id = 6529 name = VICTORY_POINTS_6529 }
+					set_province_name = { id = 9503 name = VICTORY_POINTS_9503 }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					69 = {
+						is_german_tag = yes
+					}
+				}
+				69 = { set_state_name = STATE_69_GER }
+				set_province_name = { id = 557 name = VICTORY_POINTS_557_GER }
+				set_province_name = { id = 3585 name = VICTORY_POINTS_3585_GER }
+				set_province_name = { id = 11401 name = VICTORY_POINTS_11401_GER }
+				set_province_name = { id = 11432 name = VICTORY_POINTS_11432_GER }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						74 = {
+							is_czechoslovak_tag = yes
+						}
+					}
+					74 = { set_state_name = STATE_74_CZE }
+					set_province_name = { id = 557 name = VICTORY_POINTS_557_CZE }
+					set_province_name = { id = 3585 name = VICTORY_POINTS_3585_CZE }
+					set_province_name = { id = 11401 name = VICTORY_POINTS_11401_CZE }
+					set_province_name = { id = 11432 name = VICTORY_POINTS_11432_CZE }
+				}
+				else = {
+					74 = { set_state_name = STATE_74 }
+					set_province_name = { id = 557 name = VICTORY_POINTS_557 }
+					set_province_name = { id = 3585 name = VICTORY_POINTS_3585 }
+					set_province_name = { id = 11401 name = VICTORY_POINTS_11401 }
+					set_province_name = { id = 11432 name = VICTORY_POINTS_11432 }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					74 = {
+						is_german_tag = yes
+					}
+				}
+				74 = { set_state_name = STATE_74_GER }
+				set_province_name = { id = 3414 name = VICTORY_POINTS_3414_GER }
+				set_province_name = { id = 3583 name = VICTORY_POINTS_3583_GER }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						74 = {
+							is_czechoslovak_tag = yes
+						}
+					}
+					74 = { set_state_name = STATE_74_CZE }
+					set_province_name = { id = 3414 name = VICTORY_POINTS_3414_CZE }
+					set_province_name = { id = 3583 name = VICTORY_POINTS_3583_CZE }
+				}
+				else = {
+					74 = { set_state_name = STATE_74 }
+					set_province_name = { id = 3414 name = VICTORY_POINTS_3414 }
+					set_province_name = { id = 3583 name = VICTORY_POINTS_3583 }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					75 = {
+						is_german_tag = yes
+					}
+				}
+				75 = { set_state_name = STATE_75_GER }
+				set_province_name = { id = 3569 name = VICTORY_POINTS_3569_GER }
+				set_province_name = { id = 6562 name = VICTORY_POINTS_6562_GER }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						75 = {
+							is_czechoslovak_tag = yes
+						}
+					}
+					75 = { set_state_name = STATE_75_CZE }
+					set_province_name = { id = 3569 name = VICTORY_POINTS_3569_CZE }
+					set_province_name = { id = 6562 name = VICTORY_POINTS_6562_CZE }
+				}
+				else = {
+					75 = { set_state_name = STATE_75 }
+					set_province_name = { id = 3569 name = VICTORY_POINTS_3569 }
+					set_province_name = { id = 6562 name = VICTORY_POINTS_6562 }
+				}
+			}
+		}
+	}
+}

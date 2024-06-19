@@ -1,0 +1,64 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_idea_GEN_berlin_1884"
+		texturefile = "gfx/interface/ideas/GEN_berlin_1884.dds"
+	}
+
+	#Belgium
+
+	SpriteType = {
+		name = "GFX_idea_BEL_leopold_iii"
+		texturefile = "gfx/interface/ideas/BEL_leopold_iii.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BEL_wallon_flemish_divide"
+		texturefile = "gfx/interface/ideas/BEL_wallon_flemimh_divide.dds"
+	}
+
+
+	#Czechoslovakia
+
+	SpriteType = {
+		name = "GFX_idea_CZE_tgm"
+		texturefile = "gfx/interface/ideas/CZE_tgm.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_CZE_sokol_movement"
+		texturefile = "gfx/interface/ideas/CZE_sokol_movement.dds"
+	}
+
+	#Manchukuo
+
+	SpriteType = {
+		name = "GFX_idea_MAN_aisin_gioro_puyi"
+		texturefile = "gfx/interface/ideas/MAN_aisin_gioro_puyi.dds"
+	}
+
+	#Netherlands
+
+	SpriteType = {
+		name = "GFX_idea_HOL_wilhelmina"
+		texturefile = "gfx/interface/ideas/HOL_wilhelmina.dds"
+	}
+
+	#Yugoslavia
+
+	SpriteType = {
+		name = "GFX_idea_YUG_croatian_opposition"
+		texturefile = "gfx/interface/ideas/YUG_croatian_opposition.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_YUG_macedonian_opposition"
+		texturefile = "gfx/interface/ideas/YUG_macedonian_opposition.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_YUG_slovene_nationalism"
+		texturefile = "gfx/interface/ideas/YUG_slovene_nationalism.dds"
+	}
+
+}

@@ -1,0 +1,35 @@
+state={
+	id=985
+	name="STATE_985"
+
+	history={
+		owner = BEL
+		victory_points = {
+			6598 30 
+		}
+		victory_points = {
+			13068 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 3
+			air_base = 4
+			6598 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		6598 9574 11419 13068 
+	}
+	manpower=1857986
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

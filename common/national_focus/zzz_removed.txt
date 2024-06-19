@@ -1,0 +1,182 @@
+focus_tree = {
+	id = removed_focuses #given to missing bookmark entry to show it in minor countries
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = XXX
+		}
+	}
+	
+	default = no
+
+	focus =  { #Focus Display Glitch Fix
+		id = PAR_rekindle_old_gripes
+		icon = GFX_goal_generic_attack_allies
+		x = 40
+		y = 0
+
+		offset = {
+			x = -10
+			y = 0
+			trigger = {
+				tag = PAR 
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_game_rule = {
+						rule = PAR_AI_BEHAVIOR
+						option = DEFAULT
+					}
+					has_game_rule = {
+						rule = PAR_AI_BEHAVIOR
+						option = HISTORICAL
+					}
+				}
+
+				AND = {
+					OR = {
+						BRA = { has_war_with_major = no }
+						ARG = { has_war_with_major = no }
+					}
+				}
+				factor = 0
+			}
+		}
+		prerequisite = {
+		}
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION  }
+		will_lead_to_war_with = BRA
+		will_lead_to_war_with = ARG
+		completion_reward = {
+			if = {
+				limit = { BRA = { has_civil_war = yes } }
+				every_country = {
+					limit = { original_tag = BRA }
+
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							generator = { 504 } # optional 
+						}
+					}
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = BRA
+					generator = { 504 } # optional 
+				}
+			}
+
+			if = {
+				limit = { ARG = { has_civil_war = yes } }
+				every_country = {
+					limit = { original_tag = ARG }
+
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							generator = { 957 } # optional 
+						}
+					}
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = annex_everything
+					target = ARG
+					generator = { 957 } # optional 
+				}
+			}
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			custom_effect_tooltip = GUAY_rekindle_old_gripes_ARG_PAR_tt
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			custom_effect_tooltip = GUAY_rekindle_old_gripes_BRA_PAR_tt
+		}
+	}
+
+	#######################################
+	######### STRATEGY DECISIONS ##########
+	#######################################
+	
+	focus = {
+		id = CZE_strategy_decisions
+		icon = GFX_goal_generic_position_armies
+		x = 11
+		y = 10
+		relative_position_id = CZE_political_direction
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = CZE_rapprochement_with_hungary
+		icon = GFX_goal_GEN_befriend_hungary
+		#prerequisite = { focus = CZE_security_council }
+		#mutually_exclusive = { focus = CZE_deal_with_hungary }
+		x = -2
+		y = 1
+		#relative_position_id = CZE_security_council
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 40
+		}
+	
+		available = {
+			NOT = {
+				is_in_faction_with = HUN
+			}
+			HUN = { exists = yes }
+			HUN = { is_subject = no }
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			HUN = { country_event = { hours = 1 id = czech.32 } }
+		}
+	}
+}

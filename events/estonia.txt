@@ -1,0 +1,849 @@
+###########################
+# Estonian Events
+###########################
+
+add_namespace = est
+
+# The Fall of Leningrad
+news_event = {
+	id = est.1
+	title = est.1.t
+	desc = est.1.d
+	picture = GFX_news_event_056
+	
+	trigger = {
+		195 = { is_controlled_by = EST }
+		195 = { is_owned_by = SOV }
+		EST = { has_war_with = SOV }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_leningrad
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = est.1.a
+		trigger = {
+			NOT = {
+				TAG = EST
+			}
+		}
+	}
+	option = {
+		name = est.1.b
+		trigger = { TAG = EST }
+	}
+}
+
+# The Fall of Riga
+news_event = {
+	id = est.2
+	title = est.2.t
+	desc = est.2.d
+	picture = GFX_news_event_kiev_ruins
+	
+	trigger = {
+		12 = { is_controlled_by = EST }
+		12 = { is_owned_by = LAT }
+		EST = { has_war_with = LAT }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = est.2.a
+		trigger = {
+			NOT = {
+				TAG = EST
+			}
+		}
+	}
+	option = {
+		name = est.2.b
+		trigger = { TAG = EST }
+	}
+}
+
+# Latvian Cores
+country_event = {
+	id = est.3
+	title = est.3.t
+	desc = est.3.d
+	picture = GFX_report_event_crowd_in_prague
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 5 }
+
+	trigger = {
+		tag = EST
+		controls_state = 190
+		controls_state = 12
+		has_political_power > 50
+	}
+	
+	option = {
+		name = est.3.a
+		add_political_power = -100
+		effect_tooltip = {
+			add_timed_idea {
+				idea = rapid_expansion
+				days = 180
+			}
+		}
+		190 = {
+			if = {
+				limit = { is_owned_by = EST }
+				add_core_of = EST
+			}
+		}
+		12 = {
+			if = {
+				limit = { is_owned_by = EST }
+				add_core_of = EST
+			}
+		}
+	}
+	option = {
+		name = est.3.b
+		add_political_power = 25
+	}
+}
+
+#Finland gets event to join our faction
+country_event = {  
+	id = est.4
+	title = est.4.t
+	desc = est.4.d
+	picture = GFX_report_event_estalliance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = est.1.a
+		ai_chance = { factor = 100 }
+		EST = {
+			country_event = { id = est.5 days = 1 }
+			add_to_faction = ROOT
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "FRA"
+			value = 200
+		}
+	}
+
+	option = {
+		name = est.4.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+#finland accepts
+country_event = {
+	id = est.5
+	title = est.5.t
+	desc = est.5.d
+	picture = GFX_report_event_estalliance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = est.5.a
+		effect_tooltip = {
+			add_to_faction = FROM
+		}
+	}
+}
+
+#Soldiers don't want to fight LIT
+ country_event = {
+	id = est.6
+	title = est.6.t
+	desc = est.6.d
+	picture = GFX_report_event_nofight
+	
+	trigger = {
+	    tag = EST
+        EST = { has_war_with = LIT }
+	}
+		
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+	
+	option = {
+	    ai_chance = {
+			base = 40
+		}
+		name = "Its for greater good!"
+        add_timed_idea = {
+			idea = unmotivated_soldiers
+			days = 120
+		}
+	}
+
+    option = {
+    	ai_chance = {
+			base = 50
+		}
+		name = "Send them to war tribunal!"
+		add_manpower = -10000
+    }
+
+	option = {
+		ai_chance = {
+			base = 10
+		}
+		name = "End the War"
+		effect_tooltip = {
+			LIT = { white_peace = EST }
+		}
+	}
+}
+
+country_event = {
+	id = est.7
+	title = est.7.t
+	desc = est.7.d
+	picture = GFX_report_event_commusupport
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = EST
+		AND = {
+		    date >1936.8.24
+		NOT = { has_government = communism }
+			}
+		}
+		
+		mean_time_to_happen = {days = 7}
+		
+		option = {
+		name = "Force them to dissolve the party!"
+		ai_chance = { factor = 50 }
+		add_popularity = { ideology = communism popularity = -0.2 }
+    }
+	
+	option = {
+		name = "Send them to prison!"
+		ai_chance = { factor = 10 }
+		add_popularity = { ideology = communism popularity = -0.1 }
+		add_popularity = { ideology = fascism popularity = 0.05 }
+	}
+	
+	option = {
+		name = "Let Them Be"
+		ai_chance = { factor = 40 }
+		add_national_unity = -0.1
+    }
+}
+
+country_event = {
+	id = est.8
+	title = est.8.t
+	desc = est.8.d
+	picture = GFX_report_event_goodharvest
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = EST
+		AND = {
+		    date >1937.6.12 
+		}
+	}
+		
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Everyone can eat as much as they want!"
+        add_timed_idea = {
+			idea = good_harvest
+			days = 120
+		}
+	}
+}
+
+#Send Soviets peace treaty when we are winning
+country_event = {
+	id = est.9
+	title = est.9.t
+	desc = est.9.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	trigger = {
+		tag = EST
+		195 = { is_controlled_by = EST }
+		208 = { is_controlled_by = EST }
+		EST = { has_war_with = SOV }
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	#Send them peace treaty for land
+	option = {
+		name = "Send Them Our Demands!"
+		ai_chance = {
+			base = 10
+		}
+		SOV = {
+			country_event = { id = est.10 }
+		}
+		effect_tooltip = {
+			SOV = { white_peace = EST }
+			EST = { set_state_owner = 208 }
+			EST = { set_state_owner = 209 }
+		}
+	}
+
+	#They will die
+	option = {
+		name = "They Will Be Utterly Destroyed!"
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#Estonia offers us peace
+country_event = {
+	id = est.10
+	title = est.10.t
+	desc = est.10.d
+	picture = GFX_report_event_finnish_soldiers_snow
+
+    #Decline
+	option = {
+		name = "How Do They Even Dare!"
+		ai_chance = {
+			factor = 10
+		}
+		EST = {
+			country_event = { id = est.12 }
+	    }
+	}
+
+	#Counteroffer
+	option = {
+		name = "Send the Counteroffer"
+		ai_chance = {
+			factor = 65
+		}
+		EST = {
+			country_event = { id = est.13 }
+		}
+        SOV = { white_peace = EST }
+			SOV = { set_state_owner = 208 }
+		}
+	}
+}
+
+#Soviet says yes!
+country_event = {
+	id = est.11
+	title = est.11.t
+	desc = est.11.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+	option = {
+	    name = "It's A Glorious Day!"
+		effect_tooltip = {
+			SOV = { white_peace = EST }
+			EST = { set_state_owner = 208 }
+			EST = { set_state_owner = 209 }
+		}
+	}
+}
+
+#Soviet says no!
+country_event = {
+	id = est.12
+	title = est.12.t
+	desc = est.12.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+	option = {
+	    name = "What A Fools!"
+	}
+}
+
+#Soviet counteroffer
+country_event = {
+	id = est.13
+	title = est.13.t
+	desc = est.13.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	fire_only_once = yes
+
+	option = {
+	    name = "It's Better Than War"
+		effect_tooltip = {
+			SOV = { white_peace = EST }
+		}
+	}
+
+	option = {
+	    name = "Continue The Conflict"
+	}
+}
+
+# Renaming leningrad to petersburg
+country_event = {
+	id = est.14
+	title = est.14.t
+	desc = est.14.d
+	picture = GFX_report_event_soviet_invasion_map
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 3 }
+
+	trigger = {
+		tag = EST
+		controls_state = 195
+	}
+	
+	option = {
+		name = est.14.a
+        195 = { set_state_name = "Peterburi" }
+        set_province_name = { id = 3151 name = "Peterburi" }
+	}
+
+	option = {
+		name = est.14.b
+	}
+}
+
+#1941 severe winter
+country_event = {
+	id = est.15
+	title = est.15.t
+	desc = est.15.d
+	picture = GFX_report_event_1941winter
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = EST
+		AND = {
+		    date >1941.11.14
+		}    
+	}
+		
+	mean_time_to_happen = {days = 20}
+	
+	option = {
+		name = "Send our boys thick clotches and boots!"
+		effect_tooltip = {
+			add_timed_idea {
+				idea = exporting_equipment
+				days = 90
+			}
+		}
+	}
+
+    option = {
+		name = "They can handle themselves"
+		add_manpower = -7500
+    }
+}
+
+#Norcid invite FIN, NOR, SWE
+country_event = {
+	id = est.16
+	title = est.16.t
+	desc = est.16.d
+	picture = GFX_report_event_estalliance
+
+	is_triggered_only = yes
+
+	option = { #Enter alliance
+		name = est.16.a
+		ai_chance = {
+			factor = 90
+		}
+		EST = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "POL"
+					value = 200
+				}
+			}
+			country_event = { id = est.17 days = 1 }
+		}
+	}
+
+	option = {
+		name = est.16.b
+		ai_chance = {
+			factor = 10
+		}
+		effect_tooltip = {
+			EST = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ROOT
+				}
+			}
+		}
+		EST = {
+			country_event = { id = est.18 days = 2 }
+		}
+	}
+}
+
+#Country accepts our invite
+country_event = {
+	id = est.17
+	title = est.17.t
+	desc = est.17.d
+	picture = GFX_report_event_estalliance
+	
+	is_triggered_only = yes
+
+	option = {
+		name = est.17.a
+	}
+}
+
+#Country refuses our invite
+country_event = {
+	id = est.18
+	title = est.18.t
+	desc = est.18.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = est.18.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
+
+# Estonia supports communism
+news_event = {
+	id = est.19
+	title = est.19.t
+	desc = est.19.d
+	picture = GFX_news_event_support_commu
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Soviet Propaganda Is Spreading It's Disease"
+		trigger = {
+			NOT = {
+				TAG = EST
+				TAG = SOV
+			}
+		}
+	}
+
+	option = {
+		name = "A Toast To Us!"
+		trigger = { TAG = EST }
+	}
+
+	option = {
+		name = "Welcome, Comrade!"
+		trigger = { TAG = SOV }
+	}
+}
+
+news_event = {
+	id = est.20
+	title = est.20.t
+	desc = est.20.d
+	picture = GFX_news_event_canada_treaty
+
+	mean_time_to_happen = { days = 4 }
+	
+	#Together we stand strong!
+	option = {
+		name = "Together we stand strong!"
+		trigger = {
+			OR = {
+				tag = EST
+				tag = FIN
+			}
+		}
+	}
+
+	option = {
+		name = "Interesting"
+		trigger = {
+			NOT = {
+				TAG = EST
+				TAG = FIN
+			}
+		}
+	}
+}
+
+#FROM pursues nuclear technology
+news_event = {
+	id = est.21
+	title = est.21.t
+	picture = GFX_news_event_069
+	desc = est.21.d
+
+	is_triggered_only = yes
+
+	#We should follow this development.
+	option = {
+		name = "We Should Do The Same"
+		trigger = {
+			NOT = {
+				is_in_faction_with = FROM
+				has_war_with = FROM
+				tag = FROM
+			}
+		}
+	}
+
+	#Let us hope their research bears fruit.
+	option = {
+		name = "Let Us Hope Their Research Bears Fruit"
+		trigger = {
+			is_in_faction_with = FROM
+			NOT = {
+				tag = FROM
+			}
+		}
+	}
+
+	#It will never amount to anything.
+	option = {
+		name = "It will never amount to anything to us"
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+
+	#We will conduct our research in secret.
+	option = {
+		name = "We Will Conduct Our Research In Secret"
+		trigger = {
+			tag = FROM
+		}
+	}
+}
+
+####################################
+# Nordic research sharing          #
+####################################
+country_event = {
+	id = est.22
+	title = est.22.t
+	desc = est.22.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = est.22.a
+		trigger = {
+			NOT = { has_dlc = "Together for Victory" }
+		}
+		ai_chance = { base = 100 }
+		add_political_power = -50
+		add_tech_bonus = {
+			name = "ships"
+			bonus = 0.5
+			uses = 1
+			category = naval_equipment
+		}
+		EST = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = "ships"
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
+			add_tech_bonus = {
+				name = "heavy fighters"
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+			country_event = { days = 1 id = est.23 }
+		}
+	}
+	
+	option = {
+		name = est.22.b
+		trigger = { has_dlc = "Together for Victory" }
+		ai_chance = { base = 100 }
+		add_political_power = -50
+		if = {
+			limit = {
+				EST = {
+					OR = {
+						is_in_faction_with = FIN
+					}
+					num_tech_sharing_groups < 1
+				}
+			}
+			EST = { add_to_tech_sharing_group = EST_nordic_research }
+		}
+		if = {
+			limit = {
+				tag = FIN
+				is_in_faction_with = EST
+			}
+			FIN = { add_to_tech_sharing_group = EST_nordic_research }
+		}
+		if = {
+			limit = {
+				tag = SWE
+				is_in_faction_with = EST
+			}
+			SWE = { add_to_tech_sharing_group = EST_nordic_research }
+		}
+		if = {
+			limit = {
+				tag = NOR
+				is_in_faction_with = EST
+			}
+			NOR = { add_to_tech_sharing_group = EST_nordic_research }
+		}
+		if = {
+			limit = {
+				tag = DEN
+				is_in_faction_with = EST
+			}
+			DEN = { add_to_tech_sharing_group = EST_nordic_research }
+		}
+		EST = {
+			country_event = { days = 1 id = est.23 }
+		}
+	}
+	
+	option = {
+		name = est.22.c
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 0
+				has_opinion = {
+					target = EST
+					value > 90
+				}
+			}
+		}
+		EST = {
+			country_event = { days = 1 id = est.24 }
+		}
+	}
+}
+
+country_event = {
+	id = est.23
+	title = est.23.t
+	desc = est.23.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And with this, we'll all get wiser"
+	}
+}
+
+country_event = {
+	id = est.24
+	title = est.24.t
+	desc = est.24.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = est.24.a
+	}
+}
+
+news_event = {
+	id = est.25
+	title = est.25.t
+	desc = est.25.d
+ 
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Estonia Can Into Nordic?"
+		trigger = {
+			NOT = {
+				TAG = EST
+			}
+		}
+	}
+
+	option = {
+		name = "Long Live Our New Alliance!"
+		trigger = { TAG = EST }
+	}
+}
+
+###Vapsid Front returns in power
+country_event = {
+	id = est.26
+	title = "Vapsid Win the Election"
+	desc = "The Liberal party of Vapsid have been returned and have recieved mayority of votes. Since 1934 when Päts rose to power the party has been banned but after recent government events it is now changed"
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		tag = EST
+		democratic > 0.5
+		date > 1936.10.24
+		date < 1940.1.24
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "The Triumph of Liberty!"
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			
+		}
+	}
+}

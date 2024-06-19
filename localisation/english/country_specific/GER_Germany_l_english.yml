@@ -1,0 +1,38 @@
+﻿l_english:
+ GER_united_in_race:0 "United Against the Enemy"
+ GER_united_in_race_desc:0 "Nazis, Monarchists, Libertarians we should all unite against our enemy during wartime! Stop persecuting monarchists and libertarians who have almost no influence would benefit us by appeasing the most radical and also using their usually good skills to our benefit."
+ GER_lettowvorbeck_general_tt:0 "§YPaul von Lettow-Vorbeck!§ becomes a general."
+ SS_himmler_wants_field_command_desc:0 "§RThis is an SS demand!§!"
+ SS_demand_tt:0 "§RThis is an SS demand!§!"
+
+#Character Descriptions
+ GER_adolf_hitler_desc:0 "§YGeneral Description\nBorn:§! §gApril 20th, 1889, in Braunau am Inn, Austrian Empire§!\n§YCareer:§! §gAdolf Hitler, being from the very young age a Pan-Germanist, would usually disagree with his father Alois who was an Austrian official. He would be a homeless street painter after getting his application on Academy of Fine Arts Vienna rejected two times. During the Great War he would serve as a soldier and after Germany was put under the Treaty of Versailles which Hitler despises. He was a Verbindungsmann (intelligence agent) who worked on infiltrating communists. Once he has been assigned to infiltrate the Deutsche Arbeiterpartei (DAP) but he would rather join the party after finding out it wasn't communist. The party would eventually transform into the Nationalsozialistische Deutsche Arbeiterpartei (NSDAP). After the Beer Hall Putsch in early November 1923 organized by Adolf Hitler, Ernst Röhm and heavily supported by the former German dictator under the Kaiserreich Erich Ludendorff the party would be banned. Only in 1925 the party was unbanned and it would be stronger in every Reichstag election ever since and especially after the Great Depression which would affect Germany hard. Adolf Hitler would also run in a presidental election against Paul von Hindenburg but he still lost and after a lot of internal pressure Paul von Hindenburg would proclaim Hitler a chancellor in 1933 and in 1934 von Hindenburg would die and Hitler united the presidental and chancellor roles into one named Führer (leader). The same year his biggest political rivals 'dissapeared' during the Night of the Long Knives. In 1935 he annexed Saarland after a referendum and start remilitarization with the help of his Arnaments Minister Albert Speer. Germany and it's Führer Adolf Hitler now seeks even further expansion to create the Lebensraum (living space)."
+#Endonyms
+ STATE_9_GER:0 "Böhmen"
+ STATE_28_GER:0 "Elsass-Lothringen" #can be Elsaß-Lothringen too
+ STATE_69_GER:0 "Sudetenland"
+ STATE_74_GER:0 "Ost Sudetenland"
+ STATE_75_GER:0 "Mähren"
+
+ VICTORY_POINTS_549_GER:0 "Hagenau"
+ VICTORY_POINTS_557_GER:0 "Znoim"
+ VICTORY_POINTS_678_GER:0 "Mulhausen"
+ VICTORY_POINTS_3414_GER:0 "Troppau"
+ VICTORY_POINTS_3548_GER:0 "Munkatsch"
+ VICTORY_POINTS_3569_GER:0 "Brünn"
+ VICTORY_POINTS_3581_GER:0 "Eperies"
+ VICTORY_POINTS_3583_GER:0 "Ostrau"
+ VICTORY_POINTS_3585_GER:0 "Carlsbad"
+ VICTORY_POINTS_6418_GER:0 "Pilsen"
+ VICTORY_POINTS_6529_GER:0 "Kolmar"
+ VICTORY_POINTS_6562_GER:0 "Olmütz"
+ VICTORY_POINTS_6573_GER:0 "Kassa"
+ VICTORY_POINTS_9503_GER:0 "Strassburg"
+ VICTORY_POINTS_9541_GER:0 "Budweis"
+ VICTORY_POINTS_9551_GER:0 "Karwin"
+ VICTORY_POINTS_9569_GER:0 "Tabor"
+ VICTORY_POINTS_9692_GER:0 "Pressburg"
+ VICTORY_POINTS_11401_GER:0 "Reichenberg"
+ VICTORY_POINTS_11432_GER:0 "Aussig"
+ VICTORY_POINTS_11539_GER:0 "Sillein"
+ VICTORY_POINTS_11542_GER:0 "Prag"

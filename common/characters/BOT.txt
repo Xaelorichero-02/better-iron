@@ -1,0 +1,42 @@
+characters={
+	BOT_tshekedi_khama={
+		name="Tshekedi Khama"
+		portraits={
+			civilian={
+				large="gfx/leaders/BOT/Portrait_Botswana_Tshekedi_Khama.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BOT_kgalemang_motsete={
+		name="Kgalemang Motsete"
+		portraits={
+			civilian={
+				large="gfx/leaders/BOT/Portrait_Botswana_Kgalemang_Motsete.dds"
+				small="gfx/advisors/BOT/Portrait_Botswana_Kgalemang_Motsete.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BOT_kgalemang_motsete
+			allowed = {
+				original_tag = BOT
+			}
+			traits = {
+				popular_figurehead 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

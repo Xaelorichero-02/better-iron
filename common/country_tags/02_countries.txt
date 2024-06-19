@@ -1,0 +1,4 @@
+TEX	= "countries/Texas.txt"
+CAL	= "countries/California.txt"
+BCG	= "countries/Belgium.txt"
+BCM	= "countries/Belgium.txt"
