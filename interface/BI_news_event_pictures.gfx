@@ -1,8 +1,43 @@
 spriteTypes = {	
 
 	spriteType = {
-		name = "GFX_news_event_support_commu"
-		texturefile = "gfx/event_pictures/news_event_support_commu.dds"
+		name = "GFX_news_event_GEN_support_communism"
+		texturefile = "gfx/news_event_pictures/GEN_support_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_GEN_aragon"
+		texturefile = "gfx/news_event_pictures/GEN_aragon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_GEN_anarchist"
+		texturefile = "gfx/news_event_pictures/GEN_anarchist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_CAN_flagship_bb"
+		texturefile = "gfx/news_event_pictures/CAN_flagship_bb.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_CAN_flagship_cv"
+		texturefile = "gfx/news_event_pictures/CAN_flagship_cv.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_CAN_tour"
+		texturefile = "gfx/news_event_pictures/CAN_tour.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_CAN_margaret"
+		texturefile = "gfx/news_event_pictures/CAN_margaret.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_CAN_wedding"
+		texturefile = "gfx/news_event_pictures/CAN_wedding.dds"
 	}
 
 }

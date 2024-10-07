@@ -4,19 +4,52 @@ spriteTypes = {
 		name = "GFX_idea_GEN_berlin_1884"
 		texturefile = "gfx/interface/ideas/GEN_berlin_1884.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_GEN_minimal_wage"
+		texturefile = "gfx/interface/ideas/GEN_minimal_wage.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GEN_mountainous_people"
+		texturefile = "gfx/interface/ideas/GEN_mountainous_people.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GEN_monarchist_movement"
+		texturefile = "gfx/interface/ideas/GEN_monarchist_movement.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GEN_illiteracy"
+		texturefile = "gfx/interface/ideas/GEN_illiteracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GEN_communism"
+		texturefile = "gfx/interface/ideas/GEN_communism.png"
+	}
+
 
 	#Belgium
-
-	SpriteType = {
-		name = "GFX_idea_BEL_leopold_iii"
-		texturefile = "gfx/interface/ideas/BEL_leopold_iii.dds"
-	}
 
 	SpriteType = {
 		name = "GFX_idea_BEL_wallon_flemish_divide"
 		texturefile = "gfx/interface/ideas/BEL_wallon_flemimh_divide.dds"
 	}
 
+	#Canada
+
+	SpriteType = {
+		name = "GFX_idea_CAN_conscription_crisis"
+		texturefile = "gfx/interface/ideas/CAN_conscription_crisis.dds"
+	}
+
+	#China
+
+	SpriteType = {
+		name = "GFX_idea_CHI_high_popular_support_kmt"
+		texturefile = "gfx/interface/ideas/CHI_high_popular_support_kmt.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_warlordism"
+		texturefile = "gfx/interface/ideas/CHI_warlordism.png"
+	}
 
 	#Czechoslovakia
 
@@ -24,24 +57,51 @@ spriteTypes = {
 		name = "GFX_idea_CZE_tgm"
 		texturefile = "gfx/interface/ideas/CZE_tgm.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_idea_CZE_sokol_movement"
 		texturefile = "gfx/interface/ideas/CZE_sokol_movement.dds"
 	}
 
-	#Manchukuo
+	#Hungary
 
 	SpriteType = {
-		name = "GFX_idea_MAN_aisin_gioro_puyi"
-		texturefile = "gfx/interface/ideas/MAN_aisin_gioro_puyi.dds"
+		name = "GFX_idea_HUN_army"
+		texturefile = "gfx/interface/ideas/HUN_army.dds"
 	}
 
-	#Netherlands
+	#Japan
 
 	SpriteType = {
-		name = "GFX_idea_HOL_wilhelmina"
-		texturefile = "gfx/interface/ideas/HOL_wilhelmina.dds"
+		name = "GFX_idea_JAP_fascism"
+		texturefile = "gfx/interface/ideas/JAP_fascism.dds"
+	}
+
+	#PR China
+
+	SpriteType = {
+		name = "GFX_idea_PRC_maoism"
+		texturefile = "gfx/interface/ideas/PRC_maoism.dds"
+	}
+
+	#Shanxi
+
+	SpriteType = {
+		name = "GFX_idea_SHX_red_wall"
+		texturefile = "gfx/interface/ideas/SHX_red_wall.dds"
+	}
+
+	#Spain
+
+	SpriteType = {
+		name = "GFX_idea_SPR_citrus"
+		texturefile = "gfx/interface/ideas/SPR_citrus.dds"
+	}
+
+	#Soviet Union
+
+	SpriteType = {
+		name = "GFX_idea_SOV_stalinism"
+		texturefile = "gfx/interface/ideas/SOV_stalinism.dds"
 	}
 
 	#Yugoslavia
@@ -50,12 +110,10 @@ spriteTypes = {
 		name = "GFX_idea_YUG_croatian_opposition"
 		texturefile = "gfx/interface/ideas/YUG_croatian_opposition.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_idea_YUG_macedonian_opposition"
 		texturefile = "gfx/interface/ideas/YUG_macedonian_opposition.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_idea_YUG_slovene_nationalism"
 		texturefile = "gfx/interface/ideas/YUG_slovene_nationalism.dds"

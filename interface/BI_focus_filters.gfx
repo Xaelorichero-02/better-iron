@@ -6,6 +6,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_FOCUS_FILTER_RESOURCES"
+		texturefile = "gfx/interface/focusview/filter/resources_icon.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_FOCUS_FILTER_ESPIONAGE"
 		texturefile = "gfx/interface/focusview/filter/espionage_icon.dds"
 	}

@@ -1,4 +1,9 @@
-spriteTypes = {	
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_starting_event"
+		textureFile = "gfx/event_pictures/zz_starting_event.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_report_event_BEL_joining_the_axis"
@@ -8,6 +13,31 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_report_event_BEL_1936_elections"
 		texturefile = "gfx/event_pictures/BEL_1936_elections.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_report_event_BEL_van_zeeland"
+		texturefile = "gfx/event_pictures/BEL_van_zeeland.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_report_event_BEL_van_zeeland_angry"
+		texturefile = "gfx/event_pictures/BEL_van_zeeland_angry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_report_event_CAN_flagship"
+		texturefile = "gfx/event_pictures/CAN_flagship.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_report_event_CAN_margaret"
+		texturefile = "gfx/event_pictures/CAN_margaret.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_report_event_CAN_wedding"
+		texturefile = "gfx/event_pictures/CAN_wedding.dds"
 	}
 
 	spriteType = {

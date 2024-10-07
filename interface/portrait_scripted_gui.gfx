@@ -1,0 +1,157 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_Ackbaraddin"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_Ackbaraddin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_vanilla"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_vanilla.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_CotF"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_CotF.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_NW"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_NW.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_NW_old"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_NW_old.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_TGWR"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_TGWR.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_TNO"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_TNO.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_hoi4fanforever_krstyle"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_hoi4fanforever_krstyle.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_NickTsurev"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_NickTsurev.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_HermanLindqvist"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_HermanLindqvist.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_Random_Khmerguy"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_Random_Khmerguy.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_Random_Khmerguy_2"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_Random_Khmerguy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Adolf_Hitler_censored"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler_censored.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_vanilla"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_vanilla.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_TGWR"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_TGWR.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_TGWR_20s"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_TGWR_20s.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_TGW"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_TGW.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_Andreiboi2020"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_Andreiboi2020.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_fignyakakayata"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_fignyakakayata.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_Hardback_Writer"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_Hardback_Writer.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_HouseofWashington"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_HouseofWashington.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_JayMann_mp"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_JayMann_mp.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_Maxno123"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_Maxno123.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_mr_bergmann"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_mr_bergmann.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_NewAardvark6445"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_NewAardvark6445.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_NewAardvark6445_2"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_NewAardvark6445_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_PolskiGrizzle"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_PolskiGrizzle.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_poslepoludnya"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_poslepoludnya.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_R0bDaFlob"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_R0bDaFlob.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_Random_Khmerguy"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_Random_Khmerguy.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Joseph_Stalin_r56"
+		textureFile = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_r56.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Yan_Xishan"
+		textureFile = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Yan_Xishan_actually_a_generic"
+		textureFile = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan_actually_a_generic.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Yan_Xishan_CirclePete"
+		textureFile = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan_CirclePete.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Yan_Xishan_CptChetson"
+		textureFile = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan_CptChetson.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Yan_Xishan_CotF"
+		textureFile = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan_CotF.dds"
+	}
+}

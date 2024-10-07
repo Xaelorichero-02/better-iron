@@ -1,0 +1,408 @@
+﻿#####################
+##### Industry ######
+#####################
+
+shared_focus = {
+	id = CHI_industrial_investment
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 12
+	y = 0
+	offset = {
+		x = 9
+		y = 0
+		trigger = {
+			tag = SHX
+		}
+	}
+	relative_position_id = CHI_secure_internal_politics
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+		random_state = {
+			limit = {
+				has_state_flag = CHI_industrial_investment_IC
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			set_state_flag = CHI_industrial_investment_IC
+		}
+	}
+}
+
+shared_focus = {
+	id = CHI_public_education_reform
+	icon = GFX_focus_research
+	prerequisite = { focus = CHI_industrial_investment }
+	x = -2
+	y = 1
+	relative_position_id = CHI_industrial_investment
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 10
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = CHI_local_arms_production
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = CHI_industrial_investment }
+	x = 0
+	y = 1
+	relative_position_id = CHI_industrial_investment
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = CHI_local_arms_production_AF
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			set_state_flag = CHI_local_arms_production_AF
+		}
+	}
+}
+
+shared_focus = {
+	id = CHI_long_term_economic_planning
+	icon = GFX_goal_generic_production2
+	prerequisite = { focus = CHI_local_arms_production }
+	x = 0
+	y = 2
+	relative_position_id = CHI_industrial_investment
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		add_ideas = CHI_long_term_economic_planning
+	}
+}
+
+shared_focus = {
+	id = CHI_local_arms_development
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = CHI_local_arms_production }
+	x = 2
+	y = 2
+	relative_position_id = CHI_industrial_investment
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_local_arms_development
+			bonus = 1.0
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = CHI_heavy_weapons_development
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = { focus = CHI_local_arms_development }
+	x = 2
+	y = 3
+	relative_position_id = CHI_industrial_investment
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = CHI_heavy_weapons_development
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = CHI_strenghten_warlord_authority
+	icon = GFX_focus_generic_military_dictatorship
+	x = 16
+	y = 0
+	offset = {
+		x = 4
+		y = 3
+		trigger = {
+			tag = SHX
+		}
+	}
+
+	cost = 10
+
+	relative_position_id = CHI_secure_internal_politics
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		IF = {
+			limit = {
+				has_idea = CHI_warlord_state_idea
+			}
+			swap_ideas = {
+				remove_idea = CHI_warlord_state_idea
+				add_idea = CHI_warlord_state_idea_2
+			}	
+		}
+	}
+}
+
+shared_focus = {
+	id = CHI_uplift_the_cavalry_regiments
+	icon = GFX_goal_generic_cavalry
+	x = -1
+	y = 1
+
+	cost = 10
+
+	prerequisite = { focus = CHI_strenghten_warlord_authority }
+
+	relative_position_id = CHI_strenghten_warlord_authority
+
+	mutually_exclusive = {
+		focus = CHI_uplift_the_mountain_brigades
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = CHI_warlord_state_idea_2
+			add_idea = CHI_warlord_state_idea_cav
+		}	
+	}
+}
+
+shared_focus = {
+	id = CHI_uplift_the_mountain_brigades
+	icon = GFX_focus_secret_rearmament
+	x = 1
+	y = 1
+
+	cost = 10
+
+	prerequisite = { focus = CHI_strenghten_warlord_authority }
+
+	relative_position_id = CHI_strenghten_warlord_authority
+
+	mutually_exclusive = {
+		focus = CHI_uplift_the_cavalry_regiments
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = {  }
+	completion_reward = {
+
+		swap_ideas = {
+			remove_idea = CHI_warlord_state_idea_2
+			add_idea = CHI_warlord_state_idea_mnt
+		}
+
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = mountaineers_tech
+		}	
+	}
+}

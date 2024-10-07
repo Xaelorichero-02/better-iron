@@ -13,15 +13,17 @@ bookmarks = {
 			ideas = {
 				home_of_the_free
 				great_depression
+				USA_monroe_doctrine_enforcer
 				undisturbed_isolation
 			}
 			focuses = {
 				USA_war_plan_black
 				USA_limited_intervention
 				USA_reestablish_the_gold_standard
+				USA_arsenal_of_democracy
 			}
 		}
-		"ADU"={
+		"XXX"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -111,11 +113,13 @@ bookmarks = {
 			available = { has_dlc = "By Blood Alone" }
 			ideas = {
 				vittorio_emanuele
+				vittoria_mutilata
 				ITA_iri_fake_ns
 				ITA_re_fake_ns
 			}	
 			focuses = {
 				ITA_comandante_diavolo
+				ITA_to_live_as_a_lion
 				ITA_il_sol_dell_avvenire
 				ITA_a_colonial_empire
 			}		
@@ -126,6 +130,7 @@ bookmarks = {
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			ideas = {
 				vittorio_emanuele
+				vittoria_mutilata
 				ITA_iri_fake_ns
 				ITA_re_fake_ns
 			}	
@@ -135,7 +140,7 @@ bookmarks = {
 				ITA_a_colonial_empire
 			}		
 		}
-		"ADU"={
+		"XXX"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -143,20 +148,20 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"BEL"={
-			history = "BEL_GATHERING_STORM_DESC"
-			ideology = democratic
+		"SHX"={
+			history = "SHX_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				BEL_leopold_iii
-				BEL_1839_agreement
-				BEL_striking_workers
-				BEL_rise_of_rex
+				CHI_warlord_state_idea
+				between_the_sword_and_the_red_wall
+				native_mercenary_army
+				anti_japanese_intellectuals
 			}
 			focuses = {
-				BEL_return_to_neutral_foreign_policy
-				BEL_minor_forts_in_liege
-				BEL_dream_of_uniting_the_low_countries
-				BEL_adress_the_strikes
+				SHX_a_han_mongol_union
+				SHX_heavenly_republic
+				SHX_retake_nanjing
+				SHX_model_virtues
 			}
 		}
 		"JAP"={
@@ -246,6 +251,7 @@ bookmarks = {
 				FIN_winter_warfare
 				FIN_greater_finland
 				FIN_oy_alkoholiliike
+				FIN_the_lone_wolf
 			}
 		}
 		FIN={
@@ -259,6 +265,7 @@ bookmarks = {
 				FIN_red_finland
 				FIN_winter_warfare
 				FIN_greater_finland
+				FIN_the_lone_wolf
 			}
 		}
 
@@ -271,17 +278,19 @@ bookmarks = {
 				BRA_undiversified_economy_modifier_dummy_idea
 				BRA_weak_government_dummy_idea
 				BRA_aftermath_of_the_coup_dummy_idea
+				BRA_separatism_idea
 			}
 			focuses = {
 				BRA_coffee_crisis_aftermath
 				BRA_tribunal_de_seguranca_nacional
 				BRA_end_the_state_of_emergency
+				BRA_prepare_for_second_intentona
 			}
 		}
 		"XXX"={
-			NOT = { has_dlc = "Trial of Allegiance" }
+			available = { NOT = { has_dlc = "Trial of Allegiance" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_TOA_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -293,6 +302,7 @@ bookmarks = {
 			history = CHL_GATHERING_STORM_DESC
 			ideology = democratic
 			ideas = {
+				CHL_the_mapuche_conflict
 				idea_CHL_near_anarchic_society
 				idea_CHL_the_Hacienda_inquilinaje_system
 				idea_CHL_repubican_guard
@@ -301,12 +311,13 @@ bookmarks = {
 				CHL_policies_of_arturo_alessandri
 				CHL_commence_the_counter_revolution
 				CHL_avenge_the_pacification_of_araucania
+				CHL_devalue_the_peso
 			}
 		}
 		"XXX"={
 			available = { NOT = { has_dlc = "Trial of Allegiance" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_TOA_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -318,6 +329,7 @@ bookmarks = {
 			history = ARG_GATHERING_STORM_DESC
 			ideology = neutrality
 			ideas = {
+				SMB_MTG_naval_arms_race_legacy
 				ARG_infamous_decade_idea
 				ARG_roca_runciman_treaty_idea
 				ARG_towards_a_greater_argentina_idea
@@ -326,12 +338,13 @@ bookmarks = {
 				ARG_islas_del_atlantico_sur
 				ARG_a_red_south_america
 				ARG_south_american_unity
+				ARG_peronism
 			}
 		}
 		"XXX"={
 			available = { NOT = { has_dlc = "Trial of Allegiance" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_TOA_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -343,20 +356,22 @@ bookmarks = {
 			history = "MEX_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				MEX_callistas
 				MEX_church_power_2
-				MEX_politicised_army
 				MEX_oil_concessions
+				MEX_politicised_army
 			}
 			focuses = {
 				MEX_focus_aztec_eagles
 				MEX_focus_hispanic_alliance
 				MEX_focus_smash_the_bureaucrats
+				MEX_focus_redeem_aztlan
 			}
 		}
 		"XXX"={
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_MTG_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -376,12 +391,13 @@ bookmarks = {
 				PAR_rekindle_old_gripes
 				PAR_pull_back_troops_from_the_chaco
 				PAR_access_the_sea
+				PAR_emergency_powers
 			}
 		}
 		"XXX"={
 			available = { NOT = { has_dlc = "Trial of Allegiance" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_TOA_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -397,6 +413,7 @@ bookmarks = {
 				USA_monroe_doctrine_idea
 			}
 			focuses = {
+				URG_terras_dictatorship
 				URG_blanco_victory
 				URG_colorado_victory
 				URG_accion_revisionista_del_uruguay
@@ -405,7 +422,7 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "Trial of Allegiance" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_TOA_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -421,6 +438,7 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
+				AST_rats_of_tobruk
 				AST_never_another_gallipoli
 				AST_support_indonesian_uprising
 				AST_delegation_to_china
@@ -436,6 +454,7 @@ bookmarks = {
 			focuses = {
 				NZL_bob_semple_tank
 				NZL_independent_new_zealand
+				NZL_rule_them_all
 				NZL_maori_volunteers
 			}
 		}
@@ -451,6 +470,7 @@ bookmarks = {
 				CAN_skewer_the_eagle
 				CAN_north_american_alliance
 				CAN_join_comintern
+				CAN_northern_sovereignty
 			}
 		}
 		"SAF"={
@@ -464,6 +484,7 @@ bookmarks = {
 			focuses = {
 				SAF_secure_interests_in_africa
 				SAF_support_the_german_coup
+				SAF_south_africa_first
 				SAF_anti_colonialist_crusade
 			}
 		}
@@ -475,6 +496,7 @@ bookmarks = {
 				HOL_wilhelmina
 				HOL_shell_shocked_spectator_5
 				HOL_de_crisisjaren_5
+				HOL_weak_government
 			}
 			focuses = {
 				HOL_continue_the_war_in_batavia
@@ -485,7 +507,7 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_MTG_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -497,9 +519,9 @@ bookmarks = {
 			history = "BEL_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				BEL_leopold_iii
 				BEL_1839_agreement
 				BEL_striking_workers
+				BEL_wallon_flemish_divide
 				BEL_rise_of_rex
 			}
 			focuses = {
@@ -516,11 +538,14 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				HUN_treaty_of_triannon
+				HUN_king_missing_fake
+				nationalism_press
 			}
 			focuses = {
 				HUN_proclaim_the_restoration_of_austria_hungary
 				HUN_secret_rearmament
 				HUN_renounce_the_treaty_of_trianon
+				HUN_radical_autarky
 			}
 		}
 
@@ -534,8 +559,9 @@ bookmarks = {
 			}
 			focuses = {
 				ROM_balkans_dominance
-				ROM_institute_royal_dictatorship
 				ROM_preserve_greater_romania
+				ROM_institute_royal_dictatorship
+				ROM_king_michaels_coup
 			}
 		}
 
@@ -561,6 +587,7 @@ bookmarks = {
 			focuses = {
 				BUL_the_fatherland_front
 				BUL_restore_the_bulgarian_patriarchate
+				BUL_the_third_bulgarian_empire
 				BUL_prussia_of_the_balkans
 			}
 		}
@@ -568,7 +595,7 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "Battle for the Bosporus" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_BFTB_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -590,23 +617,17 @@ bookmarks = {
 				YUG_end_the_regency
 				YUG_abolish_the_monarchy
 				YUG_dissolve_serbia
+				YUG_greater_yugoslavia
 			}
 		}
 
-		"CZE"={
+		"XXX"={ #later replace by Albania
 			minor = yes
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
+			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			ideology = neutrality
 			ideas = {
-				CZE_tgm
-				CZE_industrial_legacy_idea
-				CZE_divided_nation
 			}
 			focuses = {
-				CZE_sudeten_1
-				CZE_industrial_legacy
-				CZE_an_entente_of_our_own
-				CZE_military_research_institute
 			}
 		}
 
@@ -631,8 +652,28 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_BBA_DESC
 			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"XXX"={
+			minor = yes
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"EGY"={
+			minor = yes
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
 			}
 			focuses = {
@@ -644,6 +685,7 @@ bookmarks = {
 			history = "SWI_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				GEN_mountainous_people
 				SWI_swiss_neutrality
 				SWI_foreign_fascist_propaganda
 				SWI_citizen_militia_1
@@ -659,7 +701,36 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_BBA_DESC
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SPR"={
+			minor = yes
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SPR_military_disloyalty
+				SPA_carlism_1
+				SPR_political_violence
+				SPR_national_strikes_3
+			}
+			focuses = {
+				SPA_caudillo_of_spain
+				SPA_no_compromise_on_carlist_ideals
+				SPR_anarchism_knows_no_borders
+				SPR_maintain_the_second_republic
+			}
+		}
+
+		"XXX"={
+			available = { NOT = { has_dlc = "La Resistance" } }
+			minor = yes
+			history = XXX_MISSING_BOOKMARK_ENTRY_LAR_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -686,7 +757,7 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "La Resistance" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_LAR_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -694,50 +765,19 @@ bookmarks = {
 			}
 		}
 
-		"SPR"={
+		"ADR"={
 			minor = yes
-			history = "SPR_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				SPR_military_disloyalty
-				SPA_carlism_1
-				SPR_political_violence
-			}
-			focuses = {
-				SPA_caudillo_of_spain
-				SPA_no_compromise_on_carlist_ideals
-				SPR_anarchism_knows_no_borders
-			}
-		}
-
-		"XXX"={
-			available = { NOT = { has_dlc = "La Resistance" } }
-			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = "ADR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				GEN_mountainous_people
+				neutrality_idea
 			}
 			focuses = {
-			}
-		}
-
-		"XXX"={
-			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"XXX"={
-			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
+				ADR_continue_the_policy_of_neutrality
+				ADR_accept_french_potectorate
+				ADR_a_flexible_foreign_policy
+				ADR_accept_spanish_refugees
 			}
 		}
 
@@ -751,6 +791,7 @@ bookmarks = {
 				MAN_low_legitimacy_5
 			}
 			focuses = {
+				MAN_pacify_the_countryside
 				MAN_obedience
 				MAN_independence_war
 				MAN_claim_the_mandate_of_heaven
@@ -765,21 +806,24 @@ bookmarks = {
 				PRC_the_long_march_1
 				PRC_low_popular_support_3
 				PRC_power_struggles
+				PRC_red_army_weakened
 			}
 			focuses = {
 				PRC_infiltration
 				PRC_maoism
 				PRC_anti_japanese_expedition
+				PRC_literacy_programs
 			}
 		}
 
-		"SHX"={
+		"XSM"={ #temporary shanxi after update
 			minor = yes
 			history = "WARLORD_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			ideas = {
 				PRC_government_corruption
 				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
 				CHI_join_the_republican_government
@@ -796,6 +840,7 @@ bookmarks = {
 			ideas = {
 				PRC_government_corruption
 				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
 				CHI_join_the_republican_government
@@ -812,23 +857,31 @@ bookmarks = {
 			ideas = {
 				RAJ_princely_states
 				RAJ_marginalized_muslim_community
-				RAJ_risko_of_famine
+				RAJ_risk_of_famine
 				RAJ_agrarian_society
 			}
 			focuses = {
 				RAJ_all_india_forward_bloc
 				RAJ_indian_gurkhas
 				RAJ_the_smiling_buddha
+				RAJ_two_nation_theory
 			}
 		}
 
-		"XXX"={ #later replace by Siam
+		"YUN"={ #later replace by Siam
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = "WARLORD_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+				CHI_anti_opposition_campaigns
 			}
 		}
 
@@ -869,7 +922,7 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "Battle for the Bosporus" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_BFTB_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -897,7 +950,7 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "Battle for the Bosporus" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_BFTB_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -922,14 +975,18 @@ bookmarks = {
 			}
 		}
 
-		"XXX"={
+		"LIT"={
 			available = { NOT = { has_dlc = "No Step Back" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = "LIT_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
+				LIT_political_vilnius
+				LIT_political_ancestry
+				LIT_political_kaunas
+				LIT_miliatary_tevyne
 			}
 		}
 
@@ -951,7 +1008,7 @@ bookmarks = {
 		"XXX"={
 			available = { NOT = { has_dlc = "No Step Back" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_NSB_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -960,6 +1017,7 @@ bookmarks = {
 		}
 		
 		"EST"={
+			available = { has_dlc = "No Step Back" }
 			minor = yes
 			history = "EST_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -973,15 +1031,22 @@ bookmarks = {
 				EST_unite_our_nations
 			}
 		}
-		
-		"XXX"={
+
+		"EST"={
 			available = { NOT = { has_dlc = "No Step Back" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = "EST_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				kaitseliit
+				economic_crises
+				outdated_military
 			}
 			focuses = {
+				EST_blueshirts
+				EST_support_the_left
+				EST_isamaaliit
+				EST_stay_neutral
 			}
 		}
 
@@ -991,20 +1056,22 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				SWE_hungershield
-				SWE_gustaf_v_idea
 				SWE_severe_lack_of_ammunition
+				SWE_gustaf_v_idea
+				neutrality_idea
 			}
 			focuses = {
 				SWE_strike_the_capitalist_beast_down
 				SWE_prevent_a_red_dictatorship
 				SWE_king_in_council
+				SWE_the_new_order
 			}
 		}
 		
 		"XXX"={
 			available = { NOT = { has_dlc = "Arms Against Tyranny" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_AAT_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -1018,20 +1085,22 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				NOR_complacent_cabinet_ns
+				NOR_obsolete_armed_forces_ns_1
 				NOR_the_hard_thirties_ns
 				NOR_anti_communist_sentiment_ns
 			}
 			focuses = {
 				NOR_continue_nygaardsvold_government
 				NOR_the_stumbling_storting
-				NOR_arrest_quisling			
+				NOR_drobak_coastal_fort
+				NOR_quislings_coup
 			}
 		}
 		
 		"XXX"={
 			available = { NOT = { has_dlc = "Arms Against Tyranny" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_AAT_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -1052,13 +1121,14 @@ bookmarks = {
 				DEN_declare_neutrality
 				DEN_establish_the_danelaw 
 				DEN_pan_scandinavianism
+				DEN_kanslergadeforliget
 			}
 		}
 		
 		"XXX"={
 			available = { NOT = { has_dlc = "Arms Against Tyranny" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_AAT_DESC
 			ideology = neutrality
 			ideas = {
 			}
@@ -1074,13 +1144,17 @@ bookmarks = {
 				ICE_christian_x
 			}
 			focuses = {
+				ICE_fighting_as_equals
+				ICE_republicanism
+				ICE_the_viking_spirit
+				ICE_infiltrating_the_british_isles
 			}
 		}
 		
 		"XXX"={
 			available = { NOT = { has_dlc = "Arms Against Tyranny" } }
 			minor = yes
-			history = XXX_MISSING_BOOKMARK_ENTRY_DESC
+			history = XXX_MISSING_BOOKMARK_ENTRY_AAT_DESC
 			ideology = neutrality
 			ideas = {
 			}

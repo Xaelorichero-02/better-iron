@@ -1,0 +1,279 @@
+﻿#######################
+### Canadian Events ###
+#######################
+
+add_namespace = redux_canada
+
+country_event = {
+	id = redux_canada.1
+	title = redux_canada.1.t
+	desc = redux_canada.1.desc
+	picture = GFX_report_event_CAN_margaret
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = redux_canada.1.a ###Constitutional Monarchy
+		ai_chance = {
+			base = 100
+		}
+
+		activate_advisor = CAN_margaret_i_mr
+
+		hidden_effect = {
+			set_cosmetic_tag = CAN_NEW
+			news_event = {
+				id = BI_news.9
+			}
+		}
+	}
+	
+	option = {
+		name = redux_canada.1.b ###Absolute Monarchy
+	
+		ai_chance = {
+			base = 0
+		}
+		
+		set_party_name = {
+			ideology = neutrality
+			name = CAN_neutrality_party_am
+			long_name = CAN_neutrality_party_long_am
+		}
+		
+		set_popularities = {
+			democratic = 0
+			fascism = 0
+			communism = 0
+			neutrality = 100
+		}
+		
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+
+		hidden_effect = {
+			set_cosmetic_tag = CAN_NEW
+			news_event = {
+				id = BI_news.10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = redux_canada.2
+	title = redux_canada.2.t
+	desc = redux_canada.2.desc
+	picture = GFX_report_event_CAN_wedding
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = redux_canada.2.a ###British Royal
+		
+		ai_chance = {
+			base = 20
+		}
+		
+		ENG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = CAN_royal_wedding_eng
+			}
+		}
+		
+		hidden_effect = {
+			news_event = {
+				id =  BI_news.11
+			}
+		}
+	}
+	
+	option = {
+		name = redux_canada.2.b ###Belgian Royal
+	
+		ai_chance = {
+			base = 60
+		}
+		
+		BEL = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = CAN_royal_wedding_bel
+			}
+		}
+		
+		hidden_effect = {
+			news_event = {
+				id = BI_news.12
+			}
+		}
+	}
+	
+	option = {
+		name = redux_canada.2.c ###Swedish Royal
+	
+		ai_chance = {
+			base = 20
+		}
+		
+		SWE = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = CAN_royal_wedding_swe
+			}
+		}
+		
+		hidden_effect = {
+			news_event = {
+				id =  BI_news.13
+			}
+		}
+	}
+}
+
+country_event = {
+	id = redux_canada.3
+	title = redux_canada.3.t
+	desc = redux_canada.3.desc
+	picture = GFX_report_event_CAN_flagship
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = redux_canada.3.a ###Battleship
+		
+		ai_chance = {
+			base = 40
+		}
+		
+		IF = {
+			limit = {
+				NOT = { has_tech = basic_heavy_armor_scheme }
+			}
+			set_technology = { basic_heavy_armor_scheme = 1 }
+		}
+		
+		IF = {
+			limit = {
+				NOT = { has_tech = improved_heavy_armor_scheme }
+			}
+			set_technology = { improved_heavy_armor_scheme = 1 }
+		}
+
+		IF = {
+			limit = {
+				NOT = { has_tech = basic_heavy_battery }
+			}
+			set_technology = { basic_heavy_battery = 1 }
+		}
+		
+		IF = {
+			limit = {
+				NOT = { has_tech = improved_heavy_battery }
+			}
+			set_technology = { improved_heavy_battery = 1 }
+		}
+		
+		set_technology = {
+			advanced_ship_hull_heavy = 1
+		}
+		
+		create_equipment_variant = {
+			name = "Victoria Class"
+			type = ship_hull_heavy_4
+			name_group = CAN_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_3
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_4
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = ship_armor_bb_3
+				front_1_custom_slot = ship_heavy_battery_3
+				mid_1_custom_slot = ship_anti_air_1
+				mid_2_custom_slot = ship_anti_air_1
+				mid_3_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_heavy_battery_3
+			}
+		}
+		
+		load_oob = "CAN_flagship_bb"
+		
+		hidden_effect = {
+			news_event = {
+				id = BI_news.14
+			}
+		}
+	}
+	
+	option = {
+		name = redux_canada.3.b ###Carrier
+	
+		ai_chance = {
+			base = 60
+		}
+		
+		set_technology = {
+			advanced_ship_hull_carrier = 1
+		}
+		
+		create_equipment_variant = {
+			name = "Victoria Class"
+			type = ship_hull_carrier_3
+			name_group = CAN_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_4
+				fixed_ship_secondaries_slot = empty
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+			}
+		}
+		
+		load_oob = "CAN_flagship_cv"
+		
+		hidden_effect = {
+			news_event = {
+				id = BI_news.15
+			}
+		}
+	}
+}
+
+#Newfoundland Question
+country_event = {
+	id = redux_canada.4
+	title = redux_canada.4.t
+	desc = redux_canada.4.d
+	picture = GFX_report_event_generic_army
+
+	fire_only_once = yes
+
+	is_triggered_only =  yes 
+	
+	option = {
+		name = redux_canada.4.a
+		ai_chance = { factor = 100 }
+		CAN = {
+		transfer_state = 332
+		}
+		
+		
+	}
+	
+	option = {
+		name = redux_canada.4.b
+		
+		
+	}
+}

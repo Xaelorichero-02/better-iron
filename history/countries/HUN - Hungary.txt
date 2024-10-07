@@ -1,4 +1,4 @@
-﻿capital = 43
+﻿capital = 996
 
 oob = "HUN_1936"
 if = {
@@ -69,29 +69,26 @@ add_opinion_modifier = {
 if = {
 	limit = { has_dlc = "Arms Against Tyranny" }
 	add_ideas = { HUN_treaty_of_triannon_aat }
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "Arms Against Tyranny" }
+	else = {
+		add_ideas = { HUN_treaty_of_triannon }
 	}
-	add_ideas = { HUN_treaty_of_triannon }
 }
 
 add_ideas = {
 	disarmed_nation
+	age_18
+	age_50
+	average_education_investment
+	nationalism_press
 }
 
-add_dynamic_modifier = {
-    modifier = HUN_Hungarian_Army 
-}
+#add_dynamic_modifier = {
+#	modifier = HUN_Hungarian_Army 
+#}
 
-add_dynamic_modifier = {
-    modifier = HUN_Political_Disputy 
-}
-
-add_dynamic_modifier = {
-    modifier = HUN_Kingdom_Without_King  
-}
+#add_dynamic_modifier = {
+#    modifier = HUN_Political_Disputy 
+#}
 
 ###### Army ##########
 set_variable = { HUN_Hungarian_Army_army_attack_factor = -0.2 }  
@@ -128,13 +125,6 @@ set_variable = { HUN_Political_Disputy_war_support_factor = -0.25 }
 set_variable = { HUN_Political_Disputy_drift_defence_factor = -0.5 }
 set_variable = { HUN_Political_Disputy_fascism_acceptance = 50 } 
 set_variable = { HUN_Political_Disputy_communism_acceptance = 50 } 
-
-###### King ##########  
-set_variable = { HUN_Kingdom_Without_King_political_power_factor = -0.05 }  
-set_variable = { HUN_Kingdom_Without_King_stability_factor = -0.15 }
-set_variable = { HUN_Kingdom_Without_King_stability_weekly = -0.01 }
-set_variable = { HUN_Kingdom_Without_King_surrender_limit = -0.25 } 
-set_variable = { HUN_Kingdom_Without_King_neutrality_drift = -0.1 }  
 
 ######### Horthy ###########
 set_variable = { HUN_Horthys_New_Government_fascism_drift = 0.05 } 
@@ -345,7 +335,7 @@ set_popularities = {
 	neutrality = 44
 }
 
-#Start Horty as neutral if DOD
+recruit_character = HUN_king_missing
 recruit_character = HUN_miklos_horthy
 recruit_character = HUN_matyas_rakosi
 recruit_character = HUN_arpad_szakasits
@@ -359,6 +349,7 @@ recruit_character = HUN_francois_deak
 recruit_character = HUN_gyorgy_jendrassik
 recruit_character = HUN_jeno_ratz
 recruit_character = HUN_henrik_werth
+recruit_character = HUN_guzstav_hennyey
 recruit_character = HUN_hugo_sonyi
 recruit_character = HUN_ferenc_szombathelyi
 recruit_character = HUN_gusztav_jany
@@ -379,6 +370,7 @@ recruit_character = HUN_gyula_gombos_de_jakfa
 recruit_character = HUN_otto_von_habsburg
 recruit_character = HUN_franz_friedrich
 
+activate_advisor = HUN_king_missing
 
 1939.1.1 = {
 	set_politics = {

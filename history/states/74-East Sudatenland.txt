@@ -1,40 +1,39 @@
-state=
-{
+
+state={
 	id=74
 	name="STATE_74"
-	manpower = 820000
-	
-	state_category = town
-
 	resources={
-		steel=17
+		steel=17.000
 	}
-	
-	
-	history=
-	{
+
+	history={
 		victory_points = {
-			3583 10
+			3583 10 
 		}
 		victory_points = {
-			3414 3
+			3414 3 
 		}
 		owner = CZE
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
+
 		}
 		add_core_of = CZE
-
 		1938.9.30 = {
 			owner = GER
 			controller = GER
 			add_core_of = GER
-		}
-	}
-	provinces= {
-		421 3414 3583 6485
- 	}
 
-	local_supplies=2.0 
+		}
+
+	}
+
+	provinces={
+		421 3414 3583 6485 13585 13586 13587 
+	}
+	manpower=820000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=2.000
 }

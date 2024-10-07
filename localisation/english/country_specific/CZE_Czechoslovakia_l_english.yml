@@ -7,10 +7,13 @@
  CZE_support_sokol_movement:0 "Support Sokol Movement"
  CZE_support_sokol_movement_desc:0 "The Sokol movement (from the Slavic word for falcon) is an all-age gymnastics organization initially founded in Prague in 1862 by Miroslav Tyrš and Jindřich Fügner. It was based upon the principle of "a strong mind in a sound body" but was also crucial for the revival of Czech national identity."
  CZE_sokol_movement:0 "Sokol Movement"
+ CZE_czech_soviet_tech_share:0 "Czech-Soviet Technology Exchange"
+ CZE_czech_soviet_tech_share_desc:0 ""
 
 #Endonyms
- STATE_9_CZE:0 "Cechy"
+ STATE_9_CZE:0 "Čechy"
  STATE_69_CZE:0 "Sudety"
+ STATE_72_CZE:0 "Záolží"
  STATE_74_CZE:0 "Východní Sudety"
  STATE_75_CZE:0 "Morava"
 
@@ -25,7 +28,7 @@
  VICTORY_POINTS_6562_CZE:0 "Olomouc"
  VICTORY_POINTS_6573_CZE:0 "Košice"
  VICTORY_POINTS_9541_CZE:0 "Budějovice"
- VICTORY_POINTS_9551_CZE:0 "Karviná"
+ VICTORY_POINTS_9567_CZE:0 "Karviná"
  VICTORY_POINTS_9569_CZE:0 "Tábor"
  VICTORY_POINTS_9692_CZE:0 "Bratislava"
  VICTORY_POINTS_11401_CZE:0 "Liberec"

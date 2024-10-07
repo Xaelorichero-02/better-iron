@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	#Belgium
+
+	SpriteType = {
+		name = "GFX_idea_BEL_avions_fairey"
+		texturefile = "gfx/interface/companies/BEL_avions_fairey.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BEL_cockerill"
+		texturefile = "gfx/interface/companies/BEL_cockerill.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BEL_fn_herstol"
+		texturefile = "gfx/interface/companies/BEL_fn_herstol.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BEL_renard"
+		texturefile = "gfx/interface/companies/BEL_renard.dds"
+	}
+
+}

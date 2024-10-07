@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_decision_GEN_book"
+		texturefile = "gfx/interface/decisions/GEN_book.dds"
+	}
+
+}

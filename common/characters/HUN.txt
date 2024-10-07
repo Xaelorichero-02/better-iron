@@ -1,10 +1,44 @@
 characters={
+
+	HUN_king_missing = {
+		name = "Without a King"
+		portraits = {
+			army = {
+				small = "gfx/advisors/no_royalty.dds"
+			}
+		}
+		advisor={
+			slot = monarch
+			idea_token = HUN_king_missing
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				HUN_a_kingdom_without_a_king
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_completed_focus = HUN_elect_a_democratic_king
+						has_completed_focus = HUN_elect_a_fascist_king
+						has_completed_focus = HUN_invite_the_habsburg_prince
+						has_completed_focus = HUN_assassinate_horthy
+						has_completed_focus = HUN_dismantle_the_kingdom
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 	HUN_miklos_horthy={
 		name=HUN_miklos_horthy
 		portraits={
-			navy = { #Can become Navy leader and therefore navy advisor
-				large = "GFX_Portrait_hungary_miklos_horthy_admiral"
-				small = "GFX_idea_HUN_miklos_horthy_admiral"
+			navy = {
+				large="GFX_Portrait_hungary_miklos_horthy"
+				small="GFX_idea_HUN_miklos_horthy_admiral"
 			}
 			civilian={
 				large="GFX_Portrait_hungary_miklos_horthy"
@@ -21,6 +55,15 @@ characters={
 			traits={ anti_communist }
 			expire="1965.1.1.1"
 			id=503
+		}
+		navy_leader={
+			traits={ gunnery_expert navy_media_personality superior_tactician }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=4		
+			legacy_id=556		
 		}
 	}
 
@@ -95,12 +138,12 @@ characters={
 		name=HUN_geza_lakatos
 		portraits={
 			army={
-				large="GFX_Portrait_hungary_geza_lakatos"
+				large="gfx/leaders/HUN/Portrait_Hungary_Geza_Lakatos.dds"
 				small="GFX_idea_HUN_geza_lakatos"
 			}
 		}
 		corps_commander={
-			traits = { career_officer }
+			traits = { career_officer brilliant_strategist }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -114,7 +157,7 @@ characters={
 		name=HUN_ivan_hindy
 		portraits={
 			army={
-				large="GFX_Portrait_hungary_ivan_hindy"
+				large="gfx/leaders/HUN/Portrait_Hungary_Ivan_Hindy.dds"
 				small="GFX_idea_HUN_ivan_hindy"
 			}
 		}
@@ -138,8 +181,9 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { politically_connected }
 			skill=1
-			attack_skill=1
+			attack_skill=2
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
@@ -175,6 +219,7 @@ characters={
 			}
 		}
 		field_marshal={
+			traits = { harsh_leader }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -209,7 +254,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={ trait_reckless armor_officer }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -219,6 +264,102 @@ characters={
 		}
 	}
 
+	HUN_ferenc_szombathelyi={
+		name=HUN_ferenc_szombathelyi
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_Hungary_Ferenc_Szombathelyi.dds"
+				small="GFX_idea_HUN_ferenc_szombathelyi"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+		advisor={
+			slot = army_chief
+			idea_token = HUN_ferenc_szombathelyi
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	HUN_henrik_werth={
+		name=HUN_henrik_werth
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_Hungary_Henrik_Werth.dds"
+				small="GFX_idea_HUN_henrik_werth"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = HUN_henrik_werth
+			ledger = army
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				army_cavalry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ politically_connected old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+
+	HUN_guzstav_hennyey={
+		name="Gusztáv Hennyey"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_Hungary_Gusztav_Hennyey.png"
+				small="gfx/advisors/HUN/Portrait_Hungary_Gusztav_Hennyey.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = HUN_guzstav_hennyey
+			allowed = {
+				original_tag = HUN
+			}
+			traits = {
+				head_of_intelligence
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 
 	### THEORISTS ###
 
@@ -268,28 +409,7 @@ characters={
 
 	### ARMY CHIEFS ###
 
-	HUN_ferenc_szombathelyi={
-		name=HUN_ferenc_szombathelyi
-		portraits={
-			army={
-				small="GFX_idea_HUN_ferenc_szombathelyi"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = HUN_ferenc_szombathelyi
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	# Szombathelyi up there
 
 	HUN_hugo_sonyi={
 		name=HUN_hugo_sonyi
@@ -394,6 +514,8 @@ characters={
 
 	# Gusztáv Jány up there
 
+	# Werth up there
+
 	HUN_sandor_magyarossy={
 		name=HUN_sandor_magyarossy
 		portraits={
@@ -457,30 +579,6 @@ characters={
 			}
 			traits = {
 				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	HUN_henrik_werth={
-		name=HUN_henrik_werth
-		portraits={
-			army={
-				small="GFX_idea_HUN_henrik_werth"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = HUN_henrik_werth
-			ledger = army
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				army_cavalry_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -561,7 +659,6 @@ characters={
 			idea_token = HUN_gusztav_gratz
 			allowed = {
 				original_tag = HUN
-				has_dlc = "Death or Dishonor"
 			}
 			visible = {
 				NOT = {
@@ -721,6 +818,4 @@ characters={
 			}
 		}
 	}
-
-	# Illusive Gentleman auto-generated
 }

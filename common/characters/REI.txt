@@ -1,0 +1,25 @@
+characters = {
+
+	REI_prince_filiberto = { 
+		name = "Prince Filiberto"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/portrait_ITA_prince_filiberto.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { }
+			expire = "1943.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1943.1.1.1"
+			id = -1
+		}
+	}
+
+}

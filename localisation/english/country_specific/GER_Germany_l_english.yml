@@ -1,6 +1,12 @@
 ﻿l_english:
  GER_united_in_race:0 "United Against the Enemy"
  GER_united_in_race_desc:0 "Nazis, Monarchists, Libertarians we should all unite against our enemy during wartime! Stop persecuting monarchists and libertarians who have almost no influence would benefit us by appeasing the most radical and also using their usually good skills to our benefit."
+ GER_expand_the_luftwaffe:0 "Expansion of Luftwaffe"
+ GER_expand_the_luftwaffe_desc:0 ""
+ GER_airbase_construction:0 "New Airbases"
+ GER_airbase_construction_desc:0 ""
+ GER_promote_luftwaffe_officers:0 "Promote Luftwaffe Officers"
+ GER_promote_luftwaffe_officers_desc:0 ""
  GER_lettowvorbeck_general_tt:0 "§YPaul von Lettow-Vorbeck!§ becomes a general."
  SS_himmler_wants_field_command_desc:0 "§RThis is an SS demand!§!"
  SS_demand_tt:0 "§RThis is an SS demand!§!"
@@ -11,6 +17,7 @@
  STATE_9_GER:0 "Böhmen"
  STATE_28_GER:0 "Elsass-Lothringen" #can be Elsaß-Lothringen too
  STATE_69_GER:0 "Sudetenland"
+ STATE_72_GER:0 "Olsa-Gebiet"
  STATE_74_GER:0 "Ost Sudetenland"
  STATE_75_GER:0 "Mähren"
 
@@ -29,7 +36,7 @@
  VICTORY_POINTS_6573_GER:0 "Kassa"
  VICTORY_POINTS_9503_GER:0 "Strassburg"
  VICTORY_POINTS_9541_GER:0 "Budweis"
- VICTORY_POINTS_9551_GER:0 "Karwin"
+ VICTORY_POINTS_9567_GER:0 "Karwin"
  VICTORY_POINTS_9569_GER:0 "Tabor"
  VICTORY_POINTS_9692_GER:0 "Pressburg"
  VICTORY_POINTS_11401_GER:0 "Reichenberg"

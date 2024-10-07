@@ -58,6 +58,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = GER_erich_brandenberger
 			50 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -2055,56 +2057,45 @@ focus_tree = {
 
 	focus = {
 		id = GER_air_innovation
-		text = air_innovation
-		icon = GFX_goal_generic_build_airforce
+		text = GER_expand_the_luftwaffe
+		icon = GFX_goal_GER_reform_luftwaffe
 		x = 16
 		y = 0
-		cost = 10
+		cost = 7.2
 		ai_will_do = {
 			factor = 1
 		}
 
 		available_if_capitulated = yes
-		complete_tooltip = {
-			air_experience = 25
-			add_doctrine_cost_reduction = {
-				name = air_sup_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = battlefield_support_tree
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_2air }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_6air }
-				add_building_construction = {
-					type = air_base
-					level = 6
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
-		}
 		
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
-			air_experience = 25
-
+			air_experience = 50
 			add_doctrine_cost_reduction = {
 				name = air_sup_bonus
-				cost_reduction = 0.25
+				cost_reduction = 0.3
 				uses = 2
 				category = battlefield_support_tree
 			}
+		}
+	}
 
+	focus = {
+		id = GER_airbase_construction
+		prerequisite = { focus = GER_air_innovation }
+		x = -2
+		y = 1
+		relative_position_id = GER_air_innovation
+		icon = GFX_focus_generic_air_bases
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		search_filters = {  }
+		completion_reward = {
 			if = {
 				limit = {
 					NOT = {
@@ -2166,15 +2157,98 @@ focus_tree = {
 				}
 				set_state_flag = GER_air_innovation_2air
 			}
+		}
+	}
+
+	focus = {
+		id = GER_promote_luftwaffe_officers
+		prerequisite = { focus = GER_air_innovation }
+		x = 2
+		y = 1
+		relative_position_id = GER_air_innovation
+		icon = GFX_goal_GER_luftwaffe_commanders
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		search_filters = {  }
+		completion_reward = {
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = hugo_sperrle
+			effect_tooltip = {
+				create_corps_commander={
+					name="Albert Kesselring"
+					picture=GFX_portrait_GER_albert_kesselring
+					traits={ brilliant_strategist trait_cautious war_hero career_officer }
+					skill=4
+					attack_skill=2
+					defense_skill=4
+					planning_skill=3
+					logistics_skill=4
+					legacy_id=32
+					visible={ has_completed_focus = GER_promote_luftwaffe_officers }
+				}
+				create_corps_commander={
+					name="Kurt Student"
+					picture=GFX_portrait_GER_kurt_student
+					traits={ trait_reckless commando brilliant_strategist career_officer hill_fighter }
+					skill=4
+					attack_skill=4
+					defense_skill=2
+					planning_skill=4
+					logistics_skill=3
+					legacy_id=16
+					visible={ has_completed_focus = GER_promote_luftwaffe_officers }
+				}
+				create_corps_commander={
+					name="Erhard Milch"
+					picture="gfx/leaders/GER/Portrait_Germany_Erhard_Milch.dds"
+					traits={ brilliant_strategist career_officer trait_reckless }
+					skill=2
+					attack_skill=1
+					defense_skill=1
+					planning_skill=3
+					logistics_skill=2
+					legacy_id=32
+					visible={ has_completed_focus = GER_promote_luftwaffe_officers }
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = fascism
+							has_country_flag = GER_reinstated_nazi_leadership
+						}
+					}
+					create_field_marshal={
+						name="Hermann Göring"
+						picture=GFX_portrait_GER_hermann_goring
+						traits={ old_guard infantry_officer offensive_doctrine defensive_doctrine }
+						skill=3
+						attack_skill=4
+						defense_skill=4
+						planning_skill=1
+						logistics_skill=4
+						visible = {
+							OR = {
+								has_government = fascism
+								has_country_flag = GER_reinstated_nazi_leadership
+							}
+							has_completed_focus = GER_promote_luftwaffe_officers
+						}
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = GER_tactical_air_effort
+		#text = GER_messerschmitt_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_strategic_air_effort }
@@ -2304,6 +2378,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_strategic_air_effort
+		#text = GER_heinkel_effort
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_air_innovation }
 		mutually_exclusive = { focus = GER_tactical_air_effort }
@@ -2818,7 +2893,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_GER_rhineland
 		mutually_exclusive = { focus = GER_oppose_hitler }
 		x = 25
 		y = 0
@@ -2842,16 +2917,20 @@ focus_tree = {
 			is_subject = no
 		}
 		bypass = {
-			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
+			42 = { is_demilitarized_zone = no }
+			989 = { is_demilitarized_zone = no }
+			990 = { is_demilitarized_zone = no }
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }	
 		completion_reward = {
-			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
+			42 = { set_demilitarized_zone = no }
+			989 = { set_demilitarized_zone = no }
+			990 = { set_demilitarized_zone = no }
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
@@ -2880,7 +2959,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_japan_friend
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_china_friend }
 		available = {
@@ -2926,7 +3005,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_china_friend
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_japan_friend }
 		available = {
@@ -2971,7 +3050,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_swedish_trade_agreement
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_focus_generic_befriend_sweden
 		prerequisite = { focus = GER_rhineland }
 		available = {
 			is_subject = no
@@ -3332,7 +3411,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_anschluss
-		icon = GFX_goal_anschluss
+		icon = GFX_goal_GER_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = no
 		available = {
@@ -3608,7 +3687,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_danzig_or_war
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_GER_danzig_or_war
 		prerequisite = { focus = GER_demand_memel }
 		mutually_exclusive = { focus = GER_danzig_vs_slovakia }
 		will_lead_to_war_with = POL
@@ -4007,7 +4086,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_czech_friend
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_goal_GEN_befriend_czechoslovakia
 		prerequisite = { focus = GER_anschluss }
 		mutually_exclusive = { focus = GER_demand_sudetenland }
 		available = { 
@@ -4835,7 +4914,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_reintegrate_luxemburg_and_alsace_lorraine
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_GER_alsace_lorraine
 		prerequisite = { focus = GER_war_with_france }
 		available = {
 			is_subject = no

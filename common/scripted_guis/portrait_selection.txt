@@ -1,0 +1,511 @@
+scripted_gui = {
+
+	portrait_gui = {
+		context_type = player_context
+		window_name = "portrait_gui_container"
+		parent_window_token = countrypoliticsview
+
+		visible = {
+            is_ai = no
+		}
+
+		effects = {
+			portrait_gui_button_click = {
+				set_temp_variable = { show = 1 }
+				if = {
+					limit = {
+						has_country_leader = {
+							character = GER_adolf_hitler
+							ruling_only = yes
+						}
+					}
+					subtract_from_temp_variable = { show = show_portrait_gui_hitler }
+					set_variable = { show_portrait_gui_hitler = show }
+					else_if = {
+						limit = {
+							has_country_leader = {
+								character = SOV_iosif_stalin
+								ruling_only = yes
+							}
+						}
+						subtract_from_temp_variable = { show = show_portrait_gui_stalin }
+						set_variable = { show_portrait_gui_stalin = show }
+					}
+					else_if = {
+						limit = {
+							has_country_leader = {
+								character = SHX_yan_xishan
+								ruling_only = yes
+							}
+						}
+						subtract_from_temp_variable = { show = show_portrait_gui_xishan }
+						set_variable = { show_portrait_gui_xishan = show }
+					}
+					else = {
+						subtract_from_temp_variable = { show = show_portrait_gui_not_added }
+						set_variable = { show_portrait_gui_not_added = show }
+					}
+				}
+			}
+		}
+	}
+
+	hitler_portrait_gui = {
+		context_type = player_context
+		parent_window_token = countrypoliticsview
+		window_name = "hitler_portrait_gui_container"
+
+		visible = {
+            is_ai = no
+			check_variable = { show_portrait_gui_hitler > 0.0 }
+		}
+
+		effects = {
+			hitler_portrait_gui_1_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler"
+					}
+				}
+			}
+			hitler_portrait_gui_2_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_Ackbaraddin"
+					}
+				}
+			}
+			hitler_portrait_gui_3_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_vanilla"
+					}
+				}
+			}
+			hitler_portrait_gui_4_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_CotF"
+					}
+				}
+			}
+			hitler_portrait_gui_5_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_NW"
+					}
+				}
+			}
+			hitler_portrait_gui_6_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_NW_old"
+					}
+				}
+			}
+			hitler_portrait_gui_7_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_TGWR"
+					}
+				}
+			}
+			hitler_portrait_gui_8_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_TNO"
+					}
+				}
+			}
+			hitler_portrait_gui_9_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_hoi4fanforever_krstyle"
+					}
+				}
+			}
+			hitler_portrait_gui_10_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_NickTsurev"
+					}
+				}
+			}
+			hitler_portrait_gui_11_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_HermanLindqvist"
+					}
+				}
+			}
+			hitler_portrait_gui_12_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_Random_Khmerguy"
+					}
+				}
+			}
+			hitler_portrait_gui_13_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_Random_Khmerguy_2"
+					}
+				}
+			}
+			hitler_portrait_gui_14_click = {
+				set_portraits = {
+					character = GER_adolf_hitler
+					civilian = {
+						large = "GFX_Portrait_Adolf_Hitler_censored"
+					}
+				}
+			}
+		}
+	}
+
+	stalin_portrait_gui = {
+		context_type = player_context
+		parent_window_token = countrypoliticsview
+		window_name = "stalin_portrait_gui_container"
+
+		visible = {
+            is_ai = no
+			check_variable = { show_portrait_gui_stalin > 0.0 }
+		}
+
+		effects = {
+			stalin_portrait_gui_1_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin"
+						small = "GFX_Portrait_Joseph_Stalin_small"
+					}
+				}
+			}
+			stalin_portrait_gui_2_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_vanilla"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_vanilla"
+						small = "GFX_Portrait_Joseph_Stalin_vanilla_small"
+					}
+				}
+			}
+			stalin_portrait_gui_3_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_TGWR"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_TGWR"
+						small = "GFX_Portrait_Joseph_Stalin_TGWR_small"
+					}
+				}
+			}
+			stalin_portrait_gui_4_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_TGWR_20s"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_TGWR_20s"
+						small = "GFX_Portrait_Joseph_Stalin_TGWR_20s_small"
+					}
+				}
+			}
+			stalin_portrait_gui_5_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_TGW"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_TGW"
+						small = "GFX_Portrait_Joseph_Stalin_TGW_small"
+					}
+				}
+			}
+			stalin_portrait_gui_6_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_Andreiboi2020"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_Andreiboi2020"
+						small = "GFX_Portrait_Joseph_Stalin_Andreiboi2020_small"
+					}
+				}
+			}
+			stalin_portrait_gui_7_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_fignyakakayata"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_fignyakakayata"
+						small = "GFX_Portrait_Joseph_Stalin_fignyakakayata_small"
+					}
+				}
+			}
+			stalin_portrait_gui_8_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_Hardback_Writer"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_Hardback_Writer"
+						small = "GFX_Portrait_Joseph_Stalin_Hardback_Writer_small"
+					}
+				}
+			}
+			stalin_portrait_gui_9_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_HouseofWashington"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_HouseofWashington"
+						small = "GFX_Portrait_Joseph_Stalin_HouseofWashington_small"
+					}
+				}
+			}
+			stalin_portrait_gui_10_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_JayMann_mp"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_JayMann_mp"
+						small = "GFX_Portrait_Joseph_Stalin_JayMann_mp_small"
+					}
+				}
+			}
+			stalin_portrait_gui_11_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_Maxno123"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_Maxno123"
+						small = "GFX_Portrait_Joseph_Stalin_Maxno123_small"
+					}
+				}
+			}
+			stalin_portrait_gui_12_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_mr_bergmann"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_mr_bergmann"
+						small = "GFX_Portrait_Joseph_Stalin_mr_bergmann_small"
+					}
+				}
+			}
+			stalin_portrait_gui_13_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_NewAardvark6445"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_NewAardvark6445"
+						small = "GFX_Portrait_Joseph_Stalin_NewAardvark6445_small"
+					}
+				}
+			}
+			stalin_portrait_gui_14_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_NewAardvark6445_2"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_NewAardvark6445_2"
+						small = "GFX_Portrait_Joseph_Stalin_NewAardvark6445_2_small"
+					}
+				}
+			}
+			stalin_portrait_gui_15_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_PolskiGrizzle"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_PolskiGrizzle"
+						small = "GFX_Portrait_Joseph_Stalin_PolskiGrizzle_small"
+					}
+				}
+			}
+			stalin_portrait_gui_16_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_poslepoludnya"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_poslepoludnya"
+						small = "GFX_Portrait_Joseph_Stalin_poslepoludnya_small"
+					}
+				}
+			}
+			stalin_portrait_gui_17_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_R0bDaFlob"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_R0bDaFlob"
+						small = "GFX_Portrait_Joseph_Stalin_R0bDaFlob_small"
+					}
+				}
+			}
+			stalin_portrait_gui_18_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_Random_Khmerguy"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_Random_Khmerguy"
+						small = "GFX_Portrait_Joseph_Stalin_Random_Khmerguy_small"
+					}
+				}
+			}
+			stalin_portrait_gui_19_click = {
+				set_portraits = {
+					character = SOV_iosif_stalin
+					civilian = {
+						large = "GFX_Portrait_Joseph_Stalin_r56"
+					}
+					army = {
+						large = "GFX_Portrait_Joseph_Stalin_r56"
+						small = "GFX_Portrait_Joseph_Stalin_r56_small"
+					}
+				}
+			}
+		}
+	}
+
+	xishan_portrait_gui = {
+		context_type = player_context
+		parent_window_token = countrypoliticsview
+		window_name = "xishan_portrait_gui_container"
+
+		visible = {
+            is_ai = no
+			check_variable = { show_portrait_gui_xishan > 0.0 }
+		}
+
+		effects = {
+			xishan_portrait_gui_1_click = {
+				set_portraits = {
+					character = SHX_yan_xishan
+					civilian = {
+						large = "GFX_Portrait_Yan_Xishan"
+					}
+					army = {
+						large = "GFX_Portrait_Yan_Xishan"
+						small = "GFX_Portrait_Yan_Xishan_small"
+					}
+				}
+			}
+			xishan_portrait_gui_2_click = {
+				set_portraits = {
+					character = SHX_yan_xishan
+					civilian = {
+						large = "GFX_Portrait_Yan_Xishan_actually_a_generic"
+					}
+					army = {
+						large = "GFX_Portrait_Yan_Xishan_actually_a_generic"
+						small = "GFX_Portrait_Yan_Xishan_actually_a_generic_small"
+					}
+				}
+			}
+			xishan_portrait_gui_3_click = {
+				set_portraits = {
+					character = SHX_yan_xishan
+					civilian = {
+						large = "GFX_Portrait_Yan_Xishan_CirclePete"
+					}
+					army = {
+						large = "GFX_Portrait_Yan_Xishan_CirclePete"
+						small = "GFX_Portrait_Yan_Xishan_CirclePete_small"
+					}
+				}
+			}
+			xishan_portrait_gui_4_click = {
+				set_portraits = {
+					character = SHX_yan_xishan
+					civilian = {
+						large = "GFX_Portrait_Yan_Xishan_CptChetson"
+					}
+					army = {
+						large = "GFX_Portrait_Yan_Xishan_CptChetson"
+						small = "GFX_Portrait_Yan_Xishan_CptChetson_small"
+					}
+				}
+			}
+			xishan_portrait_gui_5_click = {
+				set_portraits = {
+					character = SHX_yan_xishan
+					civilian = {
+						large = "GFX_Portrait_Yan_Xishan_CotF"
+					}
+					army = {
+						large = "GFX_Portrait_Yan_Xishan_CotF"
+						small = "GFX_Portrait_Yan_Xishan_CotF_small"
+					}
+				}
+			}
+		}
+	}
+
+	nac_portrait_gui = {
+		context_type = player_context
+		parent_window_token = countrypoliticsview
+		window_name = "nac_portrait_gui_container"
+
+		visible = {
+            is_ai = no
+			check_variable = { show_portrait_gui_not_added > 0.0 }
+		}
+
+		effects = {
+			nac_portrait_gui_1_click = {
+				country_event = super_info.2
+			}
+		}
+	}
+}

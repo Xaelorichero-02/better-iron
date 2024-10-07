@@ -4,5 +4,12 @@
  XXX_ADJ:0 "Missing Entry"
 
  XXX_MISSING_BOOKMARK_ENTRY_DESC:0 "No country input to this bookmark slot."
+ XXX_MISSING_BOOKMARK_ENTRY_MTG_DESC:0 "No country input to this bookmark slot without the Man the Guns dlc."
+ XXX_MISSING_BOOKMARK_ENTRY_LAR_DESC:0 "No country input to this bookmark slot without the La Resistance dlc."
+ XXX_MISSING_BOOKMARK_ENTRY_BFTB_DESC:0 "No country input to this bookmark slot without the Battle for the Bosporous dlc."
+ XXX_MISSING_BOOKMARK_ENTRY_NSB_DESC:0 "No country input to this bookmark slot without the No Step Back dlc."
+ XXX_MISSING_BOOKMARK_ENTRY_BBA_DESC:0 "No country input to this bookmark slot without the By Blood Alone dlc."
+ XXX_MISSING_BOOKMARK_ENTRY_AAT_DESC:0 "No country input to this bookmark slot without the Arms Against Tyranny dlc."
+ XXX_MISSING_BOOKMARK_ENTRY_TOA_DESC:0 "No country input to this bookmark slot without the Trial of Allegiance dlc."
 
 #yes theres a speccial country for a bookmark

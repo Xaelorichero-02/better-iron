@@ -38,6 +38,40 @@
 #	}
 #}
 
+estonian_focus_switch = {
+	name = "RULE_EST_FOCUSTREE"
+	group = "RULE_GROUP_GAMEPLAY"
+	required_dlc = "No Step Back"
+	option = {
+		name = "BI"
+		text = "RULE_OPTION_BI"
+		desc = "RULE_FOCUSTREE_BI_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = "NSB"
+		text = "RULE_OPTION_NSB"
+		desc = "RULE_FOCUSTREE_NSB_DESC"
+	}
+}
+
+lithuanian_focus_switch = {
+	name = "RULE_LIT_FOCUSTREE"
+	group = "RULE_GROUP_GAMEPLAY"
+	required_dlc = "No Step Back"
+	option = {
+		name = "BI"
+		text = "RULE_OPTION_BI"
+		desc = "RULE_FOCUSTREE_BI_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = "NSB"
+		text = "RULE_OPTION_NSB"
+		desc = "RULE_FOCUSTREE_NSB_DESC"
+	}
+}
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"

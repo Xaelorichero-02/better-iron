@@ -14,6 +14,17 @@ characters={
 			expire="1960.1.1.1"
 			id=-1
 		}
+		advisor={
+			slot = monarch
+			idea_token = MAN_aisin_gioro_puyi_mr
+			allowed = {
+				original_tag = MAN
+			}
+			allowed_to_remove = { has_government = communism }
+			traits = {
+				warrior_code
+			}
+		}
 	}
 	MAN_zhang_jinghui={
 		name=MAN_zhang_jinghui

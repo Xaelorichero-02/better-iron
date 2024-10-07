@@ -376,6 +376,50 @@ characters = {
 		}
 	}
 
+	BOL_bernardino_bilbao_rioja = {
+		name = BOL_bernardino_bilbao_rioja
+		portraits = {
+			army = {
+				large = "gfx/leaders/BOL/Portrait_Bolivia_Bernardino_Rioja.dds"
+				small = "gfx/advisors/BOL/Portrait_Bolivia_Bernardino_Rioja.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless infantry_officer ranger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BOL_bernardino_bilbao_rioja
+			ledger = air
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = BOL_bernardino_bilbao_rioja_ac
+			allowed = {
+				original_tag = BOL
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 	BOL_enrique_baldivieso_aparicio = {
 		portraits = {
 			army = {
@@ -499,39 +543,6 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_air_south_america_1"
-			}
-		}
-	}
-
-	BOL_bernardino_bilbao_rioja = {
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_air_south_america_1"
-			}
-		}
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = BOL_bernardino_bilbao_rioja
-			ledger = air
-			allowed = {
-				original_tag = BOL
-			}
-			traits = {
-				air_warfare_theorist
-			}
-		}
-		advisor = {
-			slot = air_chief
-			idea_token = BOL_bernardino_bilbao_rioja_ac
-			allowed = {
-				original_tag = BOL
-			}
-			traits = {
-				air_chief_reform_2
-			}
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 	}

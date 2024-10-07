@@ -1789,7 +1789,6 @@ focus_tree = {
 		x = -1
 		y = 3
 		prerequisite = { focus = USA_war_propaganda }
-		mutually_exclusive = { focus = USA_focus_on_asia }
 		relative_position_id = USA_limited_intervention
 
 		offset = {
@@ -1812,6 +1811,10 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
+			OR = {
+				NOT = { has_completed_focus = USA_focus_on_asia }
+				has_completed_focus = USA_magic
+			}
 		}
 		
 		bypass = {
@@ -1898,7 +1901,6 @@ focus_tree = {
 		x = 1
 		y = 3
 		prerequisite = { focus = USA_war_propaganda }
-		mutually_exclusive = { focus = USA_focus_on_europe }
 		relative_position_id = USA_limited_intervention
 
 		offset = {
@@ -1925,6 +1927,10 @@ focus_tree = {
 					has_war_with = JAP
 					has_war_with = CHI
 				}
+			}
+			OR = {
+				NOT = { has_completed_focus = USA_focus_on_europe }
+				has_completed_focus = USA_office_of_strategic_services
 			}
 		}
 		

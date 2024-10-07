@@ -1,0 +1,259 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	BEL_infantry_idle
+	BEL_infantry_neutral_combat
+	BEL_infantry_positive_combat
+	BEL_infantry_retreat
+	BEL_infantry_move_out
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########## IND
+
+soundeffect = 
+{
+    name = "BEL_infantry_idle"
+    sounds = {
+		sound = bel_Idle_001
+        sound = bel_Idle_002
+        sound = bel_Idle_003
+		
+        sound = bel_Idle_014
+        sound = bel_Idle_015
+        sound = bel_Idle_016
+        sound = bel_Idle_017
+        sound = bel_Idle_018
+        sound = bel_Idle_019
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.70
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "BEL_infantry_neutral_combat"
+    sounds = {
+        sound = bel_Neutral_001
+		sound = bel_Neutral_002
+        sound = bel_Neutral_003
+		
+        sound = bel_Neutral_014
+        sound = bel_Neutral_015
+        sound = bel_Neutral_016
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.70
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "BEL_infantry_positive_combat"
+    sounds = {
+        sound = bel_Positive_001
+        sound = bel_Positive_002
+		
+        sound = bel_Positive_013
+        sound = bel_Positive_014
+        sound = bel_Positive_015
+        sound = bel_Positive_016
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.70
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "BEL_infantry_retreat"
+    sounds = {
+        sound = bel_Retreat_001
+        sound = bel_Retreat_002
+        sound = bel_Retreat_003
+        sound = bel_Retreat_004
+		
+        sound = bel_Retreat_015
+        sound = bel_Retreat_016
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.70
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "BEL_infantry_move_out"
+    sounds = {
+        sound = bel_Idle_001
+        sound = bel_Idle_017
+		sound = bel_Idle_017
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.70
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+############## AUDIO ASSETS
+
+################# IND
+sound = 
+{
+	name = "bel_Idle_001"
+	file = "bel/bel_Idle_001.wav"
+}
+sound = 
+{
+	name = "bel_Idle_002"
+	file = "bel/bel_Idle_002.wav"
+}
+sound = 
+{
+	name = "bel_Idle_003"
+	file = "bel/bel_Idle_003.wav"
+}
+sound = 
+{
+	name = "bel_Idle_014"
+	file = "bel/bel_Idle_014.wav"
+}
+sound = 
+{
+	name = "bel_Idle_015"
+	file = "bel/bel_Idle_015.wav"
+}
+sound = 
+{
+	name = "bel_Idle_016"
+	file = "bel/bel_Idle_016.wav"
+}
+sound = 
+{
+	name = "bel_Idle_017"
+	file = "bel/bel_Idle_017.wav"
+}
+sound = 
+{
+	name = "bel_Idle_018"
+	file = "bel/bel_Idle_018.wav"
+}
+sound = 
+{
+	name = "bel_Idle_019"
+	file = "bel/bel_Idle_019.wav"
+}
+
+
+sound = 
+{
+	name = "bel_Neutral_001"
+	file = "bel/bel_Neutral_001.wav"
+}
+sound = 
+{
+	name = "bel_Neutral_002"
+	file = "bel/bel_Neutral_002.wav"
+}
+sound = 
+{
+	name = "bel_Neutral_003"
+	file = "bel/bel_Neutral_003.wav"
+}
+sound = 
+{
+	name = "bel_Neutral_014"
+	file = "bel/bel_Neutral_014.wav"
+}
+sound = 
+{
+	name = "bel_Neutral_015"
+	file = "bel/bel_Neutral_015.wav"
+}
+sound = 
+{
+	name = "bel_Neutral_016"
+	file = "bel/bel_Neutral_016.wav"
+}
+
+
+sound = 
+{
+	name = "bel_Positive_001"
+	file = "bel/bel_Positive_001.wav"
+}
+sound = 
+{
+	name = "bel_Positive_002"
+	file = "bel/bel_Positive_002.wav"
+}
+sound = 
+{
+	name = "bel_Positive_013"
+	file = "bel/bel_Positive_013.wav"
+}
+sound = 
+{
+	name = "bel_Positive_014"
+	file = "bel/bel_Positive_014.wav"
+}
+sound = 
+{
+	name = "bel_Positive_015"
+	file = "bel/bel_Positive_015.wav"
+}
+sound = 
+{
+	name = "bel_Positive_016"
+	file = "bel/bel_Positive_016.wav"
+}
+
+
+sound = 
+{
+	name = "bel_Retreat_001"
+	file = "bel/bel_Retreat_001.wav"
+}
+sound = 
+{
+	name = "bel_Retreat_002"
+	file = "bel/bel_Retreat_002.wav"
+}
+sound = 
+{
+	name = "bel_Retreat_003"
+	file = "bel/bel_Retreat_003.wav"
+}
+sound = 
+{
+	name = "bel_Retreat_004"
+	file = "bel/bel_Retreat_004.wav"
+}
+sound = 
+{
+	name = "bel_Retreat_015"
+	file = "bel/bel_Retreat_015.wav"
+}
+sound = 
+{
+	name = "bel_Retreat_016"
+	file = "bel/bel_Retreat_016.wav"
+}

@@ -157,6 +157,9 @@ ideologies = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
+			left_nationalism = {
+			}
+
 		}
 
 		dynamic_faction_names = {

@@ -7,7 +7,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 50
+			add = 0
 			tag = HUN 
 		}
 	}
@@ -31,29 +31,23 @@ focus_tree = {
 		
  
 		completion_reward = {
-			
-		army_experience = 10
-
-		random_core_state = {
+			army_experience = 10
+			random_core_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-					}
-
-		}
-
+				}
+			}
 			random_core_state = {
-				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-					}
-
-		}
- 
+				}
+			}
 		}
 	}
 
@@ -96,8 +90,20 @@ focus_tree = {
 
 		available = {
 			OR = {
-				NOT = { has_idea = Treaty_of_Triannon } 
-				has_completed_focus = Denouce_Treaty_of_Triannon  
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					NOT = {
+						has_idea = HUN_treaty_of_triannon_aat
+					}
+					else = {
+						NOT = {
+							has_idea = HUN_treaty_of_triannon
+						}
+					}
+				}
+				has_completed_focus = HUN_Denouce_Treaty_of_Triannon  
 			}
 			has_war_support > 0.5 
 		}
@@ -129,8 +135,20 @@ focus_tree = {
 
 		available = {
 			OR = {
-				NOT = { has_idea = Treaty_of_Triannon } 
-				has_completed_focus = Denouce_Treaty_of_Triannon  
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					NOT = {
+						has_idea = HUN_treaty_of_triannon_aat
+					}
+					else = {
+						NOT = {
+							has_idea = HUN_treaty_of_triannon
+						}
+					}
+				}
+				has_completed_focus = HUN_Denouce_Treaty_of_Triannon  
 			} 
 			has_war_support > 0.5  
 		}
@@ -163,7 +181,7 @@ focus_tree = {
 			has_war_support > 0.65 
 			OR = {
 				NOT = { has_idea = Secret_Rearment } 
-				has_completed_focus = Denouce_Treaty_of_Triannon   
+				has_completed_focus = HUN_Denouce_Treaty_of_Triannon   
 			}
 		}
 		
@@ -227,8 +245,20 @@ focus_tree = {
 		available = {
 			has_war_support > 0.5  
 			OR = {
-				NOT = { has_idea = Treaty_of_Triannon } 
-				has_completed_focus = Denouce_Treaty_of_Triannon  
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					NOT = {
+						has_idea = HUN_treaty_of_triannon_aat
+					}
+					else = {
+						NOT = {
+							has_idea = HUN_treaty_of_triannon
+						}
+					}
+				}
+				has_completed_focus = HUN_Denouce_Treaty_of_Triannon  
 			}
 		}
 		
@@ -259,7 +289,7 @@ focus_tree = {
 			has_war_support > 0.65 
 			OR = {
 				NOT = { has_idea = Secret_Rearment } 
-				has_completed_focus = Denouce_Treaty_of_Triannon  
+				has_completed_focus = HUN_Denouce_Treaty_of_Triannon  
 			}
 		}
 		
@@ -289,8 +319,20 @@ focus_tree = {
 		available = {
 			has_war_support > 0.25 
 			OR = {
-				NOT = { has_idea = Treaty_of_Triannon } 
-				has_completed_focus = Denouce_Treaty_of_Triannon  
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					NOT = {
+						has_idea = HUN_treaty_of_triannon_aat
+					}
+					else = {
+						NOT = {
+							has_idea = HUN_treaty_of_triannon
+						}
+					}
+				}
+				has_completed_focus = HUN_Denouce_Treaty_of_Triannon  
 			}
 		}
 		
@@ -377,7 +419,7 @@ focus_tree = {
 				has_war_support > 0.65 
 				OR = {
 				NOT = { has_idea = Secret_Rearment } 
-				has_completed_focus = Denouce_Treaty_of_Triannon  
+				has_completed_focus = HUN_Denouce_Treaty_of_Triannon  
 			} 
 		}
 		
@@ -443,7 +485,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods  
 
 
-		x = 20
+		x = 17
 		y = 0     
 		cost = 5
 
@@ -466,12 +508,13 @@ focus_tree = {
 	# military # 
 
 	focus = {
-		id = HUN_Secret_Rearment 
+		id = HUN_Secret_Rearment
+		text = HUN_secret_rearmament
 		icon = GFX_focus_generic_little_entente   
 		prerequisite = { focus = HUN_Ipari_Fejlesztés }
 
 		relative_position_id = HUN_Ipari_Fejlesztés
-		x = -6
+		x = -4
 		y = 1
 		cost = 5
 
@@ -513,7 +556,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Secret_Rearment }  
 
 		relative_position_id = HUN_Secret_Rearment
-		x = -3
+		x = -2
 		y = 1
 		cost = 5
 
@@ -629,17 +672,13 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
 	focus = {
 		id = HUN_Mission_Stealth_Sentinel  
 		icon = GFX_goal_generic_air_naval_bomber  
 		prerequisite = { focus = HUN_Secret_Rearment }  
 
 		relative_position_id = HUN_Secret_Rearment
-		x = 3
+		x = 2
 		y = 1
 		cost = 5
 
@@ -711,6 +750,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_Denouce_Treaty_of_Triannon 
+		text = HUN_renounce_the_treaty_of_trianon 
 		icon = GFX_focus_renounce_the_treaty_of_trianon  
 		prerequisite = { focus = HUN_Directive_Hidden_Arsenal } 
 		prerequisite = { focus = HUN_Operation_Phantom_Forge } 
@@ -740,7 +780,8 @@ focus_tree = {
 	# total rearment #  
 
 	focus = {
-		id = HUN_Start_rearment  
+		id = HUN_Start_rearment
+		text = HUN_bled_agreement
 		icon = GFX_focus_secret_rearmament   
 		prerequisite = { focus = HUN_Denouce_Treaty_of_Triannon }  
  
@@ -769,7 +810,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Start_rearment }  
  
 		relative_position_id = HUN_Start_rearment
-		x = -3
+		x = -2
 		y = 1
 		cost = 5
 
@@ -1002,7 +1043,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Start_rearment }  
  
 		relative_position_id = HUN_Start_rearment
-		x = 3
+		x = 2
 		y = 1
 		cost = 5
 
@@ -1181,7 +1222,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Ipari_Fejlesztés }
 
 		relative_position_id = HUN_Ipari_Fejlesztés
-		x = 6
+		x = 4
 		y = 1
 		cost = 5
 
@@ -1207,7 +1248,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Industrial_Revitalization_Initiative  }
 
 		relative_position_id = HUN_Industrial_Revitalization_Initiative
-		x = -5
+		x = -3
 		y = 1      
 		cost = 5
 
@@ -1296,7 +1337,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Industrial_Revitalization_Initiative } 
 
 		relative_position_id = HUN_Industrial_Revitalization_Initiative
-		x = -2
+		x = -1
 		y = 1     
 		cost = 5
 
@@ -1347,7 +1388,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Industrial_Revitalization_Initiative }
 
 		relative_position_id = HUN_Industrial_Revitalization_Initiative
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 
@@ -1407,7 +1448,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Industrial_Revitalization_Initiative }  
 
 		relative_position_id = HUN_Industrial_Revitalization_Initiative
-		x = 5
+		x = 3
 		y = 1
 		cost = 5
 
@@ -1537,7 +1578,7 @@ focus_tree = {
 		icon = xxx    
 
 
-		x = 45
+		x = 33
 		y = 0
 		cost = 10
 
@@ -1697,11 +1738,7 @@ focus_tree = {
 		}
  
 		completion_reward = { 
-
-			remove_dynamic_modifier = {
-				modifier = HUN_Kingdom_Without_King
-			} 
-
+			remove_ideas = HUN_Kingdom_Without_King
 			set_politics = {
 				ruling_party = fascism 
 			}
@@ -1718,6 +1755,60 @@ focus_tree = {
 		}
 	}
 
+	######## Autarky #######
+
+
+
+	focus = { 
+		id = HUN_Autarky_Project 
+		text = HUN_autarky         
+		icon = GFX_focus_generic_improve_roads  
+		prerequisite = { focus = HUN_Eternal_Hungary }   
+		      
+
+		relative_position_id = HUN_Eternal_Hungary
+		x = -7
+		y = 1                 
+		cost = 5   
+
+
+		available = { 
+		 
+			
+
+		}
+ 
+		completion_reward = {
+			add_ideas = HUN_Autarky
+		}
+	}
+
+	focus = { 
+		id = HUN_Expanded_Autarky_Project           
+		icon = GFX_focus_generic_tankette  
+		prerequisite = { focus = HUN_Autarky_Project }     
+		      
+
+		relative_position_id = HUN_Autarky_Project
+		x = 0
+		y = 1
+		cost = 5   
+
+
+		available = { 
+		 
+			
+
+		}
+ 
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HUN_Expanded_Autarky
+				remove_idea = HUN_Autarky   
+			}
+		}
+	}
+
 
 	### axis ###
 
@@ -1727,7 +1818,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Eternal_Hungary } 
 
 		relative_position_id = HUN_Eternal_Hungary
-		x = -8
+		x = -5
 		y = 1          
 		cost = 5   
 
@@ -1864,7 +1955,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Eternal_Hungary }   
 
 		relative_position_id = HUN_Eternal_Hungary
-		x = -5
+		x = -3
 		y = 1
 		cost = 5   
 
@@ -1932,7 +2023,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Eternal_Hungary }    
 
 		relative_position_id = HUN_Eternal_Hungary
-		x = -2
+		x = -1
 		y = 1
 		cost = 5   
 
@@ -2051,7 +2142,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_Eternal_Hungary }    
 
 		relative_position_id = HUN_Eternal_Hungary
-		x = 2
+		x = 1
 		y = 1
 		cost = 5   
 
@@ -2122,7 +2213,7 @@ focus_tree = {
 		icon = GFX_focus_generic_conspiracy  
 		prerequisite = { focus = HUN_Hungarian_Unity_Act }       
 
-		relative_position_id = HUN_Centralize_Control
+		relative_position_id = HUN_Hungarian_Unity_Act
 		x = 0
 		y = 1
 		cost = 5   
@@ -2171,8 +2262,8 @@ focus_tree = {
 		prerequisite = { focus = HUN_Strengthen_National_Identity }      
 
 		relative_position_id = HUN_Militarize_the_Government
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		cost = 5
 
 
@@ -2200,61 +2291,6 @@ focus_tree = {
 			  
 		}
 	}
-
-
-
-	######## Autarky #######
-
-
-
-	focus = { 
-		id = HUN_Autarky_Project          
-		icon = GFX_focus_generic_improve_roads  
-		prerequisite = { focus = HUN_Eternal_Hungary }   
-		      
-
-		relative_position_id = HUN_Eternal_Hungary
-		x = -11
-		y = 1                 
-		cost = 5   
-
-
-		available = { 
-		 
-			
-
-		}
- 
-		completion_reward = {
-			add_ideas = HUN_Autarky
-		}
-	}
-
-	focus = { 
-		id = HUN_Expanded_Autarky_Project           
-		icon = GFX_focus_generic_tankette  
-		prerequisite = { focus = HUN_Autarky_Project }     
-		      
-
-		relative_position_id = HUN_Autarky_Project
-		x = 0
-		y = 1
-		cost = 5   
-
-
-		available = { 
-		 
-			
-
-		}
- 
-		completion_reward = {
-			swap_ideas = {
-				add_idea = HUN_Expanded_Autarky
-				remove_idea = HUN_Autarky   
-			}
-		}
-	}
  
 	######## Greater Hungary #######
 
@@ -2265,7 +2301,7 @@ focus_tree = {
 		      
 
 		relative_position_id = HUN_Eternal_Hungary
-		x = 6
+		x = 4
 		y = 1
 		cost = 5   
 
@@ -2356,7 +2392,7 @@ focus_tree = {
 		      
 
 		relative_position_id = HUN_Eternal_Hungary
-		x = 9
+		x = 6
 		y = 1
 		cost = 5   
 
@@ -2390,7 +2426,7 @@ focus_tree = {
 		      
 
 		relative_position_id = HUN_Eternal_Hungary
-		x = 12
+		x = 8
 		y = 1
 		cost = 5   
 

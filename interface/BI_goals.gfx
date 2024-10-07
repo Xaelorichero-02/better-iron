@@ -1,4 +1,16 @@
-spriteTypes = {	
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_GEN_agriculture"
+		texturefile = "gfx/interface/goals/GEN_agriculture.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_free_trade"
+		texturefile = "gfx/interface/goals/GEN_free_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_wartime_industry"
+		texturefile = "gfx/interface/goals/GEN_wartime_industry.dds"
+	}
 	SpriteType = {
 		name = "GFX_goal_GEN_military_socialism"
 		texturefile = "gfx/interface/goals/GEN_military_socialism.dds"
@@ -51,20 +63,97 @@ spriteTypes = {
 		name = "GFX_goal_GEN_befriend_czechoslovakia"
 		texturefile = "gfx/interface/goals/GEN_befriend_czechoslovakia.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_GEN_support_workers"
+		texturefile = "gfx/interface/goals/GEN_support_workers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_political"
+		texturefile = "gfx/interface/goals/GEN_political.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_chrtistianity"
+		texturefile = "gfx/interface/goals/GEN_chrtistianity.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_business_bills"
+		texturefile = "gfx/interface/goals/GEN_business_bills.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_attack_austria"
+		texturefile = "gfx/interface/goals/GEN_attack_austria.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_befriend_austria"
+		texturefile = "gfx/interface/goals/GEN_befriend_austria.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_monarchy"
+		texturefile = "gfx/interface/goals/GEN_monarchy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_salt"
+		texturefile = "gfx/interface/goals/GEN_salt.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_soviet_union"
+		texturefile = "gfx/interface/goals/GEN_soviet_union.png"
+	}
 
 	#Belgium
 
 	SpriteType = {
+		name = "GFX_goal_BEL_van_der_bergen"
+		texturefile = "gfx/interface/goals/BEL_van_der_bergen.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_BEL_a_new_red_benelux"
-		texturefile = "gfx/interface/goals/BEL_a_new_red_benelux.dds"
+		texturefile = "gfx/interface/goals/BEL_a_new_red_benelux.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_BEL_rex"
-		texturefile = "gfx/interface/goals/BEL_rex.dds"
+		texturefile = "gfx/interface/goals/BEL_rex.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_BEL_wallonia"
-		texturefile = "gfx/interface/goals/BEL_wallonia.dds"
+		texturefile = "gfx/interface/goals/BEL_wallonia.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_BEL_congo_union"
+		texturefile = "gfx/interface/goals/BEL_congo_union.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_BEL_burgundy"
+		texturefile = "gfx/interface/goals/BEL_burgundy.png"
+	}
+	
+	#Brazil
+
+	SpriteType = {
+		name = "GFX_goal_BRA_officers"
+		texturefile = "gfx/interface/goals/BRA_officers.png"
+	}
+
+	#Canada
+
+	SpriteType = {
+		name = "GFX_goal_CAN_monarchy"
+		texturefile = "gfx/interface/goals/CAN_monarchy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAN_royal_wedding"
+		texturefile = "gfx/interface/goals/CAN_royal_wedding.dds"
+	}
+
+	#China
+
+	SpriteType = {
+		name = "GFX_goal_CHI_military_commission"
+		texturefile = "gfx/interface/goals/CHI_military_commission.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CHI_crush_kmt"
+		texturefile = "gfx/interface/goals/CHI_crush_kmt.png"
 	}
 
 	#Czechoslovakia
@@ -101,16 +190,144 @@ spriteTypes = {
 		name = "GFX_goal_CZE_slovak_rebelion"
 		texturefile = "gfx/interface/goals/CZE_slovak_rebelion.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_CZE_air"
+		texturefile = "gfx/interface/goals/CZE_air.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CZE_army"
+		texturefile = "gfx/interface/goals/CZE_army.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CZE_navy"
+		texturefile = "gfx/interface/goals/CZE_navy.png"
+	}
+
+	#Egypt
+
+	SpriteType = {
+		name = "GFX_goal_EGY_democracy"
+		texturefile = "gfx/interface/goals/EGY_democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_EGY_farouk"
+		texturefile = "gfx/interface/goals/EGY_farouk.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_EGY_monarchy"
+		texturefile = "gfx/interface/goals/EGY_monarchy.dds"
+	}
+
+	#Germany
+
+	SpriteType = {
+		name = "GFX_goal_GER_luftwaffe_commanders"
+		texturefile = "gfx/interface/goals/GER_luftwaffe_commanders.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_reform_luftwaffe"
+		texturefile = "gfx/interface/goals/GER_reform_luftwaffe.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_alsace_lorraine"
+		texturefile = "gfx/interface/goals/GER_alsace_lorraine.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_anschluss"
+		texturefile = "gfx/interface/goals/GER_anschluss.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_danzig_or_war"
+		texturefile = "gfx/interface/goals/GER_danzig_or_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GER_rhineland"
+		texturefile = "gfx/interface/goals/GER_rhineland.dds"
+	}
+
+	#Hungary
+
+	SpriteType = {
+		name = "GFX_goal_HUN_greater_hungary"
+		texturefile = "gfx/interface/goals/HUN_greater_hungary.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_HUN_horthy"
+		texturefile = "gfx/interface/goals/HUN_horthy.dds"
+	}
 
 	#Italy
 
 	SpriteType = {
 		name = "GFX_goal_ITA_army_leaders"
-		texturefile = "gfx/interface/goals/ITA_army_leaders.dds"
+		texturefile = "gfx/interface/goals/ITA_army_leaders.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_ITA_empire"
-		texturefile = "gfx/interface/goals/ITA_empire.dds"
+		texturefile = "gfx/interface/goals/ITA_empire.png"
+	}
+
+	#Japan
+
+	SpriteType = {
+		name = "GFX_goal_JAP_imperialism"
+		texturefile = "gfx/interface/goals/JAP_imperialism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_officer"
+		texturefile = "gfx/interface/goals/JAP_officer.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_army_expansion"
+		texturefile = "gfx/interface/goals/JAP_army_expansion.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_bomber"
+		texturefile = "gfx/interface/goals/JAP_bomber.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_co_prosperity_sphere"
+		texturefile = "gfx/interface/goals/JAP_co_prosperity_sphere.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_defense"
+		texturefile = "gfx/interface/goals/JAP_defense.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_fate_of_the_imperial_family"
+		texturefile = "gfx/interface/goals/JAP_fate_of_the_imperial_family.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_kodoha"
+		texturefile = "gfx/interface/goals/JAP_kodoha.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_manchu_army"
+		texturefile = "gfx/interface/goals/JAP_manchu_army.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_manchu_special_focus"
+		texturefile = "gfx/interface/goals/JAP_manchu_special_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_nav_b"
+		texturefile = "gfx/interface/goals/JAP_nav_b.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_navy"
+		texturefile = "gfx/interface/goals/JAP_navy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_showa_constitution"
+		texturefile = "gfx/interface/goals/JAP_showa_constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_strenghten_the_civilian_government"
+		texturefile = "gfx/interface/goals/JAP_strenghten_the_civilian_government.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_the_unthinkable_option"
+		texturefile = "gfx/interface/goals/JAP_the_unthinkable_option.png"
 	}
 
 	#Poland
@@ -118,5 +335,27 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_POL_coa"
 		texturefile = "gfx/interface/goals/POL_coa.dds"
+	}
+
+	#Spain
+
+	SpriteType = {
+		name = "GFX_goal_SPR_citrus"
+		texturefile = "gfx/interface/goals/SPR_citrus.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_conscription"
+		texturefile = "gfx/interface/goals/SPR_conscription.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SPR_disband_the_army"
+		texturefile = "gfx/interface/goals/SPR_disband_the_army.dds"
+	}
+
+	#Switzerland
+
+	SpriteType = {
+		name = "GFX_goal_SWI_defense"
+		texturefile = "gfx/interface/goals/SWI_defense.dds"
 	}
 }

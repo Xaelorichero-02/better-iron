@@ -97,3 +97,405 @@ news_event = {
 		name = BI_news.4.a
 	}
 }
+
+# Aragon Proclaimed
+news_event = {
+	id = BI_news.5
+	title = BI_news.5.t
+	desc = BI_news.5.d
+	picture = GFX_news_event_GEN_aragon
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = BI_news.5.a
+	}
+}
+
+# Egypt Protected by Brits
+news_event = {
+	id = BI_news.6
+	title = BI_news.6.t
+	desc = BI_news.6.d
+	picture = GFX_news_event_GEN_aragon
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = BI_news.6.a
+	}
+}
+
+# Egypt Not Protected by Brits
+news_event = {
+	id = BI_news.7
+	title = BI_news.7.t
+	desc = BI_news.7.d
+	picture = GFX_news_event_GEN_aragon
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = BI_news.7.a
+	}
+}
+
+# Purchase of Malta
+news_event = {
+	id = BI_news.8
+	title = BI_news.8.t
+	desc = BI_news.8.d
+	picture = GFX_news_event_GEN_aragon
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = BI_news.8.a
+	}
+}
+
+#Constitutional Monarchy - Canada
+news_event = {
+	id = BI_news.9
+	title = BI_news.9.t
+	desc = BI_news.9.desc
+	picture = GFX_news_event_CAN_margaret
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.9.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.9.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				has_war_with = CAN
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.9.c
+		trigger = {
+			has_war_with = CAN
+		}
+	}
+	
+	option = {
+		name = BI_news.9.d
+		trigger = {
+			tag = ENG
+		}
+	}
+}
+
+#Absolte Monarchy - Canada
+news_event = {
+	id = BI_news.10
+	title = BI_news.10.t
+	desc = BI_news.10.desc
+	picture = GFX_news_event_CAN_margaret
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.10.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.10.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				has_war_with = CAN
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.10.c
+		trigger = {
+			has_war_with = CAN
+		}
+	}
+	
+	option = {
+		name = BI_news.10.d
+		trigger = {
+			tag = ENG
+		}
+	}
+}
+
+#Royal Wedding UK-Canada
+news_event = {
+	id = BI_news.11
+	title = BI_news.11.t
+	desc = BI_news.11.desc
+	picture = GFX_news_event_CAN_wedding
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.11.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.11.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				tag = ENG
+				has_war_with = CAN
+				has_war_with = ENG
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.11.c
+		trigger = {
+			OR = {
+				has_war_with = CAN
+				has_war_with = ENG
+			}
+		}
+	}
+	
+	option = {
+		name = BI_news.11.d
+		trigger = {
+			tag = ENG
+		}
+	}
+}
+
+#Royal Wedding Belgium-Canada
+news_event = {
+	id = BI_news.12
+	title = BI_news.12.t
+	desc = BI_news.12.desc
+	picture = GFX_news_event_CAN_wedding
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.12.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.12.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				tag = BEL
+				has_war_with = CAN
+				has_war_with = BEL
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.12.c
+		trigger = {
+			OR = {
+				has_war_with = CAN
+				has_war_with = BEL
+			}
+		}
+	}
+	
+	option = {
+		name = BI_news.12.d
+		trigger = {
+			tag = BEL
+		}
+	}
+}
+
+#Royal Wedding Sweden-Canada
+news_event = {
+	id = BI_news.13
+	title = BI_news.13.t
+	desc = BI_news.13.desc
+	picture = GFX_news_event_CAN_wedding
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.13.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.13.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				tag = SWE
+				has_war_with = CAN
+				has_war_with = SWE
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.13.c
+		trigger = {
+			OR = {
+				has_war_with = CAN
+				has_war_with = SWE
+			}
+		}
+	}
+	
+	option = {
+		name = BI_news.13.d
+		trigger = {
+			tag = SWE
+		}
+	}
+}
+
+#Flagship BB
+news_event = {
+	id = BI_news.14
+	title = BI_news.14.t
+	desc = BI_news.14.desc
+	picture = GFX_news_event_CAN_flagship_bb
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.14.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.14.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				has_war_with = CAN
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.14.c
+		trigger = {
+			has_war_with = CAN
+		}
+	}
+}
+
+#Flagship CV
+news_event = {
+	id = BI_news.15
+	title = BI_news.15.t
+	desc = BI_news.15.desc
+	picture = GFX_news_event_CAN_flagship_cv
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.15.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.15.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				has_war_with = CAN
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.15.c
+		trigger = {
+			has_war_with = CAN
+		}
+	}
+}
+
+#Royal Tour
+news_event = {
+	id = BI_news.16
+	title = BI_news.16.t
+	desc = BI_news.16.desc
+	picture = GFX_news_event_CAN_tour
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BI_news.16.a
+		trigger = {
+			tag = CAN
+		}
+	}
+
+	option = {
+		name = BI_news.16.b
+		trigger = {
+			NOT = {
+				tag = CAN
+				has_war_with = CAN
+			}
+		}
+	}
+
+	option = {
+		name = BI_news.16.c
+		trigger = {
+			has_war_with = CAN
+		}
+	}
+}

@@ -1,4 +1,86 @@
 characters={
+	#Popes are here
+	BEL_pius_xi = {
+		name = "Pope Pius XI"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAP/Portrait_Papacy_Pius_XI.dds"
+				small = "gfx/advisors/PAP/Portrait_Papacy_Pius_XI.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_pius_xi
+			allowed = {
+				original_tag = BEL
+			}
+			visible = {
+				NOT = {
+					has_country_leader = {
+						character = BEL_pius_xi
+						ruling_only = yes
+					}
+				}
+				date<1939.2.10
+				has_completed_focus = BEL_befriend_the_pope
+				NOT = { has_completed_focus = BEL_his_holyness }
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = BEL_pius_xi
+						ruling_only = yes
+					}
+				}
+				date<1939.2.10
+				has_completed_focus = BEL_befriend_the_pope
+			}
+			traits = {
+				supreme_pontiff temperamental
+			}
+		}
+	}
+
+	BEL_pius_xii = {
+		name = "Pope Pius XII"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAP/Portrait_Papacy_Pius_XII.dds"
+				small = "gfx/advisors/PAP/Portrait_Papacy_Pius_XII.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_pius_xii
+			allowed = {
+				original_tag = BEL
+			}
+			visible = {
+				NOT = {
+					has_country_leader = {
+						character = BEL_pius_xii
+						ruling_only = yes
+					}
+				}
+				date>1939.2.10
+				has_completed_focus = BEL_befriend_the_pope
+				NOT = { has_completed_focus = BEL_his_holyness }
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = BEL_pius_xii
+						ruling_only = yes
+					}
+				}
+				has_completed_focus = BEL_befriend_the_pope
+			}
+			traits = {
+				supreme_pontiff grand_master_of_the_equestrian_order_of_the_holy_sepulcher_of_jerusalem
+			}
+		}
+	}
+	#Bellow Belgian chars
 	BEL_paul_van_zeeland={
 		name="Paul van Zeeland"
 		portraits={
@@ -239,6 +321,17 @@ characters={
 			expire="1965.1.1.12"
 			id=-1
 		}
+		advisor={
+			slot = monarch
+			idea_token = BEL_leopold_iii_mr
+			allowed = {
+				original_tag = BEL
+			}
+			allowed_to_remove = { has_government = communism }
+			traits = {
+				popular_figurehead3
+			}
+		}
 	}
 	BEL_staf_de_clercq={
 		name="Staf De Clercq"
@@ -298,6 +391,9 @@ characters={
 			allowed = {
 				original_tag = BEL
 			}
+			available = {
+				has_completed_focus = BEL_van_der_bergen_plan
+			}
 			traits = {
 				army_chief_drill_3
 			}
@@ -325,10 +421,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_mountaineer hill_fighter cavalry_officer }
+			traits={ career_officer trait_mountaineer hill_fighter cavalry_officer ranger }
 			skill=4
 			attack_skill=3
-			defense_skill=2
+			defense_skill=4
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=-1
@@ -343,31 +439,17 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer cavalry_leader }
+			traits={ career_officer cavalry_leader war_hero }
 			skill=2
 			attack_skill=2
-			defense_skill=1
+			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
 		}
 		advisor={
-			slot = army_chief
-			idea_token = BEL_victor_strydonck_burkel
-			allowed = {
-				original_tag = BEL
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		advisor={
 			slot = high_command
-			idea_token = BEL_victor_strydonck_burkel_hc
+			idea_token = BEL_victor_strydonck_burkel
 			ledger = army
 			allowed = {
 				original_tag = BEL
@@ -435,12 +517,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer }
+			traits={ politically_connected cavalry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
 			planning_skill=2
-			logistics_skill=1
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -530,7 +612,7 @@ characters={
 			}
 		}
 		corps_commander={
-			#traits={ meticulous caring_leader }
+			traits={ organizer }
 			skill=2
 			attack_skill=1
 			defense_skill=3
@@ -566,6 +648,53 @@ characters={
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BEL_lambert_chardome={
+		name="Lambert Chardome"
+		portraits={
+			army={
+				large="gfx/leaders/BEL/Portrait_Belgium_Lambert_Chardome.dds"
+				small="gfx/advisors/BEL/Portrait_Belgium_Lambert_Chardome.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = army_chief
+			idea_token = BEL_lambert_chardome
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	BEL_jean_baptiste_piron={
+		name="Jean-Baptiste Piron"
+		portraits={
+			army={
+				large="gfx/leaders/BEL/Portrait_Belgium_Jean_Baptiste_Piron.dds"
+				small="gfx/advisors/BEL/Portrait_Belgium_Jean_Baptiste_Piron.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -847,6 +976,24 @@ characters={
 			}
 			traits = {
 				armaments_organizer
+			}
+		}
+	}
+	BEL_georges_theunis={
+		name="Georges Theunis"
+		portraits={
+			army={
+				small="gfx/advisors/BEL/Portrait_Belgium_Georges_Theunis.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_georges_theunis
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				bank_president
 			}
 		}
 	}

@@ -1,0 +1,291 @@
+guiTypes = {
+	containerWindowType = {
+		name = "portrait_gui_container"
+		#position = { x = 10 y = 133 }
+		#position = { x = 10 y = 10 }
+		position = { x = 675 y = 35 }
+		Orientation = UPPER_LEFT
+
+		buttonType = {
+			name = "portrait_gui_button"
+			position = { x = 0 y = 0 }
+			#quadTextureSprite ="GFX_empty_portrait"
+			quadTextureSprite ="GFX_portrait_button"
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			pdx_tooltip = "MENU_PORTRAIT_GUI"
+			pdx_tooltip_delayed = "MENU_PORTRAIT_GUI_EXPANDED"
+		}
+	}
+	containerWindowType = {
+		name = "hitler_portrait_gui_container"
+		position = { x=550 y=80 }
+		size = { width=684 height=900 }
+		clipping = yes
+
+		fade_time = 300
+		fade_type = linear
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "hitler_portrait_gui_1"
+			position = { x=15 y=15 }
+			spriteType = "GFX_Portrait_Adolf_Hitler"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_2"
+			position = { x=181 y=15 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_Ackbaraddin"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_3"
+			position = { x=347 y=15 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_vanilla"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_4"
+			position = { x=513 y=15 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_CotF"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_5"
+			position = { x=15 y=235 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_NW"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_6"
+			position = { x=181 y=235 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_NW_old"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_7"
+			position = { x=347 y=235 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_TGWR"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_8"
+			position = { x=513 y=235 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_TNO"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_9"
+			position = { x=15 y=455 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_hoi4fanforever_krstyle"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_10"
+			position = { x=181 y=455 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_NickTsurev"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_11"
+			position = { x=347 y=455 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_HermanLindqvist"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_12"
+			position = { x=513 y=455 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_Random_Khmerguy"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_13"
+			position = { x=15 y=675 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_Random_Khmerguy_2"
+		}
+		buttonType = {
+			name = "hitler_portrait_gui_14"
+			position = { x=181 y=675 }
+			spriteType = "GFX_Portrait_Adolf_Hitler_censored"
+		}
+	}
+
+	containerWindowType = {
+		name = "stalin_portrait_gui_container"
+		position = { x=550 y=80 }
+		size = { width=684 height=900 }
+		verticalScrollbar = "right_vertical_slider"
+		scroll_wheel_factor = 37
+		smooth_scrolling = yes
+		margin = { top = 5 bottom = 15}	
+		clipping = yes
+
+		fade_time = 300
+		fade_type = linear
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "stalin_portrait_gui_1"
+			position = { x=15 y=15 }
+			spriteType = "GFX_Portrait_Joseph_Stalin"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_2"
+			position = { x=181 y=15 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_vanilla"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_3"
+			position = { x=347 y=15 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_TGWR"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_4"
+			position = { x=513 y=15 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_TGWR_20s"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_5"
+			position = { x=15 y=235 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_TGW"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_6"
+			position = { x=181 y=235 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_Andreiboi2020"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_7"
+			position = { x=347 y=235 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_fignyakakayata"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_8"
+			position = { x=513 y=235 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_Hardback_Writer"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_9"
+			position = { x=15 y=455 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_HouseofWashington"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_10"
+			position = { x=181 y=455 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_JayMann_mp"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_11"
+			position = { x=347 y=455 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_Maxno123"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_12"
+			position = { x=513 y=455 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_mr_bergmann"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_13"
+			position = { x=15 y=675 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_NewAardvark6445"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_14"
+			position = { x=181 y=675 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_NewAardvark6445_2"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_15"
+			position = { x=347 y=675 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_PolskiGrizzle"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_16"
+			position = { x=513 y=675 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_poslepoludnya"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_17"
+			position = { x=15 y=895 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_R0bDaFlob"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_18"
+			position = { x=181 y=895 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_Random_Khmerguy"
+		}
+		buttonType = {
+			name = "stalin_portrait_gui_19"
+			position = { x=347 y=895 }
+			spriteType = "GFX_Portrait_Joseph_Stalin_r56"
+		}
+	}
+
+	containerWindowType = {
+		name = "xishan_portrait_gui_container"
+		position = { x=550 y=80 }
+		size = { width=684 height=900 }
+		verticalScrollbar = "right_vertical_slider"
+		scroll_wheel_factor = 37
+		smooth_scrolling = yes
+		margin = { top = 5 bottom = 15}	
+		clipping = yes
+
+		fade_time = 300
+		fade_type = linear
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "xishan_portrait_gui_1"
+			position = { x=15 y=15 }
+			spriteType = "GFX_Portrait_Yan_Xishan"
+		}
+		buttonType = {
+			name = "xishan_portrait_gui_2"
+			position = { x=181 y=15 }
+			spriteType = "GFX_Portrait_Yan_Xishan_actually_a_generic"
+		}
+		buttonType = {
+			name = "xishan_portrait_gui_3"
+			position = { x=347 y=15 }
+			spriteType = "GFX_Portrait_Yan_Xishan_CirclePete"
+		}
+		buttonType = {
+			name = "xishan_portrait_gui_4"
+			position = { x=513 y=15 }
+			spriteType = "GFX_Portrait_Yan_Xishan_CptChetson"
+		}
+		buttonType = {
+			name = "xishan_portrait_gui_5"
+			position = { x=15 y=235 }
+			spriteType = "GFX_Portrait_Yan_Xishan_CotF"
+		}
+	}
+
+	containerWindowType = {
+		name = "nac_portrait_gui_container"
+		position = { x=550 y=80 }
+		size = { width=240 height=210 }
+		scroll_wheel_factor = 37
+		smooth_scrolling = yes
+		margin = { top = 5 bottom = 15}	
+		clipping = yes
+
+		fade_time = 300
+		fade_type = linear
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "nac_portrait_gui_1"
+			position = { x=15 y=15 }
+			spriteType = "GFX_report_event_starting_event"
+		}
+	}
+}

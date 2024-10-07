@@ -11,7 +11,7 @@ state={
 	
 	history={
 		victory_points = {
-			9551 2
+			9567 2
 		}
 		owner = CZE
 		buildings = {
@@ -27,7 +27,7 @@ state={
 	}
 
 	provinces={
-		9551 9567 
+		9567 
 	}
 
 	local_supplies=1.0 

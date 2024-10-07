@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+
+		SPR_citrus = {
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.025
+			}
+		}
+
+	}
+}

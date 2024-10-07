@@ -1,0 +1,31 @@
+characters={
+	PAP_pius_xi = {
+		name = "Pope Pius XI"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAP/Portrait_Papacy_Pius_XI.dds"
+				small = "gfx/advisors/PAP/Portrait_Papacy_Pius_XI.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = 1939.2.10
+			traits = { supreme_pontiff temperamental }
+		}
+	}
+
+	PAP_pius_xii = {
+		name = "Pope Pius XII"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAP/Portrait_Papacy_Pius_XII.dds"
+				small = "gfx/advisors/PAP/Portrait_Papacy_Pius_XII.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = 1958.12.16
+			traits = { supreme_pontiff grand_master_of_the_equestrian_order_of_the_holy_sepulcher_of_jerusalem }
+		}
+	}
+}

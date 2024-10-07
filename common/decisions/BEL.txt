@@ -4,7 +4,7 @@ political_actions = {
 
 		priority = 10
 
-		icon = GFX_decision_generic_operation
+		icon = GFX_decision_generic_political_discourse
 
 		ai_will_do = {
 			base = 0
@@ -42,6 +42,51 @@ political_actions = {
 					traits = { eager_collaborator }
 				}
 			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_van_zeeland_retirement_decision = {
+
+		priority = 10
+
+		icon = GFX_decision_generic_political_discourse
+
+		ai_will_do = {
+			base = 0
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = {
+				character = BEL_paul_van_zeeland
+				ruling_only = yes
+			}
+		}
+
+		visible = { 
+			has_government = democratic
+			has_country_leader = {
+				character = BEL_paul_van_zeeland
+				ruling_only = yes
+			}
+			NOT = {
+				has_global_flag = national_bank_scandal_incoming
+			}
+		}
+
+		cost = 150
+
+		complete_effect = { 
+			country_event = belgium.6
 		}
 
 		remove_effect = {
@@ -349,6 +394,978 @@ BEL_expansion = {
 
 		remove_effect = {
 
+		}
+
+	}
+
+	BEL_integrate_niederpfalz = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_expand_to_the_rhine
+			controls_state = 989
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 989
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_expand_to_the_rhine
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 989
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_saarland = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_expand_to_the_rhine
+			controls_state = 990
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 990
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_expand_to_the_rhine
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 990
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_picardy = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 785
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 785
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 785
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_upper_normandy = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 1006
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 1006
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 1006
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_champagne = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 18
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 18
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 18
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_paris = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 16
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 16
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 16
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_sedan = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 987
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 987
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 987
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_nanzig = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			has_completed_focus = BEL_expand_to_the_rhine
+			controls_state = 986
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 986
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+			has_completed_focus = BEL_expand_to_the_rhine
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 986
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_geradmer = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			has_completed_focus = BEL_expand_to_the_rhine
+			controls_state = 988
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 988
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+			has_completed_focus = BEL_expand_to_the_rhine
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 988
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_alsace_lorraine = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			has_completed_focus = BEL_expand_to_the_rhine
+			controls_state = 28
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 28
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+			has_completed_focus = BEL_expand_to_the_rhine
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 28
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_franche_comte = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 17
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 17
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 17
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_burgundy = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 27
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 27
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 27
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_rhone = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 20
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 20
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 20
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_alpes = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 32
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 32
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 32
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_integrate_northern_rhineland = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_burgundian_claim
+			controls_state = 51
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 51
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_burgundian_claim
+		}
+
+		cost = 50
+
+		complete_effect = { 
+			add_state_core = 51
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+}
+
+BEL_pope_king_schism = {
+
+	BEL_secure_ypres = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_his_holyness
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 983
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_his_holyness
+			controls_state = 983
+			owns_state = 983
+		}
+
+		cost = 75
+
+		complete_effect = { 
+			983 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_secure_flanders = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_his_holyness
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 6
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_his_holyness
+			controls_state = 6
+			owns_state = 6
+		}
+
+		cost = 300
+
+		complete_effect = { 
+			6 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_secure_liege = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_his_holyness
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 34
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_his_holyness
+			controls_state = 34
+			owns_state = 34
+		}
+
+		cost = 250
+
+		complete_effect = { 
+			34 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_secure_brussel = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_his_holyness
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 984
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_his_holyness
+			controls_state = 984
+			owns_state = 984
+		}
+
+		cost = 300
+
+		complete_effect = { 
+			984 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_secure_the_ardeness = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = BEL
+		}
+
+		available = {
+			has_completed_focus = BEL_his_holyness
+		}
+
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 981
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = { 
+			has_completed_focus = BEL_his_holyness
+			controls_state = 978
+			owns_state = 978
+			controls_state = 979
+			owns_state = 979
+			controls_state = 980
+			owns_state = 980
+			controls_state = 981
+			owns_state = 981
+			controls_state = 982
+			owns_state = 982
+		}
+
+		cost = 300 
+
+		complete_effect = { 
+			978 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+			979 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+			980 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+			981 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+			982 = {
+				set_demilitarized_zone = yes
+				set_state_flag = BEL_controlled_by_pope
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	BEL_for_the_pope = {
+
+		icon = GFX_decision_generic_operation
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = BEL
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		activation = {
+			has_completed_focus = BEL_his_holyness
+		}
+
+		visible = { 
+			has_completed_focus = BEL_his_holyness
+		}
+
+		cost = 100
+
+		days_mission_timeout = 100
+
+		timeout_effect = {
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = BEL_controlled_by_pope
+					}
+				}
+				every_owned_controlled_state = {
+					if = {
+						limit = { has_state_flag = BEL_controlled_by_pope }
+						transfer_state_to = PAP
+					}
+					add_core_of = PAP
+				}
+				PAP = {
+					change_tag_from = BEL
+					declare_war_on = {
+						target = BEL
+						type = civil_war
+					}
+					load_oob=PAP_BEL
+				}
+			}
 		}
 
 	}

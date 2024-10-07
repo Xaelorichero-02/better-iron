@@ -1,0 +1,22 @@
+on_actions = {
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					BEL = {
+						has_government = communism
+					}
+				}
+				news_event = BI_news.5
+				set_autonomy = {
+					target = BCG
+					autonomous_state = autonomy_free
+				}
+				set_autonomy = {
+					target = BCM
+					autonomous_state = autonomy_free
+				}
+			}
+		}
+	}
+}

@@ -2,35 +2,15 @@ ideas = {
 
 	country = {
 
-		HUN_treaty_of_triannon_2 = {
+		HUN_king_missing_fake = {
 			allowed = {
-				original_tag = HUN
 				always = no
 			}
-			picture = HUN_treaty_of_triannon
-
-			available = {
-				has_war = no
-			}
+			picture = no_royalty
 
 			modifier = {
-				production_speed_arms_factory_factor = -0.15	
-			}
-		}
-
-		HUN_treaty_of_triannon_3 = {
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			picture = HUN_treaty_of_triannon
-
-			available = {
-				has_war = no
-			}
-
-			modifier = {
-				
+				stability_factor = -0.1
+				political_power_factor = -0.5
 			}
 		}
 
@@ -47,8 +27,6 @@ ideas = {
 				generate_wargoal_tension = -0.5
 			}
 		}
-
-		
 
 		HUN_hungarian_monarchy = {
 			allowed = {
@@ -264,29 +242,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.05
-			}
-		}
-
-		HUN_secret_rearmament = {
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-			available = {
-				OR = {
-					has_idea = disarmed_nation 
-					has_idea = volunteer_only 
-				}
-			}
-
-			allowed_civil_war = {
-				
-			}
-			
-			modifier = {
-				conscription = 0.0025
-				industrial_capacity_factory = 0.05
-				custom_modifier_tooltip = HUN_secret_rearmament_tt_2
 			}
 		}
 

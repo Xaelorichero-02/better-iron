@@ -1,0 +1,46 @@
+characters={
+	HAW_david_kalakaua_kawananakoa={
+		name="David Kalakaua Kawananakoa"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAW/Portrait_Hawaii_David_Kalakaua_Kawananakoa.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HAW_joseph_poindexter={
+		name="Joseph Poindexter"
+		portraits={
+			civilian={
+				large="GFX_portrait_Joseph_Poindexter"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HAW_charles_fujimoto={
+		name="Charles Fujimoto"
+		portraits={
+			civilian={
+				large="GFX_portrait_Charles_Fujimoto"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

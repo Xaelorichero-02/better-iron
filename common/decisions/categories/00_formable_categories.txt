@@ -411,3 +411,13 @@ german_austria_category = {
 	}
 }
 
+aragon_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_greater_italy
+	
+	allowed = {
+		
+	}
+}

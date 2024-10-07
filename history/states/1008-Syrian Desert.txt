@@ -1,0 +1,18 @@
+state={
+	id=1008
+	name="STATE_1008"
+
+	history={
+		owner = FRA
+		add_core_of = SYR
+
+	}
+
+	provinces={
+		13556 13558 
+	}
+	manpower=42
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,5 +1,23 @@
 technology_sharing_group = {
 
+	id = CZE_SOV_tech_share
+	name = CZE_SOV_tech_share_name
+	desc = CZE_SOV_tech_share_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+		OR = {
+			is_in_faction_with = SOV
+			is_in_faction_with = CZE
+		}
+    }
+
+}
+
+technology_sharing_group = {
+
 	id = EST_nordic_research
 	name = EST_nordic_research_name
 	desc = EST_nordic_research_desc

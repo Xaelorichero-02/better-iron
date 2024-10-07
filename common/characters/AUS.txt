@@ -411,20 +411,20 @@ characters={
 		}
 	}
 	AUS_leopold_figl={
-		advisor={
-			slot = political_advisor
-			idea_token = AUS_leopold_figl
-			allowed  = {
-					original_tag  = AUS
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
 		name=AUS_leopold_figl
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
+				small="gfx/advisors/AUS/Portrait_Austria_Leopold_Figl.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AUS_leopold_figl
+			allowed = {
+				original_tag  = AUS
+			}
+			traits = {
+				popular_figurehead 
 			}
 		}
 	}

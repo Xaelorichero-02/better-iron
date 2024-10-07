@@ -22,12 +22,17 @@ add_timed_idea = {
 	days = 1400
 }
 
-add_ideas = BOL_era_of_national_regression
+add_ideas = {
+	GEN_mountainous_people
+	BOL_era_of_national_regression
+}
 
 JUNO_set_shared_military_branch_defaults = yes
 
 # Starting tech
 set_technology = {
+	mountainous_people_tech = 1
+
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1

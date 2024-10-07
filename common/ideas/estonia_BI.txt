@@ -45,7 +45,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = idea_EST_production_eff
+			picture = generic_production_bonus
 			
 			modifier = { 
 				MONTHLY_POPULATION = 0.15
@@ -82,7 +82,7 @@ ideas = {
 			}
 		}
 		artillery_production = {
-		picture = idea_goal_generic_army_doctrines
+		picture = generic_artillery_regiments
 			allowed = {
 				always = no
 			}
@@ -190,7 +190,7 @@ ideas = {
 	}
 }
 		industrial_councils = {
-		picture = idea_EST_production_eff
+		picture = man_five_year_plan_industry
 			allowed = {
 				always = no
 			}
@@ -272,28 +272,11 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_goal_generic_construct_infrastructure
+			picture = generic_build_infrastructure
 			
 			modifier = {
 				stability_factor = 0.05
 				production_speed_infrastructure_factor = 0.1
-			}
-		}
-		fortificationing = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = idea_EST_fortification
-			
-			modifier = {
-				production_speed_bunker_factor = 0.2
 			}
 		}
 		start_the_progress = {
@@ -307,7 +290,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_EST_military
+			picture = ARG_public_works_investment
 			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
@@ -406,7 +389,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_crda
+			picture = crda
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1

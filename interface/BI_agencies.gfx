@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_EGY_gis"
+		texturefile = "gfx/interface/operatives/agencies/intelligence_agency_logo_EGY_gis.dds"
+		noOfFrames = 2
+	}
+
+}

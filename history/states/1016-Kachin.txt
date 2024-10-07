@@ -1,0 +1,26 @@
+state={
+	id=1016
+	name="STATE_1016"
+
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+		victory_points = {
+			4425 1 
+		}
+
+	}
+
+	provinces={
+		1082 1197 1934 4318 4425 4996 8063 
+	}
+	manpower=788920
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

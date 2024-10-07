@@ -5,3 +5,18 @@
  german_austria_category:0 "Unite the Southern Germans"
  german_austria_category_desc:0 "German-Austria has been originally established in 1918 in the aftermath of the Great War but the proposal to unite Austria, Sudetenland and South Tyrol was blocked by the Entente and Treaty of Saint-Germain. Let's make the nationalists happy now."
  reform_german_austria:0 "Revoke the Treaty of Saint-Germain"
+
+ aragon_category:0 "Re-Establish the Aragonese State"
+ aragon_category_desc:0 ""
+ reform_aragon:0 "Re-Establish the Aragonese State"
+
+ aoi_required_egyptian_states:0 "Italy or a subject of Italy own all Egyptian core states"
+ italian_egypt_founded_tt:0 "Release the RDEI as a subject"
+ colonial_government_in_egypt:0 "Establish Regno Del Egitto Italiana"
+ ITA_bop_malta_purchase:0 "Purchase Malta"
+
+ GEN_illiteracy_campaign:0 "Build Schools"
+
+ army_xp_cost_50:0 "£army_experience §H50§!"
+ army_xp_cost_50_blocked:0 "£army_experience §R50§!"
+ army_xp_cost_50_tooltip:0 "\nIt costs £army_experience §H50§! to take the decision"  

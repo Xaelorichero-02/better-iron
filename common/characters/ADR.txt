@@ -1,0 +1,81 @@
+characters = {
+	ADR_co_prince_council = {
+		name = "Co-Prince Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ADR/Portrait_Andorra_Co_Prince_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	ADR_roc_pallares_i_rossell = {
+		name = "Roc Pallares i Rossell"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ADR/Portrait_Andorra_Roc_Palares_i_Rossell.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	ADR_miquel_mateu_i_pla = {
+		name = "Miquel Mateu i Pla"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ADR/Portrait_Andorra_Miquel_Mateu_i_Pia.dds"
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	ADR_consell_sindical = {
+		name = "Consell Sindical"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ADR/Portrait_Andorra_Consell_Sindical.dds"
+			}
+		}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	ADR_ramon_i_navarri = {
+		name = "Ramón i Navarri"
+#		portraits = {
+#			civilian = {
+#				large = "gfx/leaders/ADR/Portrait_Andorra_Co_Prince_Council.dds"
+#				small = "gfx/advisors/ADR/Portrait_Andorra_Co_Prince_Council.dds"
+#			}
+#		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1965.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ADR_ramon_i_navarri
+			allowed = {
+				original_tag = ADR
+			}
+			available = {
+				has_completed_focus = ADR_continue_the_policy_of_neutrality
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+		}
+	}
+}

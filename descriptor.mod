@@ -1,0 +1,16 @@
+version="1.4.0"
+picture="thumbnail.png"
+tags={
+	"National Focuses"
+	"Historical"
+	"Balance"
+	"Fixes"
+	"Graphics"
+	"Events"
+	"Alternative History"
+	"Gameplay"
+	"Map"
+}
+name="Better Iron"
+supported_version="1.14.*"
+remote_file_id="3262421854"

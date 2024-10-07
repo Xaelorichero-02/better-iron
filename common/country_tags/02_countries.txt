@@ -1,4 +1,8 @@
 TEX	= "countries/Texas.txt"
 CAL	= "countries/California.txt"
-BCG	= "countries/Belgium.txt"
-BCM	= "countries/Belgium.txt"
+BCG	= "countries/Belgium.txt" #Belgian Congo
+BCM	= "countries/Belgium.txt" #Belgian Cameroon
+BAD	= "countries/Baden.txt"
+RKB	= "countries/Belgium.txt" #Reichskommisariat Belgien-Nordfrankreich
+ADR	= "countries/Andorra.txt"
+REI	= "countries/Italy.txt"

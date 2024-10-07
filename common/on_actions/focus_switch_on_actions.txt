@@ -1,0 +1,108 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = estonian_focus_switch
+						option = BI
+					}
+				}
+				set_global_flag = EST_BI_tree
+				EST = {
+					load_focus_tree = estonian_BI_focus
+					set_variable = {
+						var = vaps_days_var
+						value = 0
+					}
+					set_variable = {
+						var = vaps_crackdown_var
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						has_start_date < 1939.08.13
+					}
+					EST = {
+						add_ideas = {
+							kaitseliit
+							economic_crises
+							outdated_military
+						}
+					}
+					else = {
+						EST = {
+							add_ideas = {
+								kaitseliit
+							}
+						}
+						complete_national_focus = EST_people_first
+						complete_national_focus = EST_strengthen_the_government
+						complete_national_focus = EST_reform_government
+						complete_national_focus = EST_stay_neutral
+						complete_national_focus = EST_protect_our_borders
+						complete_national_focus = EST_armed_neutrality
+						complete_national_focus = EST_deterrence
+						complete_national_focus = EST_the_four_year_plan
+						complete_national_focus = EST_build_better_capital
+						complete_national_focus = EST_more_civilian_factories
+						complete_national_focus = EST_invest_in_the_military
+						complete_national_focus = EST_develop_our_railroads
+						complete_national_focus = EST_prepare_for_war
+						complete_national_focus = EST_the_defence
+						complete_national_focus = EST_standardization_of_equipment
+						complete_national_focus = EST_protect_against_the_red_army
+						complete_national_focus = EST_air_base_expansion
+						complete_national_focus = EST_build_paldiski_port
+						complete_national_focus = EST_expand_port_paldiski
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = lithuanian_focus_switch
+						option = BI
+					}
+				}
+				set_global_flag = LIT_BI_tree
+				LIT = {
+					load_focus_tree = lithuanian_BI_tree
+					remove_ideas = {
+						LIT_iron_wolf_idea_bad_1
+						LIT_agrarian_society
+						LIT_military_idea_1
+						LIT_seimas_idea_1
+					}
+					set_variable = {
+						var = iron_wolf_days_var
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						has_start_date < 1939.08.13
+					}
+					else = {
+						LIT = {
+							complete_national_focus = LIT_political_awake
+							unlock_national_focus = LIT_political_vilnius
+							complete_national_focus = LIT_political_foreign
+							complete_national_focus = LIT_miliatary
+							complete_national_focus = LIT_miliatary_tevyne
+							complete_national_focus = LIT_miliatary_youth
+							complete_national_focus = LIT_industrial_reform
+							complete_national_focus = LIT_industrial_kaunas
+							complete_national_focus = LIT_industrial_siauliai
+							unlock_national_focus = LIT_industrial_memel
+							complete_national_focus = LIT_miliatary_tutors
+							complete_national_focus = LIT_industrial_siauliai_steel
+							complete_national_focus = LIT_industrial_tank
+						}
+					}
+				}
+			}
+		}
+	}
+}

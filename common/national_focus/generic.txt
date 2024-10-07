@@ -283,24 +283,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}			
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}			
-		}
-
 		completion_reward = {
 			air_experience = 25
 
@@ -420,23 +402,6 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_2_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name =  air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
 		completion_reward = {
 			air_experience = 25
 			if = {
@@ -595,16 +560,6 @@ focus_tree = {
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
-			}
-		}
-
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
 			}
 		}
 		
@@ -1166,15 +1121,6 @@ focus_tree = {
 			}
 		}
 
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}		
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1240,15 +1186,6 @@ focus_tree = {
 			}
 		}
 
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}		
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1305,19 +1242,6 @@ focus_tree = {
 						size < 1
 					}
 				}
-			}
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
 			}
 		}
 
@@ -1410,15 +1334,6 @@ focus_tree = {
 			}
 		}
 
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}		
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1475,19 +1390,6 @@ focus_tree = {
 						size < 1
 					}
 				}
-			}
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
 			}
 		}
 
@@ -1577,15 +1479,6 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
 			}
 		}
 

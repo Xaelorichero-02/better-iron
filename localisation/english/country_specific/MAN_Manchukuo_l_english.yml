@@ -1,8 +1,10 @@
 ﻿l_english:
- MAN_communism_party:0 "CPC"
- MAN_communism_party_long:0 "Communist Party of China"
  MAN_democratic_party:0 "L-KMT"
  MAN_democratic_party_long:0 "Left Kuomitang"
+ MAN_fascism_party:0 "MX"
+ MAN_fascism_party_long:0 "Manzhōuguó Xiéhehuì"
+ MAN_communism_party:0 "CPC"
+ MAN_communism_party_long:0 "Communist Party of China"
  MAN_neutrality_party:0 "Aisin-Gioro"
  MAN_neutrality_party_long:0 "Aisin-Gioro Clan"
 #Character Descriptions

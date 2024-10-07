@@ -4,4 +4,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits_strip.dds"
 		noOfFrames = 19
 	}
+	SpriteType = {
+		name = "GFX_idea_no_royalty"
+		texturefile = "gfx/advisors/no_royalty.dds"
+	}
 }

@@ -1,6 +1,6 @@
 HUN_Hungarian_Army = {  
 	
-	icon = GFX_idea_generic_manpower_bonus  
+	icon = GFX_idea_HUN_army  
  
 	#INITIAL  
 	
@@ -48,23 +48,6 @@ HUN_Political_Disputy = {
     drift_defence_factor = HUN_Political_Disputy_drift_defence_factor
     fascism_acceptance = HUN_Political_Disputy_fascism_acceptance
     communism_acceptance = HUN_Political_Disputy_communism_acceptance  
-}
-
-HUN_Kingdom_Without_King = {   
-	
-	icon = xxx
-     
-	#INITIAL
-	
-	
-
-	#FUTURE 
-    political_power_factor = HUN_Kingdom_Without_King_political_power_factor
-    stability_factor = HUN_Kingdom_Without_King_stability_factor
-    stability_weekly = HUN_Kingdom_Without_King_stability_weekly 
-    surrender_limit = HUN_Kingdom_Without_King_surrender_limit 
-    neutrality_drift = HUN_Kingdom_Without_King_neutrality_drift  
-	
 }
 
 HUN_Horthys_New_Government = {

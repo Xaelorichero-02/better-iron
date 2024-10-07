@@ -268,10 +268,9 @@
  capitalism:0 "Capitalism"
  back_to_routes:0 "Return to Democracy"
  good_roads:0 "Good Roads"
- fortificationing:0 "Fortification Studies"
  start_the_progress:0 "Start the Progress"
  start_industrialisation:0 "Start Industrialisation"
- aero_idea:0 "Aero Idea"
+ aero_idea:0 "Õhuvägi"
 
  #Opinion Modifiers
  closed_borders:0 "Closed Borders"

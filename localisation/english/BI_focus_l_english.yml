@@ -1,5 +1,6 @@
 ﻿l_english:
  FOCUS_FILTER_DIPLOMATIC:0 "Diplomacy"
+ FOCUS_FILTER_RESOURCES:0 "Resources"
 #Reichskommisariats
  RKS_a_new_state:0 "A New State"
  RKS_a_new_state_desc:0 ""
@@ -25,3 +26,6 @@
  RKS_anti_bolshevism_desc:0 ""
  RKS_wunderwaffe:0 "Wunderwaffe"
  RKS_wunderwaffe_desc:0 ""
+#Italy
+ ITA_protect_austria:0 "Protection of Austria"
+ ITA_protect_austria_desc:0 "The recent rise of Adolf Hitler has destabilized Austria and the Stresa Front. By protecting Austria we can develop some respect from our former allies of Britain and France. With that the Stresa Front can eventually be recreated."

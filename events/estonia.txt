@@ -79,6 +79,8 @@ country_event = {
 
 	fire_only_once = yes
 
+	is_triggered_only = yes
+
 	mean_time_to_happen = { days = 5 }
 
 	trigger = {
@@ -177,6 +179,8 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
+
+	is_triggered_only = yes
 	
 	option = {
 	    ai_chance = {
@@ -214,20 +218,21 @@ country_event = {
 	desc = est.7.d
 	picture = GFX_report_event_commusupport
 	
-	is_triggered_only = no
+	is_triggered_only = yes
+
 	fire_only_once = yes
 	
 	trigger = {
 	    tag = EST
 		AND = {
 		    date >1936.8.24
-		NOT = { has_government = communism }
-			}
+			NOT = { has_government = communism }
 		}
+	}
 		
-		mean_time_to_happen = {days = 7}
+	mean_time_to_happen = {days = 7}
 		
-		option = {
+	option = {
 		name = "Force them to dissolve the party!"
 		ai_chance = { factor = 50 }
 		add_popularity = { ideology = communism popularity = -0.2 }
@@ -243,7 +248,7 @@ country_event = {
 	option = {
 		name = "Let Them Be"
 		ai_chance = { factor = 40 }
-		add_national_unity = -0.1
+		add_stability = -0.1
     }
 }
 
@@ -294,6 +299,8 @@ country_event = {
 
 	fire_only_once = yes
 
+	is_triggered_only = yes
+
 	#Send them peace treaty for land
 	option = {
 		name = "Send Them Our Demands!"
@@ -326,6 +333,10 @@ country_event = {
 	desc = est.10.d
 	picture = GFX_report_event_finnish_soldiers_snow
 
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
     #Decline
 	option = {
 		name = "How Do They Even Dare!"
@@ -347,10 +358,10 @@ country_event = {
 			country_event = { id = est.13 }
 		}
         SOV = { white_peace = EST }
-			SOV = { set_state_owner = 208 }
-		}
+		SOV = { set_state_owner = 208 }
 	}
 }
+
 
 #Soviet says yes!
 country_event = {
@@ -359,6 +370,8 @@ country_event = {
 	desc = est.11.d
 	picture = GFX_report_event_finnish_soldiers_snow
 	
+	fire_only_once = yes
+
 	is_triggered_only = yes
 
 	option = {
@@ -378,6 +391,8 @@ country_event = {
 	desc = est.12.d
 	picture = GFX_report_event_finnish_soldiers_snow
 	
+	fire_only_once = yes
+
 	is_triggered_only = yes
 
 	option = {
@@ -393,6 +408,8 @@ country_event = {
 	picture = GFX_report_event_finnish_soldiers_snow
 	
 	fire_only_once = yes
+
+	is_triggered_only = yes
 
 	option = {
 	    name = "It's Better Than War"
@@ -414,6 +431,8 @@ country_event = {
 	picture = GFX_report_event_soviet_invasion_map
 
 	fire_only_once = yes
+
+	is_triggered_only = yes
 
 	mean_time_to_happen = { days = 3 }
 
@@ -441,6 +460,8 @@ country_event = {
 	picture = GFX_report_event_1941winter
 	
 	fire_only_once = yes
+
+	is_triggered_only = yes
 	
 	trigger = {
 	    tag = EST
@@ -550,7 +571,7 @@ news_event = {
 	id = est.19
 	title = est.19.t
 	desc = est.19.d
-	picture = GFX_news_event_support_commu
+	picture = GFX_news_event_GEN_support_communism
 	
 	is_triggered_only = yes
 	
@@ -582,6 +603,8 @@ news_event = {
 	picture = GFX_news_event_canada_treaty
 
 	mean_time_to_happen = { days = 4 }
+
+	is_triggered_only = yes
 	
 	#Together we stand strong!
 	option = {
@@ -837,6 +860,8 @@ country_event = {
 	}
 	
 	fire_only_once = yes
+
+	is_triggered_only = yes
 	
 	option = {
 		name = "The Triumph of Liberty!"

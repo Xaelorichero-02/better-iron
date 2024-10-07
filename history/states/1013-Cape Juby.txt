@@ -1,0 +1,22 @@
+state={
+	id=1013
+	name="STATE_1013"
+
+	history={
+		owner = SPR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		8111 13616 
+	}
+	manpower=93277
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

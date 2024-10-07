@@ -1,0 +1,123 @@
+﻿capital = 907
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+set_convoys = 20
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+		tech_trucks = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+
+#set_politics = {
+#	ruling_party = democratic
+#	last_election = "1929.12.21"
+#	election_frequency = 78
+#	elections_allowed = yes
+#}
+#set_popularities = {
+#	democratic = 77.7
+#	fascism = 6.2
+#	communism = 0
+#	neutrality = 16.1
+#}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1929.12.21"
+	election_frequency = 78
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 1
+	fascism = 10
+	communism = 0
+	neutrality = 89
+}
+
+add_ideas = {
+	censored_press
+	#EGY_republican_opposition
+}
+
+country_event = { # Ahmed Fuad I dead
+	id = egypt.1
+	days = 118
+}
+
+recruit_character = EGY_muhammad_naguib
+recruit_character = EGY_ahmed_husayn
+recruit_character = EGY_fuad_i
+recruit_character = EGY_farouk_muhammad_ali
+recruit_character = EGY_mohamed_tawfik_naseem
+recruit_character = EGY_mostafa_el_nahas
+recruit_character = EGY_mohamed_mahmoud
+recruit_character = EGY_aly_maher_pasha
+recruit_character = EGY_hosni_alarabi
+recruit_character = EGY_gamal_abdel_nasser
+recruit_character = EGY_abdel_hakim_amer
+recruit_character = EGY_abdul_munim_riad
+recruit_character = EGY_ahmad_smail_ali
+recruit_character = EGY_ahmed_ali_al_mwawi
+recruit_character = EGY_hussein_el_shafei
+recruit_character = EGY_aziz_ezzat
+
+activate_advisor = EGY_fuad_i_mt

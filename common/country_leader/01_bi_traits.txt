@@ -1,3 +1,15 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
 leader_traits = {
 
 	navy_chief_maneuver_1_undistinguished_suit_hoi3 = { # Naval units move 5% faster
@@ -65,6 +77,62 @@ leader_traits = {
 				NOT = {
 					has_government = communism
 				}
+			}
+		}
+	}
+
+	fort_organization_1 = {
+		random = no
+		sprite = 9
+		command_cap = 30
+
+		land_bunker_effectiveness_factor = 0.05
+		recon_factor_while_entrenched = 0.05
+		repair_speed_bunker_factor = 0.25
+		unit_garrison_design_cost_factor = -0.25
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < 30
+			}
+		}
+	}
+	fort_organization_2 = {
+		random = no
+		sprite = 9
+		command_cap = 20
+
+		land_bunker_effectiveness_factor = 0.1
+		recon_factor_while_entrenched = 0.1
+		repair_speed_bunker_factor = 0.50
+		unit_garrison_design_cost_factor = -0.50
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < 20
+			}
+		}
+	}
+
+	fort_organization_3 = {
+		random = no
+		sprite = 9
+		command_cap = 10
+
+		land_bunker_effectiveness_factor = 0.15
+		recon_factor_while_entrenched = 0.15
+		repair_speed_bunker_factor = 0.75
+		unit_garrison_design_cost_factor = -0.75
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < 10
 			}
 		}
 	}

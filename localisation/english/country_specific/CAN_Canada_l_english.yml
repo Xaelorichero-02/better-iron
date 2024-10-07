@@ -1,0 +1,109 @@
+﻿l_english:
+ ########################
+ ### CANADA REDUX MOD ###
+ ########################
+ CAN_NEW_democratic:0 "Canada"
+ CAN_NEW_neutrality:0 "Kingdom of Canada"
+ CAN_NEW_communism:0 "Canada"
+ CAN_NEW_fascism:0 "Kingdom of Canada"
+ ########################
+ ########################
+ ########################
+ ########################
+ ### CANADA REDUX MOD ###
+ ########################
+ redux_canada.1.t:0 "God Save the Queen"
+ redux_canada.1.desc:0 "A beautiful young woman has ascended to the Canadian Throne. Queen Margaret I will serve as our head of state and lead this great nation into the turbulent future. We have placed all our trust with Her Majesty. Parliament will continue to serve at Her pleasure. It is also within her power to dissolve the House of Commons and rule Her new Kingdom absolutely. The choice is Hers."
+ redux_canada.1.a:0 "Constitutional Monarchy"
+ redux_canada.1.b:0 "Absolute Monarchy"
+ redux_canada.2.t:0 "Marriage Proposals"
+ redux_canada.2.desc:0 "Her Majesty is unmarried and should remedy that fact sooner rather than later. She is the darling of the civilized world and such admiration has attracted several potential consorts to Ottawa.  Marrying a prince of an established royal house will undoubtedly bring a substantial level of legitimacy to Her Majesty’s new Kingdom."
+ redux_canada.2.a:0 "Prince John of the United Kingdom"
+ redux_canada.2.b:0 "Prince Charles of Belgium"
+ redux_canada.2.c:0 "Prince Bertil of Sweden"
+ redux_canada.3.t:0 "Her Majesty's Canadian Ship"
+ redux_canada.3.desc:0 "Like most of the Commonwealth, Canada used to entrust the defence of its maritime sovereignty to the British Royal Navy. Obviously, we cannot rely on Britain any longer. The Royal Canadian Navy is in a sorry state and will need to be built up rapidly if we are to protect Her Majesty’s Kingdom. Admiral DeWolf suggested building a state-of-the-art flagship to help guide the RCN into modernity."
+ redux_canada.3.a:0 "Battleship"
+ redux_canada.3.b:0 "Aircraft Carrier"
+ ### CONSTITUTIONAL GOVT ###
+ BI_news.9.t:0 "Canada's New Queen"
+ BI_news.9.desc:0 "Not long after it removed itself from the British Monarch, Canada has installed its own royal house and named its new ruler Queen Margaret I of Canada. The origins of the young woman are still unclear, but the Canadian House of Commons passed an act, which transferred the powers of Head of State to the new Canadian monarch. The Canadian Prime Minister will remain as Head of Government and Parliament will continue with its mandate. It is clear, however, that Victoria will serve as Canada’s representative on the international stage."
+ BI_news.9.a:0 "God save the Queen!"
+ BI_news.9.b:0 "Best of luck to her."
+ BI_news.9.c:0 "She will fail."
+ BI_news.9.d:0 "God save King George!"
+ ### ABSOLUTE GOVT ###
+ BI_news.10.t:0 "Canada's New Queen"
+ BI_news.10.desc:0 "Not long after it removed itself from the British Monarch, Canada has installed its own royal house and named its new ruler Queen Margaret I of Canada. The origins of the young woman are still unclear, but the Canadian House of Commons passed an act, which transferred all federal powers to the new Canadian monarch. A new governance structure is being formed in Ottawa, as the Canadian Parliament has been stripped of its mandate. The Canadian Prime Minister has stepped down but will likely remain in an advisory role to the Queen."
+ BI_news.10.a:0 "God save the Queen!"
+ BI_news.10.b:0 "Best of luck to her."
+ BI_news.10.c:0 "She will fail."
+ BI_news.10.d:0 "God save King George!"
+ ### WEDDING ENG ###
+ BI_news.11.t:0 "Royal Wedding in Ottawa"
+ BI_news.11.desc:0 "On Saturday afternoon in Ottawa, Her Majesty Queen Margaret of Canada married Prince John of the United Kingdom. The ceremony was held at Notre-Dame Cathedral on Sussex Drive, after which the newlywed couple travelled by coach to their new residence at Rideau Hall. The wedding was attended by numerous foreign leaders and royals, including members of the Prince Consort’s family. King George did not travel to Ottawa. The streets were lined with proud Canadians wishing good fortune to the happy couple."
+ BI_news.11.a:0 "Happy day."
+ BI_news.11.b:0 "They look happy."
+ BI_news.11.c:0 "Such trivial news."
+ BI_news.11.d:0 "Perhaps this will repair our frayed relations."
+ ### WEDDING BEL ###
+ BI_news.12.t:0 "Royal Wedding in Ottawa"
+ BI_news.12.desc:0 "On Saturday afternoon in Ottawa, Her Majesty Queen Margaret of Canada married Prince Charles of Belgium. The ceremony was held at Notre-Dame Cathedral on Sussex Drive, after which the newlywed couple travelled by coach to their new residence at Rideau Hall. The wedding was attended by numerous foreign leaders and royals, including members of the Prince Consort’s family. His Royal Highness’ elder brother, King Leopold attended the wedding. The Belgian Queen Mother, Elisabeth, was also in Ottawa to witness Her son’s wedding. The streets were lined with proud Canadians wishing good fortune to the happy couple."
+ BI_news.12.a:0 "Happy day."
+ BI_news.12.b:0 "They look happy."
+ BI_news.12.c:0 "Such trivial news."
+ BI_news.12.d:0 "A wonderful match. Bless them."
+ ### WEDDING SWE ###
+ BI_news.13.t:0 "Royal Wedding in Ottawa"
+ BI_news.13.desc:0 "On Saturday afternoon in Ottawa, Her Majesty Queen Victoria of Canada married Prince Bertil of Sweden. The ceremony was held at Notre-Dame Cathedral on Sussex Drive, after which the newlywed couple travelled by coach to their new residence at Rideau Hall. The wedding was attended by numerous foreign leaders and royals, including members of the Prince Consort’s family. King Gustaf and Lady Louise Mountbatten attended the wedding along with Prince Bertil’s elder sister, Princess Ingrid, and Her husband Prince Frederick of Denmark. The streets were lined with proud Canadians wishing good fortune to the happy couple."
+ BI_news.13.a:0 "Happy day."
+ BI_news.13.b:0 "They look happy."
+ BI_news.13.c:0 "Such trivial news."
+ BI_news.13.d:0 "A wonderful match. Bless them."
+ ### FLAGSHIP BB ###
+ BI_news.14.t:0 "HMCS Victoria is Launched"
+ BI_news.14.desc:0 "Her Majesty Queen Victoria was present at the launching of the new Canadian battleship that bears her name. HMCS Victoria was launched at the Halifax shipyards on Thursday and is already turning heads amongst naval officers and shipbuilders. The Victoria is an impressive vessel, destined to be the flagship of the Royal Canadian Navy. She is a new class of battleship, sporting a battery of 16-inch guns to accompany her numerous anti-aircraft and anti-submarine armaments."
+ BI_news.14.a:0 "She will make Canada proud."
+ BI_news.14.b:0 "An impressive vessel."
+ BI_news.14.c:0 "Alert our naval command."
+ ### FLAGSHIP CV ###
+ BI_news.15.t:0 "HMCS Victoria is Launched"
+ BI_news.15.desc:0 "Her Majesty Queen Victoria was present at the launching of the new Canadian battleship that bears her name. HMCS Victoria was launched at the Halifax shipyards on Thursday and is already turning heads amongst naval officers and shipbuilders. The Victoria is an impressive vessel, destined to be the flagship of the Royal Canadian Navy. She is a new class of aircraft carrier, capable of carrying more than a hundred fighter and torpedo aircraft. With the launch of the Victoria, it’s clear that Canada will soon have one of the most powerful carrier groups in the Atlantic."
+ BI_news.15.a:0 "She will make Canada proud."
+ BI_news.15.b:0 "An impressive vessel."
+ BI_news.15.c:0 "Alert our naval command."
+ ### ROYAL TOUR ###
+ BI_news.16.t:0 "Royals Tour Canada"
+ BI_news.16.desc:0 "The Queen and Prince Consort of Canada have completed their multi-week journey across the massive nation. Travelling primarily by train, the royal couple stopped in numerous cities and were met with adoring crowds, eager to catch a glimpse of the newlywed couple. Popular support for the Canadian Monarchy had been significant, but public attitudes have improved even further in the wake of the royal tour. It seems that Canadians are committed to seeing this new monarch succeed. "
+ BI_news.16.a:0 "An excellent act by Her Majesty."
+ BI_news.16.b:0 "Good for them."
+ BI_news.16.c:0 "Why should be care?"
+ ########################
+ ### CANADA REDUX MOD ###
+ ########################
+ CAN_our_own_monarch:0 "Our Own Monarch"
+ CAN_our_own_monarch_desc:0 "As Canadians yearn for independence from Britain, many are not prepared to abandon the monarchial system of government. If King George VI will no longer be our sovereign, then we will need to establish our own."
+ CAN_queen_victoria_ii:0 "Queen Margaret I"
+ CAN_queen_victoria_ii_desc:0 "After much discussion and an extenssive search, Parliament has chosen a new monarch to lead Canada into the future."
+ CAN_royal_wedding:0 "Royal Wedding"
+ CAN_royal_wedding_desc:0 "A number of suitors have come seeking Her Majesty's affections. Marrying a European prince will boost the Canadian Crown's legitimacy and will establish a bond between Canada and whichever country Her Majesty's husband hails from."
+ CAN_canadian_flagship:0 "Canadian Flagship"
+ CAN_canadian_flagship_desc:0 "Canada borders the Atlantic, Pacific and Arctic Oceans. We have historically depended on the British Fleet to protect those coastlines. Queen Victoria's first military act will be to build a modern flagship for Her new navy." 
+ CAN_royal_tour:0 "Royal Tour"
+ CAN_royal_tour_desc:0 "After finishing their honeymoon, the new royal couple are setting out along the Canadian Pacific Railway. They are expected to be greeted by adoring crowds as they stop along their way to British Columbia."
+ CAN_northern_sovereignty:0 "Northern Sovereignty"
+ CAN_northern_sovereignty_desc:0 "Although the Northwest Passage remains impassable to most vessels, there are no measures to deter foreign ships from entering Hudson's Bay. However cold, these lands are part of Her Majesty's Kingdom and will be protected from would-be adversaries."
+ CAN_rcn_modernization_effort:0 "RCN Modernization Effort"
+ CAN_rcn_modernization_effort_desc:0 "The world expects Canada's navy to be made up of antiquated destroyers and cruisers. Let us show the world that we're capable of producing some of the finest vessels."
+ ########################
+ ########################
+ ########################
+ ########################
+ ### CANADA REDUX MOD ###
+ ########################
+ CAN_monarchist_movement:0 "Monarchist Movement"
+ CAN_the_black_devils_idea:0 "Black Devils Brigade"
+ ########################
+ ### CANADA REDUX MOD ###
+ ########################
+ victoria_ii:0 "Queen"

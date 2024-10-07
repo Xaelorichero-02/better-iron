@@ -10,7 +10,6 @@
  modifier_production_cost_max_ship_hull_light:0 "Light Ship Max Cost"
  modifier_production_cost_max_ship_hull_submarine:0 "Submarine Max Cost"
 
-#Fixes from now on
  PAR_rekindle_old_gripes:0 "Beneath the Shadow of the Triple Alliance"
  PAR_rekindle_old_gripes_desc:0 "60% of the population died during the war of the Triple Alliance and our country never recovered. Only expansion can bring stability and prosperity to our people; no longer will we live under the shadow of that cursed alliance."
 
@@ -24,4 +23,13 @@
  YUG_macedonian_opposition_desc:0 "The Macedonians have not quite accepted their identity as Serbs and keep demanding special rights. Political support from Bulgaria no doubt plays a role."
  YUG_macedonian_opposition_1:0 "Mild Macedonian Opposition"
  YUG_macedonian_opposition_1_desc:0 "Through granting some mild political concessions to the Macedonians and ceasing our efforts to enforce a Serbian identity on them, tensions in Macedonia have somewhat eased off for the time."
+ ITA_union_in_the_party:0 "Unity in the Party"
+ ITA_union_in_the_party_desc:1 "The unity within the party is the most important factor for the development of our country towards communism. We must ensure that all members share the same vision, have the same goals and follow the processes established by the party to achieve them."
  elect_anastasia_tt:0 "Elect Queen Anastasia via event."
+
+ ENG_embargo_germany:0 "German Trade Act"
+
+ HUN_claim_galicia:0 "Integrate Galicia"
+ HUN_claim_the_bucovina:0 "Integrate Bucovina"
+
+ CHI_warlord_state_idea_tt:0 "\nThis national spirit is removed upon forming §YChina§! or another formable"

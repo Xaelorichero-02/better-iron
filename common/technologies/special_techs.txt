@@ -1,0 +1,25 @@
+technologies = {
+	mountainous_people_tech = {
+		research_cost = 1
+	
+		# only from starting techs!!! #####
+		allow = {
+			always = no
+		}
+	
+		#If you change these
+		#Change the custom tooltip too: GEN_montainous_people_effect
+		infantry = {
+			mountain = {
+				defence = 0.02
+				movement = 0.05
+			}
+		}
+		mountaineers = {
+			mountain = {
+				attack = 0.05
+				movement = 0.10
+			}
+		}
+	}
+}

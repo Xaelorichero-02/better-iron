@@ -2,8 +2,12 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_frontend_bg"
 		texturefile = "gfx/main_menu.dds"
+		#texturefile = "gfx/loadingscreens/load_1.dds" # Iberian/Egyptian Update
+		#texturefile = "gfx/loadingscreens/load_2.dds" # Chinese Update
+		#texturefile = "gfx/loadingscreens/load_3.dds" # Indochina Update
 		borderSize = { x=0 y=0 }
 		size = { x=1920 y=1440 }
+		#size = { x=1920 y=1080 }
 		tilingCenter = no
 		effectFile = "gfx/FX/buttonstate.shader"
 	}

@@ -28,6 +28,16 @@ country_event = {
 				days = 322
 				random_days = 226
 			}
+			set_global_flag = national_bank_scandal_incoming
+			set_country_flag = christ_dems_gov
+			set_country_flag = not_a_rex_gov
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 500
+			}
 		}
 	}
 	option = {
@@ -53,6 +63,11 @@ country_event = {
 				character = BEL_paul_van_zeeland
 				ideology = conservatism
 			}
+			set_country_flag = libs_gov
+			set_country_flag = not_a_rex_gov
+		}
+		ai_chance = {
+			base = 10
 		}
 	}
 	option = {
@@ -78,6 +93,11 @@ country_event = {
 				character = BEL_paul_van_zeeland
 				ideology = conservatism
 			}
+			set_country_flag = soc_dems_gov
+			set_country_flag = not_a_rex_gov
+		}
+		ai_chance = {
+			base = 10
 		}
 	}
 	option = {
@@ -93,6 +113,10 @@ country_event = {
 			popularity = 0.6
 		}
 		complete_national_focus = BEL_rex_won
+		set_country_flag = rex_gov
+		ai_chance = {
+			base = 10
+		}
 	}
 }
 
@@ -101,7 +125,7 @@ country_event = {
 	id = belgium.2
 	title = belgium.2.t
 	desc = belgium.2.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_BEL_van_zeeland_angry
 	
 	is_triggered_only = yes
 	
@@ -124,6 +148,11 @@ country_event = {
 				ideology = conservatism
 			}
 		}
+		set_country_flag = libs_gov
+		clr_country_flag = christ_dems_gov
+		ai_chance = {
+			base = 10
+		}
 	}
 	option = {
 		name = belgium.2.b
@@ -143,6 +172,13 @@ country_event = {
 				ideology = conservatism
 			}
 		}
+		ai_chance = { # oversimplified but spaak was historically
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 500
+			}
+		}
 	}
 	option = {
 		name = belgium.2.c
@@ -157,11 +193,47 @@ country_event = {
 			popularity = 0.6
 		}
 		complete_national_focus = BEL_rex_won
+		hidden_effect = {
+			set_country_flag = rex_gov
+			clr_country_flag = christ_dems_gov
+			clr_country_flag = not_a_rex_gov
+		}
+		ai_chance = {
+			base = 10
+		}
 	}
 	option = {
-		name = belgium.2.d
+		name = belgium.2.e
 		add_stability = -0.05
 		add_political_power = -250
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = belgium.2.f
+		trigger = {
+			NOT = {
+				has_completed_focus = BEL_befriend_the_pope
+			}
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1936.5.24"
+			election_frequency = 36
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 1
+		}
+		hidden_effect = {
+			set_country_flag = his_majesty_gov
+			clr_country_flag = christ_dems_gov
+		}
+		ai_chance = {
+			base = 10
+		}
 	}
 }
 
@@ -224,13 +296,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			BEL = { news_event = BI_news.3 }
-			FRA = { news_event = BI_news.3 }
-			LUX = { news_event = BI_news.3 }
-			HOL = { news_event = BI_news.3 }
-			GER = { news_event = BI_news.3 }
-			ENG = { news_event = BI_news.3 }
-			ITA = { news_event = BI_news.3 }
+			news_event = BI_news.3
 		}
 	}
 	option = {
@@ -243,7 +309,7 @@ country_event = {
 	id = belgium.6
 	title = belgium.6.t
 	desc = belgium.6.d
-	picture = GFX_report_event_BEL_joining_the_axis
+	picture = GFX_report_event_BEL_van_zeeland
 	
 	is_triggered_only = yes
 	

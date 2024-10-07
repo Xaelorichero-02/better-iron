@@ -5,16 +5,21 @@ state={
 
 	history={
 		owner = ITA
+		victory_points = {
+			1060 1
+		}
+		victory_points = {
+			12025 1
+		}
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = LBA
 
 	}
 
 	provinces={
-		1060 1062 1186 4060 4063 4133 7063 7139 7206 9977 10049 10785 11951 12025 12079 13078 
+		1060 1062 1186 4060 4063 4133 4200 7063 7139 7206 9977 10049 10785 11951 12025 12079 13078 13575 13576 13577 13629 13631 13632 
 	}
 	manpower=8808
 	buildings_max_level_factor=1.000

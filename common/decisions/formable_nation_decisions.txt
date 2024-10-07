@@ -10992,3 +10992,121 @@ german_austria_category = {
 		}
 	}
 }
+
+aragon_category = {
+	
+	reform_aragon = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = ADR
+				original_tag = CAT
+			}
+		}
+
+		available = {
+			165 = { is_controlled_by = ROOT }
+			1011 = { is_controlled_by = ROOT }
+			794 = { is_controlled_by = ROOT }
+			177 = { is_controlled_by = ROOT }
+			167 = { is_controlled_by = ROOT }
+			166 = { is_controlled_by = ROOT }
+		}
+
+		visible = {
+			OR = {
+				original_tag = ADR
+				original_tag = CAT
+			}
+
+			NOT = { has_global_flag = aragon_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = CAT_aragon 
+			
+			IF =  {
+				limit = {
+					NOT = {
+						165 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				165 = { add_core_of = ROOT }
+			}
+
+			IF =  {
+				limit = {
+					NOT = {
+						1011 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1011 = { add_core_of = ROOT }
+			}
+
+			IF =  {
+				limit = {
+					NOT = {
+						794 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				794 = { add_core_of = ROOT }
+			}
+
+			IF =  {
+				limit = {
+					NOT = {
+						177 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				177 = { add_core_of = ROOT }
+			}
+
+			IF =  {
+				limit = {
+					NOT = {
+						167 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				167 = { add_core_of = ROOT }
+			}
+
+			IF =  {
+				limit = {
+					NOT = {
+						166 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				166 = { add_core_of = ROOT }
+			}
+
+			hidden_effect = {
+				set_global_flag = aragon_flag
+
+				news_event = { 
+					id = BI_news.5
+					days = 1
+					random_days = 2
+				}
+
+			}
+		}
+
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+}

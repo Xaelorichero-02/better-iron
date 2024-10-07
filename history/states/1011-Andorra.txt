@@ -1,0 +1,25 @@
+state={
+	id=1011
+	name="STATE_1011"
+
+	history={
+		owner = ADR
+		victory_points = {
+			13588 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ADR
+
+	}
+
+	provinces={
+		13588 
+	}
+	manpower=6176
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

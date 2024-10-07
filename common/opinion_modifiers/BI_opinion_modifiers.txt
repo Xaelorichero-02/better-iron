@@ -16,8 +16,23 @@ opinion_modifiers = {
 	
 	est_claim = { value = -50 }
 	
-	sau_trade_broken = { 
+	sau_trade_broken = {
 		trade = yes
 		value = -75 
+	}
+
+	HUN_german_customs_union = {
+		trade = yes
+		value = 999
+	}
+
+	HUN_diplomacy_supported = {
+		value = 50
+	}
+
+	revolt_organizer = {
+		value = -50
+		months = 36
+		decay = 1
 	}
 }

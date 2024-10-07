@@ -1,5 +1,5 @@
 focus_tree = {
-	id = estonian_focus
+	id = estonian_BI_focus
 	
 	country = {
 		factor = 0
@@ -11,6 +11,11 @@ focus_tree = {
 				has_dlc = "No Step Back"
 			}
 		}
+		modifier = {
+            add = 11
+            tag = EST
+			has_global_flag = EST_BI_tree
+        }
 	}
 	
 	default = no
@@ -478,7 +483,8 @@ focus = {
 				}
 
 		completion_reward = {
-			add_ideas = gender_equality_idea
+			#add_ideas = gender_equality_idea
+			add_ideas = limited_female_service
 		}	
 	}
     focus = {
@@ -1017,7 +1023,7 @@ focus = {
 		#}
 
 		completion_reward = {
-		    add_ideas = fortificationing
+		    add_ideas = CZE_fortification_focus
 			191 = {
 				add_building_construction = {
 					type = bunker
@@ -1832,7 +1838,7 @@ focus = {
 
 		completion_reward = {
 			remove_ideas = economic_crises
-			add_national_unity = 0.05
+			add_stability = 0.05
 		}
 	}
 
@@ -1913,6 +1919,8 @@ focus = {
 
 		completion_reward = {
 			add_ideas = nationalism
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_andres_larka
 		}
 	}
 	focus = {
@@ -1949,6 +1957,9 @@ focus = {
 		completion_reward = {
 			create_wargoal = { type = annex_everything target = LAT }
 			add_state_claim = 12
+			add_state_claim = 810
+			add_state_claim = 808
+			add_state_claim = 809
 			add_state_claim = 190
 		}
 	}
@@ -2005,12 +2016,12 @@ focus = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.3}
-			add_national_unity = -0.1
+			add_stability = -0.1
 		}
 	}
 	focus = {
 		id = EST_create_our_faction
-		icon = GFX_goal_anschluss
+		icon = GFX_focus_EST_estonia_is_scandinavia
 		prerequisite = { focus = EST_spread_democracy }
 		available = {
 			is_puppet = no
@@ -2068,7 +2079,7 @@ focus = {
 
 	focus = {
 		id = EST_invite_others
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_generic_scandinavia_flags
 		prerequisite = { focus = EST_create_our_faction }
 		available = {
 			is_puppet = no
@@ -2113,8 +2124,8 @@ focus = {
 					DEN = {
 						country_event = { id = est.16 days = 1 }
 					}
-	}
-	}
+			}
+		}
 	}
 
 	focus = {
@@ -2155,8 +2166,8 @@ focus = {
 					FIN = {
 						country_event = { id = est.4 days = 1 }
 					}
-	}
-	}
+			}
+		}
 	}
 
 	
@@ -2245,6 +2256,12 @@ focus = {
 		completion_reward = {
 		    add_ideas = blueshirts
 			add_political_power = 50
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_viktor_puskar
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_johan_pitka
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_hjalmar_mae
 		}
 	}
 	focus = {
@@ -2297,9 +2314,11 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = {	FRA_support_the_left_focus }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_johannes_kabin
+			add_ideas = { FRA_support_the_left_focus }
 		    hidden_effect = {				
-			news_event = { days = 1 id = est.19 }				
+				news_event = { days = 1 id = est.19 }				
 			}
 		}	
     }
@@ -2342,6 +2361,12 @@ focus = {
 		completion_reward = {
 		    add_ideas = redshirts
 			set_rule = { can_create_factions = yes }
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_august_jakobson
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_voldemar_voolman
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_henrik_allik
 		}
 	}
 	focus = {
@@ -2469,6 +2494,8 @@ focus = {
 
 		completion_reward = {
 			add_ideas = democratic_influence
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = EST_jaan_tonisson
 			#Increase in Democratic Support
 		}
 	}
@@ -2675,9 +2702,9 @@ focus = {
 		prerequisite = { focus = EST_return_of_vapsid }
 
 		available = {
-		OR {
-			has_government = democratic
-		}
+			OR {
+				has_government = democratic
+			}
 		}
 
 		x = 36
@@ -2693,28 +2720,31 @@ focus = {
 				add_ideas = democratic_leanings
 				add_ai_strategy = {
 					type = alliance
-					id = "back_to_routes"
+					id = "EST"
 					value = 200
 				}
+			}
 			SWE = {
 				add_ideas = democratic_leanings
 				add_ai_strategy = {
 					type = alliance
-					id = "back_to_routes"
+					id = "EST"
 					value = 200
 				}
+			}
 			NOR = {
 				add_ideas = democratic_leanings
 				add_ai_strategy = {
 					type = alliance
-					id = "back_to_routes"
+					id = "EST"
 					value = 200
 				}
+			}
 			DEN = {
 				add_ideas = democratic_leanings
 				add_ai_strategy = {
 					type = alliance
-					id = "back_to_routes"
+					id = "EST"
 					value = 200
 				}
 			}
@@ -2732,11 +2762,12 @@ focus = {
 		}
 		}
 
-		x = 41
-		y = 3
+		x = 35
+		y = 7
 		cost = 10
 		completion_reward = {
 			add_ideas = aid_from_allies
 		}
 	}
 }
+

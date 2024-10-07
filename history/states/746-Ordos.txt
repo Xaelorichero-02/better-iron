@@ -20,14 +20,12 @@ state={
 		}
 
 		1938.10.25 = {
-			controller = JAP
-		}
-		
-		1939.1.1 = {
-			
 			owner = PRC
 			controller = MEN
+		}
 
+		victory_points = {
+			4960 1
 		}
 	}
 	manpower=500000

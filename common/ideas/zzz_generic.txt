@@ -105,6 +105,115 @@ ideas = {
 	# Special ones that can be applied on other countries through focus system.
 	country = {
 
+		GEN_illiteracy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.25
+			}
+
+			research_bonus = {
+				electronics = -0.25
+				nuclear = -0.5
+			}
+		}
+		
+		GEN_illiteracy_2 = {
+
+			name = GEN_illiteracy
+
+			picture = GEN_illiteracy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.10
+			}
+
+			research_bonus = {
+				electronics = -0.10
+				nuclear = -0.25
+			}
+		}
+
+		GEN_mountainous_people = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = GEN_montainous_people_effect
+			}
+		}
+
+		GEN_human_rights = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			rule = {
+				can_join_opposite_factions = no
+				can_create_factions = yes
+			}
+
+			modifier = {
+				drift_defence_factor = 0.2
+				ai_badass_factor = 0.03 # cares for 3% of normal threat
+				ai_desired_divisions_factor = 0.5 
+			}
+		}
+
+		GEN_minimal_wage = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+
 		GEN_berlin_1884 = {
 			
 			allowed = {
@@ -754,14 +863,47 @@ ideas = {
 			removal_cost = -1
 	
 			modifier = {
-				#generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
-				#lend_lease_tension = 0.50
 				send_volunteers_tension = 0.20
 				guarantee_tension = 1.0
 				embargo_threshold_factor = 2.5
 				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
 				ai_get_ally_desire_factor = -100
+			}
+		}
+
+		neutrality_idea_militarization = {
+
+			name = neutrality_idea
+			picture = neutrality_idea
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				join_faction_tension = 1.00
+				send_volunteers_tension = 0.25
+				guarantee_tension = 1.0
+				embargo_threshold_factor = 2.5
+				ai_badass_factor = 0.02    # Will receive 2% of the threat from others
+				ai_get_ally_desire_factor = -100
+				production_speed_arms_factory_factor = 0.33
+				production_speed_bunker_factor = 0.33
+				production_speed_coastal_bunker_factor = 0.33
+				production_speed_naval_base_factor = 0.33
+				production_speed_air_base_factor = 0.33
 			}
 		}
 	

@@ -1,0 +1,27 @@
+state={
+	id=1010
+	name="STATE_1010"
+
+	history={
+		owner = SIK
+		add_core_of = SIK
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			4973 1 
+		}
+
+	}
+
+	provinces={
+		4973 10911 13636 13637 13640 13641 13644 13645 13653 13657 
+	}
+	manpower=328000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

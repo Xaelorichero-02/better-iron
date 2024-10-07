@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			10833 1 
+			13524 1 
 		}
 		victory_points = {
 			5068 1 
@@ -14,7 +14,7 @@ state={
 		add_core_of = SOM
 		buildings = {
 			infrastructure = 2
-			10833 = {
+			13524 = {
 				naval_base = 1
 
 			}

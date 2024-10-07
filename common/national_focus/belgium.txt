@@ -16,7 +16,7 @@ focus_tree = {
 
 	focus = {
 		id = BEL_catholics_won
-		icon = GFX_focus_mex_restore_the_army_of_christ
+		icon = GFX_goal_GEN_chrtistianity
 		x = 1
 		y = 0
 		prerequisite = { }
@@ -61,6 +61,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = christ_dems_gov
 		}
 		bypass = {
 			has_idea = neutrality_idea
@@ -93,6 +94,153 @@ focus_tree = {
 				ENG = { news_event = BI_news.2 }
 				ITA = { news_event = BI_news.2 }
 			}
+		}
+	}
+
+	focus = {
+		id = BEL_swiss_model
+		icon = GFX_goal_SWI_defense
+		x = 1
+		y = 2
+		relative_position_id = BEL_return_to_neutral_foreign_policy
+
+		prerequisite = { focus = BEL_return_to_neutral_foreign_policy }
+		mutually_exclusive = { }
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1.5
+		}
+
+		available = {
+			has_country_flag = christ_dems_gov
+		}
+		bypass = {
+			has_idea = neutrality_idea
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = neutrality_idea
+				add_idea = neutrality_idea_militarization
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_prepare_for_the_inevitable
+		text = ENG_prepare_for_the_inevitable
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 2
+		relative_position_id = BEL_swiss_model
+
+		prerequisite = { focus = BEL_swiss_model }
+		prerequisite = { focus = BEL_humanism }
+		mutually_exclusive = { }
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1.5
+		}
+
+		available = {
+			has_country_flag = christ_dems_gov
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = ENG_prepare_for_the_inevitable_idea
+		}
+	}
+
+	focus = {
+		id = BEL_befriend_the_pope
+		icon = GFX_focus_generic_pope
+		x = -1
+		y = 1
+		relative_position_id = BEL_return_to_neutral_foreign_policy
+
+		prerequisite = { focus = BEL_return_to_neutral_foreign_policy }
+		mutually_exclusive = { }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			has_country_flag = christ_dems_gov
+			NOT = {
+				has_country_flag = his_majesty_gov
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			if = {
+				limit = {
+					date>1939.2.10
+				}
+				show_ideas_tooltip = BEL_pius_xii
+				else = {
+					show_ideas_tooltip = BEL_pius_xi
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_his_holyness
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 0
+		y = 1
+		relative_position_id = BEL_befriend_the_pope
+
+		prerequisite = { focus = BEL_befriend_the_pope }
+		mutually_exclusive = { }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1.5
+		}
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			unlock_decision_category_tooltip = BEL_pope_king_schism
 		}
 	}
 
@@ -143,6 +291,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = libs_gov
 		}
 		bypass = {
 		}
@@ -160,6 +309,121 @@ focus_tree = {
 				add_building_construction = { type = bunker province = 3516 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 9418 level = 1 instant_build = yes }
 				add_building_construction = { type = bunker province = 13081 level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_laissez_faire
+		text = FRA_laissez_faire
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		relative_position_id = BEL_minor_forts_in_liege
+
+		prerequisite = { focus = BEL_threath_of_rex focus = BEL_threath_of_rex_libs }
+		prerequisite = { focus = BEL_minor_forts_in_liege }
+		mutually_exclusive = { }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1.5
+		}
+
+		available = {
+			has_country_flag = libs_gov
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_laissez_faire
+				category = industry
+				uses = 3
+				bonus = 1.5
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_humanism
+		icon = GFX_goal_GEN_political
+		x = -1
+		y = 1
+		relative_position_id = BEL_laissez_faire
+
+		prerequisite = { focus = BEL_laissez_faire focus = BEL_swiss_model }
+		mutually_exclusive = { }
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1.5
+		}
+
+		available = {
+			OR = {
+				has_country_flag = libs_gov
+				has_country_flag = christ_dems_gov
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = GEN_human_rights
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BEL_democratic_principles
+		icon = GFX_goal_support_democracy
+		x = 1
+		y = 1
+		relative_position_id = BEL_humanism
+
+		prerequisite = { focus = BEL_humanism }
+		prerequisite = { focus = BEL_laissez_faire }
+		mutually_exclusive = { }
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1.5
+		}
+
+		available = {
+			has_country_flag = libs_gov
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
 			}
 		}
 	}
@@ -197,8 +461,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BEL_minimal_wage_focus
-		icon = GFX_goal_generic_territory_or_war
+		id = BEL_minimal_wage
+		icon = GFX_goal_GEN_support_workers
 		x = 0
 		y = 1
 		relative_position_id = BEL_labour_won
@@ -213,6 +477,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = soc_dems_gov
 		}
 		bypass = {
 		}
@@ -224,7 +489,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = BEL_minimal_wage
+			add_ideas = GEN_minimal_wage
 		}
 	}
 
@@ -235,7 +500,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BEL_return_to_neutral_foreign_policy
 
-		prerequisite = { focus = BEL_minor_forts_in_liege focus = BEL_return_to_neutral_foreign_policy focus = BEL_minimal_wage_focus }
+		prerequisite = { focus = BEL_minor_forts_in_liege focus = BEL_return_to_neutral_foreign_policy focus = BEL_minimal_wage }
 		mutually_exclusive = { focus = BEL_threath_of_rex_libs }
 
 		cost = 7.2
@@ -245,6 +510,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = not_a_rex_gov
 		}
 		bypass = {
 		}
@@ -278,7 +544,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BEL_minor_forts_in_liege
 
-		prerequisite = { focus = BEL_minor_forts_in_liege focus = BEL_return_to_neutral_foreign_policy focus = BEL_minimal_wage_focus }
+		prerequisite = { focus = BEL_minor_forts_in_liege focus = BEL_return_to_neutral_foreign_policy focus = BEL_minimal_wage }
 		mutually_exclusive = { focus = BEL_threath_of_rex }
 
 		cost = 7.2
@@ -288,6 +554,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = not_a_rex_gov
 		}
 		bypass = {
 		}
@@ -308,9 +575,9 @@ focus_tree = {
 		icon = GFX_goal_GEN_new_deal
 		x = 0
 		y = 1
-		relative_position_id = BEL_minimal_wage_focus
+		relative_position_id = BEL_minimal_wage
 
-		prerequisite = { focus = BEL_minimal_wage_focus }
+		prerequisite = { focus = BEL_minimal_wage }
 		mutually_exclusive = { }
 
 		cost = 10
@@ -320,6 +587,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_country_flag = soc_dems_gov
 		}
 		bypass = {
 		}
@@ -651,6 +919,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			set_cosmetic_tag = HOL_benelux_unified
 			create_wargoal = {
 				target = HOL
 				type = take_state_focus
@@ -796,6 +1065,55 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_tooltip = BEL_integrate_moselland
 			unlock_decision_tooltip = BEL_integrate_northern_rhineland
+			unlock_decision_tooltip = BEL_integrate_niederpfalz
+			unlock_decision_tooltip = BEL_integrate_saarland
+		}
+	}
+
+	focus = {
+		id = BEL_burgundian_claim
+		icon = GFX_goal_BEL_burgundy
+		x = 1
+		y = 1
+		relative_position_id = BEL_german_ally
+
+		prerequisite = { focus = BEL_german_ally focus = BEL_expand_to_the_rhine }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1.5
+		}
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			unlock_decision_tooltip = BEL_integrate_picardy
+			unlock_decision_tooltip = BEL_integrate_upper_normandy
+			unlock_decision_tooltip = BEL_integrate_champagne
+			unlock_decision_tooltip = BEL_integrate_paris
+			unlock_decision_tooltip = BEL_integrate_franche_comte
+			unlock_decision_tooltip = BEL_integrate_sedan
+			unlock_decision_tooltip = BEL_integrate_burgundy
+			unlock_decision_tooltip = BEL_integrate_rhone
+			unlock_decision_tooltip = BEL_integrate_alpes
+			if = {
+				limit = {
+					has_completed_focus = BEL_expand_to_the_rhine
+				}
+				unlock_decision_tooltip = BEL_integrate_alsace_lorraine
+				unlock_decision_tooltip = BEL_integrate_nanzig
+				unlock_decision_tooltip = BEL_integrate_geradmer
+			}
 		}
 	}
 
@@ -1494,7 +1812,7 @@ focus_tree = {
 				state = 889
 			}
 			add_resource = {
-				type = aluminum
+				type = aluminium
 				amount = 3
 				state = 889
 			}
@@ -1511,7 +1829,7 @@ focus_tree = {
 
 	focus = {
 		id = BEL_belgian_congolese_union
-		icon = GFX_goal_generic_production2
+		icon = GFX_goal_BEL_congo_union
 		x = 1
 		y = 1
 		relative_position_id = BEL_katanga_mines
@@ -1538,6 +1856,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			set_cosmetic_tag = BEL_COG
 			if = {
 				limit = {
 					BCM = {
@@ -1589,7 +1908,7 @@ focus_tree = {
 
 	focus = {
 		id = BEL_cameroon_colony
-		icon = GFX_focus_generic_rubber
+		icon = GFX_focus_attack_france
 		x = 1
 		y = 1
 		relative_position_id = BEL_african_journey
@@ -1623,7 +1942,7 @@ focus_tree = {
 
 	focus = {
 		id = BEL_cameroon_works
-		icon = GFX_focus_generic_rubber
+		icon = GFX_goal_generic_production2
 		x = 0
 		y = 1
 		relative_position_id = BEL_cameroon_colony
@@ -1653,6 +1972,697 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESOURCES FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			773 = { upgrade_state_category_3 = yes }
+			774 = { upgrade_state_category_2 = yes }
+			660 = { upgrade_state_category_2 = yes }
+			539 = { upgrade_state_category_2 = yes }
+			772 = { upgrade_state_category_2 = yes }
+		}
+	}
+
+	focus = {
+		id = BEL_van_den_bergen_plan
+		icon = GFX_goal_BEL_van_der_bergen
+		x = 26
+		y = 0
+
+		prerequisite = { }
+		mutually_exclusive = { }
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = BEL_edouard_van_den_bergen
+		}
+	}
+
+	focus = {
+		id = BEL_reinforce_the_german_border
+		icon = GFX_goal_fortify_the_westwall
+		x = -2
+		y = 1
+		relative_position_id = BEL_van_den_bergen_plan
+
+		prerequisite = { focus = BEL_van_den_bergen_plan }
+		mutually_exclusive = { }
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_completed_focus = BEL_german_ally
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { }
+		completion_reward = {
+			979 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 3488
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3488
+					instant_build = yes
+				}
+			}
+			980 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 13472
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				path = { 11519 13472 13471 3488 }
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_reinforce_the_french_border
+		icon = GFX_goal_fortify_the_westwall
+		x = 2
+		y = 1
+		relative_position_id = BEL_van_den_bergen_plan
+
+		prerequisite = { focus = BEL_van_den_bergen_plan }
+		mutually_exclusive = { }
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_completed_focus = BEL_franco_belgian_alliance
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { }
+		completion_reward = {
+			983 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 13474
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 13474
+					instant_build = yes
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 9536
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9536
+					instant_build = yes
+				}
+			}
+			983 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 9418
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9418
+					instant_build = yes
+				}
+			}
+			982 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9444
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				path = { 13474 6446 6560 }
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_equipment_effort
+		text = equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BEL_van_den_bergen_plan }
+		x = -1
+		y = 2
+		relative_position_id = BEL_van_den_bergen_plan
+		cost = 7.2
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_motorization_effort
+		text = motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = BEL_van_den_bergen_plan }
+		bypass = { has_tech = motorised_infantry }
+		x = 1
+		y = 2
+		relative_position_id = BEL_van_den_bergen_plan
+		cost = 7.2
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_doctrine_effort
+		text = doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BEL_van_den_bergen_plan }
+		x = 0
+		y = 1
+		relative_position_id = BEL_van_den_bergen_plan
+		cost = 7.2
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_equipment_effort_2
+		text = equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = BEL_equipment_effort }
+		x = 0
+		y = 2
+		relative_position_id = BEL_equipment_effort
+		cost = 7.2
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_mechanization_effort
+		text = mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = BEL_motorization_effort }
+		x = 0
+		y = 2
+		relative_position_id = BEL_motorization_effort
+		cost = 7.2
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_doctrine_effort_2
+		text = doctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BEL_doctrine_effort }
+		x = 0
+		y = 2
+		relative_position_id = BEL_doctrine_effort
+		cost = 7.2
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_equipment_effort_3
+		text = equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = BEL_equipment_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = BEL_equipment_effort_2
+		cost = 7.2
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_armor_effort
+		text = armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = BEL_mechanization_effort }
+		x = 0
+		y = 1
+		relative_position_id = BEL_mechanization_effort
+		cost = 7.2
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_special_forces
+		text = special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = BEL_equipment_effort_3 }
+		prerequisite = { focus = BEL_doctrine_effort_2 }
+		prerequisite = { focus = BEL_armor_effort }
+		x = 1
+		y = 1
+		relative_position_id = BEL_equipment_effort_3
+		cost = 7.2
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_aviation_effort
+		text = aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		x = 21
+		y = 0
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_fighter_focus
+		text = fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = BEL_aviation_effort }
+		mutually_exclusive = { focus = BEL_bomber_focus }
+		x = -1
+		y = 1
+		relative_position_id = BEL_aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_bomber_focus
+		text = bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BEL_aviation_effort }
+		mutually_exclusive = { focus = BEL_fighter_focus }
+		x = 1
+		y = 1
+		relative_position_id = BEL_aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_aviation_effort_2
+		text = aviation_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BEL_bomber_focus focus = fighter_focus }
+		x = -1
+		y = 1
+		relative_position_id = BEL_bomber_focus
+		cost = 10
+
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_CAS_effort
+		text = CAS_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = BEL_aviation_effort_2 }
+		prerequisite = { focus = BEL_van_den_bergen_plan }
+		x = 2
+		y = 1
+		relative_position_id = BEL_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_rocket_effort
+		text = rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = BEL_aviation_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = BEL_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BEL_NAV_effort
+		text = NAV_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = BEL_aviation_effort_2 }
+		prerequisite = { focus = BEL_naval_effort }
+		x = -2
+		y = 1
+		relative_position_id = BEL_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
 		}
 	}
 

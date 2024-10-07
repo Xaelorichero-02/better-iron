@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_empty_portrait"
+		textureFile = "gfx/leaders/empty_for_portrait_change.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_button"
+		textureFile = "gfx/interface/topbar/portrait_button.dds"
+	}
+}

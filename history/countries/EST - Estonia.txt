@@ -2,13 +2,19 @@
 
 oob = "EST_1936"
 if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "EST_1936_naval_mtg"
+	else = {
+		set_naval_oob = "EST_1936_naval_legacy"
+	}
+}
+if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "EST_1936_air_bba"
+	set_air_oob = "EST_1936_air_bba"
 	else = {
 		set_air_oob = "EST_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
-
 		}
 	}
 }
@@ -23,10 +29,20 @@ add_ideas = {
 	limited_conscription
 }
 IF = {
-	limit = { has_dlc = "No Step Back" }
+	limit = { 
+		has_dlc = "No Step Back"
+	}
 	add_ideas = {
 		democratic_opposition
 		EST_vaps_idea_1
+	}
+	set_variable = {
+		var = vaps_days_var
+		value = 80
+	}
+	set_variable = {
+		var = vaps_crackdown_var
+		value = 360
 	}
 	else = {
 		add_ideas = {
@@ -57,29 +73,16 @@ recruit_character = EST_boris_kumm
 recruit_character = EST_august_rei
 recruit_character = EST_jaan_anvelt
 recruit_character = EST_johan_laidoner
-
-IF = { 
-	limit = { has_dlc = "No Step Back"}
-	recruit_character = EST_august_jakobson
-	recruit_character = EST_viktor_puskar
-	recruit_character = EST_voldemar_voolman
-	recruit_character = EST_henrik_allik
-	recruit_character = EST_johan_pitka
-	recruit_character = EST_hjalmar_mae
-	recruit_character = EST_aleksander_jaakson
-	recruit_character = EST_herbert_brede
-	recruit_character = EST_otto_heinze
-}
-
-set_variable = {
-	var = vaps_days_var
-	value = 80
-}
-
-set_variable = {
-	var = vaps_crackdown_var
-	value = 360
-}
+recruit_character = EST_august_jakobson
+recruit_character = EST_aleksander_jaakson
+recruit_character = EST_herbert_brede
+recruit_character = EST_otto_heinze
+recruit_character = EST_viktor_puskar
+recruit_character = EST_voldemar_voolman
+recruit_character = EST_henrik_allik
+recruit_character = EST_johan_pitka
+recruit_character = EST_hjalmar_mae
+recruit_character = EST_hermann_salza
 
 set_technology = {
 	infantry_weapons = 1
@@ -142,6 +145,27 @@ set_convoys = 5
 		complete_national_focus = BALTIC_ford_motors
 		complete_national_focus = BALTIC_crossley_motors
 		complete_national_focus = BALTIC_natural_resources
+		else = {
+			complete_national_focus = EST_people_first
+			complete_national_focus = EST_strengthen_the_government
+			complete_national_focus = EST_reform_government
+			complete_national_focus = EST_stay_neutral
+			complete_national_focus = EST_protect_our_borders
+			complete_national_focus = EST_armed_neutrality
+			complete_national_focus = EST_deterrence
+			complete_national_focus = EST_the_four_year_plan
+			complete_national_focus = EST_build_better_capital
+			complete_national_focus = EST_more_civilian_factories
+			complete_national_focus = EST_invest_in_the_military
+			complete_national_focus = EST_develop_our_railroads
+			complete_national_focus = EST_prepare_for_war
+			complete_national_focus = EST_the_defence
+			complete_national_focus = EST_standardization_of_equipment
+			complete_national_focus = EST_protect_against_the_red_army
+			complete_national_focus = EST_air_base_expansion
+			complete_national_focus = EST_build_paldiski_port
+			complete_national_focus = EST_expand_port_paldiski
+		}
 	}
 	
 	oob = "EST_1939"
@@ -238,25 +262,23 @@ set_popularities = {
 
 
 ### VARIANTS ###
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Kalev Class"				
-			type = ship_hull_submarine_2
-			name_group = EST_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = ship_mine_layer_sub
-			}
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	# Ship variants #
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = { # were in 1939 but the subs were already ordered for production in 1934
+		name = "Kalev Class"
+		type = ship_hull_submarine_2
+		name_group = EST_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
 		}
 	}
 }

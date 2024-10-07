@@ -1,0 +1,35 @@
+
+state={
+	id=736
+	name="STATE_736"
+
+	history={
+		owner = ITA
+		victory_points = {
+			6626 5 
+		}
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+			arms_factory = 1
+			6626 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = ITA
+		add_core_of = YUG
+		add_core_of = SLV
+		add_core_of = LBV
+
+	}
+
+	provinces={
+		599 6626 11595 13604 
+	}
+	manpower=1038159
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

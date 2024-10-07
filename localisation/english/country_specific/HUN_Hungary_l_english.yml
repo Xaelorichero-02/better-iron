@@ -1,4 +1,17 @@
 ﻿l_english:
+ HUN_autarky_idea:0 "Autarky"
+ HUN_king_missing_fake:0 "A Kingdom Without a King"
+
+ HUN_radical_autarky:0 "Radical Autarky"
+ HUN_radical_autarky_desc:0 "To stimulate economic growth we have to produce as much as possible and to export as much as possible."
+ HUN_collaborate_with_the_germans:0 "Draw Closer To Germany"
+ HUN_horthys_dictatorship:0 "Horthy's Dictatorship"
+ HUN_support_british_diplomacy:0 "Pro-British Diplomacy"
+ HUN_join_allies_horthy:0 "Join the Allies"
+ HUN_join_allies_horthy_desc:0 "Our leader Admiral Horthy is now in a difficult geopolitical situation. On one side there's the expansionist Germany and on the another one a communist superpower, the Sovet Union which annexed the Baltics after 'wanting' to protect them. Currently our best choise is to side with the Allies."
+ HUN_customs_union_with_germany:0 "Establish Customs Union with Germany"
+ HUN_dismantle_the_kingdom:0 "Dismantle the Kingdom"
+#Lukko14's original cancelled stuff
  HUN_Start_Army_Exercises:0 "Start Army Exercises"
  HUN_Start_Army_Exercises_desc:0 "Start Army Exercises" 
  HUN_Offensive_Doctrine_Reform:0 "Offensive Doctrine Reform"

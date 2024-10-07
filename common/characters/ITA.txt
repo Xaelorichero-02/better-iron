@@ -1040,8 +1040,8 @@ characters = {
 		name = ITA_giuseppe_fioravanzo
 		portraits = {
 			army = {
-				large = GFX_portrait_ITA_giuseppe_fioravanzo
-				small = GFX_portrait_ITA_giuseppe_fioravanzo_small
+				large = "gfx/leaders/ITA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
+				small = "gfx/advisors/ITA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
 			}
 		}
 
@@ -1109,8 +1109,8 @@ characters = {
 		name = ITA_angelo_iachino
 		portraits = {
 			navy = {
-				small = GFX_idea_angelo_iachino
-				large = GFX_portrait_ITA_angelo_iachino
+				large = "gfx/leaders/ITA/Portrait_Italy_Angelo_Iachino.dds"
+				small = "gfx/advisors/ITA/Portrait_Italy_Angelo_Iachino.dds"
 			}
 		}
 
@@ -1121,9 +1121,6 @@ characters = {
 			ledger = navy
 			allowed = {
 				ITA_is_italian_tag = yes
-			}
-			available = {
-				has_government = fascism
 			}
 			traits = { naval_theorist }
 		}
@@ -1136,7 +1133,6 @@ characters = {
 			maneuvering_skill = 3
 			coordination_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
