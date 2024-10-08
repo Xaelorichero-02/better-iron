@@ -1,0 +1,237 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CHI_INFLATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+### search_filters = {FOCUS_FILTER_TFV_AUTONOMY}
+### search_filters = {FOCUS_FILTER_MEX_CHURCH_AUTHORITY}
+### search_filters = {FOCUS_FILTER_MEX_CAUDILLO_REBELLION}
+
+focus_tree = {
+	id = mexican_tree
+	
+	country = {
+		factor = 0
+		#modifier = {
+		#	add = 10
+		#	tag = MEX
+		#}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 70 y = 1100 }
+
+	focus = {
+		id = MEX_man_of_the_people
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 15
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+
+		mutually_exclusive = {
+			focus = MEX_leftist_rethoric
+			focus = MEX_glories_of_the_past
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = MEX_leftist_rethoric
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 25
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		mutually_exclusive = {
+			focus = MEX_man_of_the_people
+			focus = MEX_glories_of_the_past
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = internationalism
+		}
+	}
+
+	focus = {
+		id = MEX_glories_of_the_past
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 40
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		mutually_exclusive = {
+			focus = MEX_man_of_the_people
+			focus = MEX_leftist_rethoric
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_country_leader_role = {
+				character = MEX_regency_council
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MEX_iturbide
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -5
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		relative_position_id = MEX_glories_of_the_past
+
+		prerequisite = {
+			focus = MEX_glories_of_the_past
+		}
+
+		mutually_exclusive = {
+			focus = MEX_habsburg_candidate
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_country_leader_role = {
+				character = MEX_regency_council
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MEX_habsburg_candidate
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 5
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		relative_position_id = MEX_glories_of_the_past
+
+		prerequisite = {
+			focus = MEX_glories_of_the_past
+		}
+
+		mutually_exclusive = {
+			focus = MEX_iturbide
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_country_leader_role = {
+				character = MEX_regency_council
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
+	}
+	
+}

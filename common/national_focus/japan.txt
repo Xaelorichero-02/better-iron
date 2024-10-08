@@ -1,10 +1,10 @@
 ﻿focus_tree = {
-	id = japan_wtt_focus
+	id = japan_focus
 	
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 10
 			tag = JAP
 		}
 	}
