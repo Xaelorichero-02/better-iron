@@ -2,6 +2,95 @@ ideas = {
 
 	country = {
 
+		CZE_the_czech_duty = {
+
+			picture = idea_generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				guarantee_cost = -0.75
+				guarantee_tension = -0.15
+			}
+		}
+
+		CZE_the_second_front = {
+
+			picture = idea_hol_liberation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.15
+				resistance_growth_on_our_occupied_states = 0.1
+			}
+		}
+
+		CZE_offensive_army = {
+
+			name = FRA_army_of_aggression_focus
+
+			picture = generic_acquire_tanks
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+
+		
+		CZE_offensive_army_2 = {
+
+			name = FRA_army_of_aggression_focus
+
+			picture = generic_acquire_tanks
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.1
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+
 		CZE_sokol_movement = {
 
 			allowed = {

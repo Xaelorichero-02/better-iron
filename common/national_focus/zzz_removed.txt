@@ -145,38 +145,37 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CZE_rapprochement_with_hungary
-		icon = GFX_goal_GEN_befriend_hungary
-		#prerequisite = { focus = CZE_security_council }
-		#mutually_exclusive = { focus = CZE_deal_with_hungary }
-		x = -2
+		id = CZE_german_puppet
+		icon = GFX_focus_CZE_german_puppet
+		#prerequisite = { focus = CZE_deliver_sudetenland }
+		#mutually_exclusive = { focus = CZE_german_ally focus = CZE_german_minor_ally }
+		x = 0
 		y = 1
-		#relative_position_id = CZE_security_council
-	
+		relative_position_id = CZE_deliver_sudetenland
+
 		cost = 10
-	
+
 		ai_will_do = {
-			factor = 40
+			factor = 90
 		}
-	
+
 		available = {
-			NOT = {
-				is_in_faction_with = HUN
-			}
-			HUN = { exists = yes }
-			HUN = { is_subject = no }
+			GER = { exists = yes }
+			GER = { is_subject = no }
+			NOT = { has_war_with = GER }
 		}
-	
+
 		bypass = {
-	
+			is_subject_of = GER
 		}
-	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
-	
+		available_if_capitulated = yes
+
 		completion_reward = {
-			HUN = { country_event = { hours = 1 id = czech.32 } }
+			GER = { country_event = { hours = 1 id = czech.19 } }
 		}
 	}
+
 }

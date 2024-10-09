@@ -1,2 +1,5 @@
 ﻿l_english:
  SMB_special_forces_option_2_tt:0 "Any State:\n  Is owned and controlled by [ROOT.GetFlag][ROOT.GetName]"
+ rule_declare_wars:0 "Can declare wars while subject: §GYes.§!"
+ rule_justify_democratic:0 "Can justify war in countries who have not generated world tension: §GYes.§!"
+ rule_guarantee_others_lower_tension:0 "Can guarantee other ideologies and lowers world tension when guaranteeing: §GYes.§!"

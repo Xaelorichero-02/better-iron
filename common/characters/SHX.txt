@@ -173,8 +173,11 @@ characters={
 			legacy_id=-1
 			visible = {
 				has_government = communism
-				PRC = {
-					exists = no
+				OR = {
+					has_completed_focus = SHX_save_mao_zedong
+					PRC = {
+						exists = no
+					}
 				}
 			}
 		}

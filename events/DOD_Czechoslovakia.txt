@@ -1,55 +1,63 @@
 ﻿add_namespace = czech
 
-#empty events 1 2 3 16 17 18 25 26 27 28 29 30
+#empty events 16 17 18 25 26 27 28 29 30
 
+# alliance ibañez
 country_event = {
 	id = czech.1
 	title = czech.1.t
 	desc = czech.1.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_canadian_soldiers
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = czech.1.a #yes
-		ai_chance = {
-			factor = 80
+	option = { #
+		name = czech.1.a
+		ai_chance = { 
+			base = 1
 		}
+		CZE = { diplomatic_relation = { country = ROOT relation = non_aggression_pact } }
+		CZE = { diplomatic_relation = { country = ROOT relation = guarantee  } }
+		ROOT = { diplomatic_relation = { country = CZE relation = guarantee  } }
+		CZE = { country_event = czech.2 }
 	}
-	
-	option = {
+
+	option = { #
 		name = czech.1.b
-		ai_chance = {
-			factor = 20
+		ai_chance = { 
+			base = 0
 		}
+		CZE = { country_event = czech.3 }
 	}
 }
 
+# it accepts
 country_event = {
 	id = czech.2
-	title = czech.1.t
+	title = czech.2.t
 	desc = czech.2.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_rally_3
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = excellent
-
+		name = czech.2.a
+		ai_chance = { base = 100 }
 	}
 }
 
+# it refuses
 country_event = {
 	id = czech.3
-	title = czech.1.t
+	title = czech.3.t
 	desc = czech.3.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_generic_rally_3
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = czech.3.a
-
+		ai_chance = { base = 100 }
 	}
 }
 

@@ -211,4 +211,14 @@ leader_traits = {
 		}
 	}
 
+	royal_lawyer = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

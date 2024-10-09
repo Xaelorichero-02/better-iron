@@ -1,5 +1,13 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_goal_GEN_anti_communism"
+		texturefile = "gfx/interface/goals/GEN_anti_communism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_peace"
+		texturefile = "gfx/interface/goals/GEN_peace.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_GEN_agriculture"
 		texturefile = "gfx/interface/goals/GEN_agriculture.png"
 	}
@@ -100,6 +108,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GEN_soviet_union.png"
 	}
 
+	#Austria
+
+	SpriteType = {
+		name = "GFX_goal_AUS_defense_of_the_fatherland"
+		texturefile = "gfx/interface/goals/AUS_defense_of_the_fatherland.png"
+	}
+
 	#Belgium
 
 	SpriteType = {
@@ -160,35 +175,35 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_CZE_industry"
-		texturefile = "gfx/interface/goals/CZE_industry.dds"
+		texturefile = "gfx/interface/goals/CZE_industry.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_legion"
-		texturefile = "gfx/interface/goals/CZE_legion.dds"
+		texturefile = "gfx/interface/goals/CZE_legion.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_defense"
-		texturefile = "gfx/interface/goals/CZE_defense.dds"
+		texturefile = "gfx/interface/goals/CZE_defense.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_defense_2"
-		texturefile = "gfx/interface/goals/CZE_defense_2.dds"
+		texturefile = "gfx/interface/goals/CZE_defense_2.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_global_arms_export"
-		texturefile = "gfx/interface/goals/CZE_global_arms_export.dds"
+		texturefile = "gfx/interface/goals/CZE_global_arms_export.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_sokol"
-		texturefile = "gfx/interface/goals/CZE_sokol.dds"
+		texturefile = "gfx/interface/goals/CZE_sokol.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_NOF"
-		texturefile = "gfx/interface/goals/CZE_NOF.dds"
+		texturefile = "gfx/interface/goals/CZE_NOF.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_slovak_rebelion"
-		texturefile = "gfx/interface/goals/CZE_slovak_rebelion.dds"
+		texturefile = "gfx/interface/goals/CZE_slovak_rebelion.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_CZE_air"
@@ -201,6 +216,18 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_CZE_navy"
 		texturefile = "gfx/interface/goals/CZE_navy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CZE_jail"
+		texturefile = "gfx/interface/goals/CZE_jail.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CZE_west_slavic_union"
+		texturefile = "gfx/interface/goals/CZE_west_slavic_union.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CZE_zapadoslavia"
+		texturefile = "gfx/interface/goals/CZE_zapadoslavia.png"
 	}
 
 	#Egypt
@@ -335,6 +362,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_POL_coa"
 		texturefile = "gfx/interface/goals/POL_coa.dds"
+	}
+
+	#Russia/USSR
+
+	SpriteType = {
+		name = "GFX_goal_SOV_imperial_army"
+		texturefile = "gfx/interface/goals/SOV_imperial_army.png"
 	}
 
 	#Spain

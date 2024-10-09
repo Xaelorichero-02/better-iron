@@ -37,17 +37,17 @@ characters={
 		}
 	}
 
-	CZE_frantishek_havlik={
-		name=CZE_frantishek_havlik
+	CZE_maximilian_lobkowicz={
+		name="Maximilian von Lobkowicz"
 		portraits={
 			civilian={
-				large="gfx/leaders/CZE/Portrait_Czechoslovakia_Frantisek_Havlik.dds"
+				large="gfx/leaders/CZE/Portrait_Czechoslovakia_Maxmilian_Lobkowicz.dds"
 			}
 		}
 		country_leader={
-			ideology=oligarchism
-			traits={ eager_collaborator captain_of_industry }
-			expire="1942.1.1.12"
+			ideology=despotism
+			traits={ royal_lawyer }
+			expire="1965.1.1.1"
 			id=-1
 		}
 	}
@@ -82,6 +82,21 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+
+	CZE_frantishek_havlik={
+		name=CZE_frantishek_havlik
+		portraits={
+			civilian={
+				large="gfx/leaders/CZE/Portrait_Czechoslovakia_Frantisek_Havlik.dds"
+			}
+		}
+		#country_leader={
+		#	ideology=oligarchism
+		#	traits={ eager_collaborator captain_of_industry }
+		#	expire="1942.1.1.12"
+		#	id=-1
+		#}
 	}
 
 	CZE_vojtyech_luzha={

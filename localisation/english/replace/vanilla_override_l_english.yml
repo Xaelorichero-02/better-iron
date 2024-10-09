@@ -33,3 +33,14 @@
  HUN_claim_the_bucovina:0 "Integrate Bucovina"
 
  CHI_warlord_state_idea_tt:0 "\nThis national spirit is removed upon forming §YChina§! or another formable"
+
+ czech.1.t:0 "[FROM.GetLeader] offers a defensive alliance"
+ czech.1.d:0 "[CZE.GetLeader] has approached [ROOT.GetLeader] directly proposing a defensive alliance between our nations, stating that we must set aside our differences in order to be able to resist German irredentism."
+ czech.1.a:0 "It is the only option"
+ czech.1.b:0 "It's too late for that, [CZE.GetLeader]"
+ czech.2.t:0 "[FROM.GetLeader] accepts!"
+ czech.2.d:0 "Our proposal of a military alliance has been accepted, now that [FROM.GetName] is on our side, we may have an opportunity against the Germans."
+ czech.2.a:0 "Perfect!"
+ czech.3.t:0 "[FROM.GetLeader] refuses"
+ czech.3.d:0 "Our proposal of a military alliance has been refused. Maybe they have other plans for our nation."
+ czech.3.a:0 "We should reinforce our borders, just in case."
