@@ -148,20 +148,19 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"SHX"={
-			history = "SHX_GATHERING_STORM_DESC"
-			ideology = neutrality
+		"CZE"={
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
-				CHI_warlord_state_idea
-				between_the_sword_and_the_red_wall
-				native_mercenary_army
-				anti_japanese_intellectuals
+				CZE_tgm
+				CZE_industrial_legacy_idea
+				CZE_divided_nation
 			}
 			focuses = {
-				SHX_a_han_mongol_union
-				SHX_heavenly_republic
-				SHX_retake_nanjing
-				SHX_model_virtues
+				CZE_sudeten_1
+				CZE_industrial_legacy
+				CZE_an_entente_of_our_own
+				CZE_military_research_institute
 			}
 		}
 		"JAP"={
@@ -816,20 +815,21 @@ bookmarks = {
 			}
 		}
 
-		"XSM"={ #temporary shanxi after update
+		"SHX"={
 			minor = yes
-			history = "WARLORD_GATHERING_STORM_DESC"
+			history = "SHX_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
 				CHI_warlord_state_idea
+				between_the_sword_and_the_red_wall
+				native_mercenary_army
+				anti_japanese_intellectuals
 			}
 			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-				CHI_anti_opposition_campaigns
+				SHX_a_han_mongol_union
+				SHX_heavenly_republic
+				SHX_retake_nanjing
+				SHX_model_virtues
 			}
 		}
 		
