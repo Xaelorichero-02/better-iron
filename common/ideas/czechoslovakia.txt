@@ -191,6 +191,31 @@ ideas = {
 			}
 		}
 
+		CZE_beacon_of_liberty_2 = {
+
+			name = CZE_beacon_of_liberty
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			picture = generic_democratic_drift_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.1
+				drift_defence_factor = 0.3
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.1
+				research_speed_factor = 0.12
+			}
+		}
+
 		CZE_czech_socialism = {
 			allowed = {
 				always = no

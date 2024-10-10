@@ -270,13 +270,7 @@ focus_tree = {
 			base = 0
 			modifier = {
 				factor = 10
-				OR = {
-					has_game_rule = {
-						rule = ADR_ai_behavior
-						option = FLEXIBLE_FOREIGN_POLICY
-					}
-					is_historical_focus_on = no
-				}
+				is_historical_focus_on = no
 			}
 		}
 		completion_reward = {

@@ -2478,19 +2478,14 @@
 
 		completion_reward = {
 			add_war_support = 0.1
-			create_country_leader = {
-				name = "Karel Kramář"
-				desc = ""
-				picture = "gfx/leaders/CZE/Portrait_CZE_Karel_Kramar.tga"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					
+			add_country_leader_role = {
+				character = CZE_karel_kramar
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "1965.1.1.1"
+					traits = {  }
 				}
-			}
-			swap_ideas = {
-				remove_idea = CZE_beacon_of_liberty
-				add_idea = CZE_beacon_of_liberty_neutral
 			}
 		}
 	}

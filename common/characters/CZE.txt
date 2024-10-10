@@ -84,6 +84,15 @@ characters={
 		}
 	}
 
+	CZE_karel_kramar={
+		name="Karel Kramář"
+		portraits={
+			civilian={
+				large="gfx/leaders/CZE/Portrait_Czechoslovakia_Karel_Kramar.dds"
+			}
+		}
+	}
+
 	CZE_frantishek_havlik={
 		name=CZE_frantishek_havlik
 		portraits={
