@@ -356,12 +356,27 @@ spriteTypes = {
 		name = "GFX_goal_JAP_the_unthinkable_option"
 		texturefile = "gfx/interface/goals/JAP_the_unthinkable_option.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_JAP_diplomacy"
+		texturefile = "gfx/interface/goals/JAP_diplomacy.png"
+	}
+
+	#Philippines
+
+	SpriteType = {
+		name = "GFX_goal_PHI_flag"
+		texturefile = "gfx/interface/goals/PHI_flag.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_PHI_revolution"
+		texturefile = "gfx/interface/goals/PHI_revolution.png"
+	}
 
 	#Poland
 
 	SpriteType = {
 		name = "GFX_goal_POL_coa"
-		texturefile = "gfx/interface/goals/POL_coa.dds"
+		texturefile = "gfx/interface/goals/POL_coa.png"
 	}
 
 	#Russia/USSR
@@ -390,6 +405,43 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_SWI_defense"
-		texturefile = "gfx/interface/goals/SWI_defense.dds"
+		texturefile = "gfx/interface/goals/SWI_defense.png"
+	}
+
+	#United States
+
+	SpriteType = {
+		name = "GFX_goal_USA_macarthur"
+		texturefile = "gfx/interface/goals/USA_macarthur.png"
+	}
+
+	#Viet Minh
+
+	SpriteType = {
+		name = "GFX_goal_VIE_viet_cong"
+		texturefile = "gfx/interface/goals/VIE_viet_cong.png"
+	}
+
+	#Yugoslavia
+
+	SpriteType = {
+		name = "GFX_goal_YUG_autonomous_transylvania"
+		texturefile = "gfx/interface/goals/YUG_autonomous_transylvania.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_YUG_bosnia"
+		texturefile = "gfx/interface/goals/YUG_bosnia.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_YUG_devolved_croatia"
+		texturefile = "gfx/interface/goals/YUG_devolved_croatia.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_YUG_dissolve_serbia"
+		texturefile = "gfx/interface/goals/YUG_dissolve_serbia.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_YUG_divide_bosnia"
+		texturefile = "gfx/interface/goals/YUG_divide_bosnia.png"
 	}
 }

@@ -590,7 +590,7 @@ focus_tree = {
 	
 	focus = {
 		id = YUG_devolved_croatia
-		icon = GFX_focus_YUG_devolved_croatia
+		icon = GFX_goal_YUG_devolved_croatia
 		prerequisite = { focus = YUG_limited_self_government }
 		mutually_exclusive = { focus = YUG_united_autonomous_croatia }
 		x = 0
@@ -736,7 +736,7 @@ focus_tree = {
 	
 	focus = {
 		id = YUG_safeguard_bosnia
-		icon = GFX_focus_YUG_safeguard_bosnia
+		icon = GFX_goal_YUG_bosnia
 		prerequisite = { focus = YUG_united_autonomous_croatia focus = YUG_devolved_croatia }
 		mutually_exclusive = { focus = YUG_divide_bosnia }
 		x = 0
@@ -845,7 +845,7 @@ focus_tree = {
 	
 	focus = {
 		id = YUG_divide_bosnia
-		icon = GFX_focus_YUG_divide_bosnia
+		icon = GFX_goal_YUG_divide_bosnia
 		prerequisite = { focus = YUG_united_autonomous_croatia focus = YUG_devolved_croatia }
 		mutually_exclusive = { focus = YUG_safeguard_bosnia }
 		x = 0
@@ -974,7 +974,7 @@ focus_tree = {
 	
 	focus = {
 		id = YUG_dissolve_serbia
-		icon = GFX_focus_YUG_dissolve_serbia
+		icon = GFX_goal_YUG_dissolve_serbia
 		prerequisite = { focus = YUG_limited_self_government }
 		x = 2
 		y = 2
@@ -1226,7 +1226,7 @@ focus_tree = {
 	
 	focus = {
 		id = YUG_autonomous_transylvania
-		icon = GFX_focus_YUG_autonomous_transylvania
+		icon = GFX_goal_YUG_autonomous_transylvania
 		prerequisite = { focus = YUG_dissolve_serbia }
 		prerequisite = { focus = YUG_safeguard_bosnia focus = YUG_divide_bosnia }
 		mutually_exclusive = { focus = YUG_banat_for_support focus = YUG_fortify_banat }
@@ -4342,7 +4342,6 @@ focus_tree = {
 		id = YUG_develop_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = YUG_expand_the_mining_industry }
-		mutually_exclusive = { focus = YUG_develop_military_industry }
 		x = -1
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
@@ -4458,7 +4457,6 @@ focus_tree = {
 		id = YUG_integrated_rail_network
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = YUG_expand_the_university_of_zagreb }
-		mutually_exclusive = { focus = YUG_improve_serbian_rail_network }
 		x = 0
 		y = 2
 		relative_position_id = YUG_develop_civilian_industry
@@ -4809,7 +4807,6 @@ focus_tree = {
 		id = YUG_develop_military_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = YUG_expand_the_mining_industry }
-		mutually_exclusive = { focus = YUG_develop_civilian_industry }
 		x = 1
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
@@ -4861,7 +4858,6 @@ focus_tree = {
 		id = YUG_improve_serbian_rail_network
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = YUG_expand_the_university_of_zagreb }
-		mutually_exclusive = { focus = YUG_integrated_rail_network }
 		x = 0
 		y = 2
 		relative_position_id = YUG_develop_military_industry
