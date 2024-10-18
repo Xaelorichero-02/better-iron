@@ -1043,7 +1043,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_crusade_to_madrid
-		icon = GFX_spain_commie_attack
+		icon = GFX_focus_generic_attack_communist_spain
 		x = -2
 		y = 1
         relative_position_id = PHI_falange_filipina
@@ -1588,7 +1588,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_woo_the_japanese
-		icon = GFX_japanese_officer
+		icon = GFX_goal_JAP_officer
 		x = 0
 		y = 1
         relative_position_id = PHI_our_brothers_in_spain
@@ -1833,7 +1833,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_j_accuse
-		icon = GFX_end_parliamentarism
+		icon = GFX_goal_GEN_parliament_in_flames
 		x = 0
 		y = 1
         relative_position_id = PHI_second_sakdalista_uprising
@@ -1863,7 +1863,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_land_for_the_landless
-		icon = GFX_AUS_agriculture
+		icon = GFX_goal_GEN_agriculture
 		x = -1
 		y = 1
         relative_position_id = PHI_j_accuse
@@ -2010,7 +2010,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_learn_from_the_samurai
-		icon = GFX_JAP_samurai
+		icon = GFX_goal_JAP_samurai
 		x = 0
 		y = 1
         relative_position_id = PHI_our_only_ally
@@ -2049,7 +2049,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_no_corruption
-		icon = GFX_CHI_An_End_to_Corruption
+		icon = GFX_goal_GEN_stop_corruption
 		x = 0
 		y = 1
         relative_position_id = PHI_learn_from_the_samurai
@@ -2163,7 +2163,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_the_new_philippines
-		icon = GFX_flag_phillipines
+		icon = GFX_goal_PHI_flag
 		x = -1
 		y = 1
         relative_position_id = PHI_form_the_makapili
@@ -4858,7 +4858,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_be_patient
-		icon = GFX_flag_usa
+		icon = GFX_goal_USA_flag
 		x = 17
 		y = 1
         relative_position_id = PHI_the_grand_negotiation
@@ -5184,7 +5184,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_modernize_the_hacienda
-		icon = GFX_AUS_agriculture
+		icon = GFX_goal_GEN_agriculture
 		x = 0
 		y = 1
         relative_position_id = PHI_usaffe

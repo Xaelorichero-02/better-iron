@@ -3,7 +3,7 @@ characters={
 		name="Manuel Luis Quezón"
 		portraits={
 			civilian={
-				large=GFX_portrait_Manuel_Luis_Quezon
+				large="gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.png"
 			}
 		}
 		country_leader={
@@ -12,11 +12,11 @@ characters={
 			id=-1
 		}
 	}
-	PHI_pedro_p_baguisa={
-		name="Pedro P. Baguisa"
+	PHI_crisanto_evangelista={
+		name="Crisanto Evangelista"
 		portraits={
 			civilian={
-				large=GFX_portrait_Pedro_P_Baguisa
+				large="gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.png"
 			}
 		}
 		country_leader={
@@ -38,18 +38,75 @@ characters={
 			id=-1
 		}
 	}
-	PHI_hermano_jacinto={
-		name="Hermano Jacinto"
+	PHI_basilio_j_valdez={
+		name="Basilio Valdez"
 		portraits={
 			civilian={
-				large=GFX_portrait_Hermano_Jacinto
+				large="gfx/leaders/PHI/Portrait_Philippines_Basilio_Valdez.png"
+			}
+			army={
+				large="gfx/leaders/PHI/Portrait_Philippines_Crisanto_Evangelista.png"
+				small="gfx/advisors/PHI/Portrait_Philippines_Crisanto_Evangelista.png"
 			}
 		}
 		country_leader={
 			ideology=oligarchism
-			traits={ fortification_engineer }
 			expire="1954.1.1.12"
 			id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PHI_basilio_j_valdez
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal = {
+			traits = { war_hero career_officer media_personality }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	PHI_vicente_p_lim={
+		name="Vicente Lim"
+		portraits={
+			army={
+				large="gfx/leaders/PHI/Portrait_Philippines_Vicente_Lim.png"
+				small="gfx/advisors/PHI/Portrait_Philippines_Vicente_Lim.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PHI_vicente_p_lim
+			ledger = army
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trickster commando }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
 		}
 	}
 	PHI_pelagio_cruz={
@@ -174,31 +231,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_3"
-			}
-		}
-	}
-	PHI_basilio_j_valdez={
-		advisor={
-			
-			
-			slot = army_chief
-			idea_token = PHI_basilio_j_valdez
-			allowed = {
-					original_tag = phi
-				}
-				traits = {
-					army_chief_defensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Basilio J. Valdez"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_4"
 			}
 		}
 	}
@@ -346,32 +378,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_3"
-			}
-		}
-	}
-	PHI_vicente_p_lim={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = PHI_vicente_p_lim
-			ledger = army
-				allowed = {
-					original_tag = phi
-				}
-				traits = {
-					army_regrouping_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Vicente P. Lim"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_3"
 			}
 		}
 	}

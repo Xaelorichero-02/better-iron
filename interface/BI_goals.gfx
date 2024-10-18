@@ -1,5 +1,13 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_goal_GEN_parliament_in_flames"
+		texturefile = "gfx/interface/goals/GEN_parliament_in_flames.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEN_stop_corruption"
+		texturefile = "gfx/interface/goals/GEN_stop_corruption.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_GEN_anti_communism"
 		texturefile = "gfx/interface/goals/GEN_anti_communism.png"
 	}
@@ -360,6 +368,10 @@ spriteTypes = {
 		name = "GFX_goal_JAP_diplomacy"
 		texturefile = "gfx/interface/goals/JAP_diplomacy.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_JAP_samurai"
+		texturefile = "gfx/interface/goals/JAP_samurai.png"
+	}
 
 	#Philippines
 
@@ -410,6 +422,10 @@ spriteTypes = {
 
 	#United States
 
+	SpriteType = {
+		name = "GFX_goal_USA_flag"
+		texturefile = "gfx/interface/goals/USA_flag.png"
+	}
 	SpriteType = {
 		name = "GFX_goal_USA_macarthur"
 		texturefile = "gfx/interface/goals/USA_macarthur.png"

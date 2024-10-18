@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		mass_poberty_in_the_countryside = {
-			picture = idea_generic_agrarian_society
+			picture = generic_agrarian_society
 
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -15,7 +15,7 @@ ideas = {
 		}
 
 		philippine_commonwealth = {
-			picture = idea_generic_deal_with_the_devil2
+			picture = generic_deal_with_the_devil2
 
 			modifier = {
 				stability_factor = 0.05
@@ -28,7 +28,7 @@ ideas = {
 		}
 
 		philippine_commonwealth2 = {
-			picture = idea_generic_deal_with_the_devil2
+			picture = generic_deal_with_the_devil2
 
 			modifier = {
 				stability_factor = 0.1
@@ -41,7 +41,7 @@ ideas = {
 		}
 
 		political_guerrillas = {
-			picture = population_chaco_veterans
+			picture = chi_army_corruption
 
 			modifier = {
 				stability_factor = -0.2
@@ -51,7 +51,7 @@ ideas = {
 		}
 
 		political_guerrillas2 = {
-			picture = population_fascist
+			picture = chi_army_corruption2
 
 			modifier = {
 				stability_factor = -0.1
@@ -61,7 +61,7 @@ ideas = {
 		}
 
 		political_guerrillas3 = {
-			picture = population_yi
+			picture = chi_army_corruption3
 
 			modifier = {
 				resistance_target_on_our_occupied_states = 0.1
@@ -70,7 +70,7 @@ ideas = {
 		}
 
 		political_guerrillas4 = {
-			picture = population_yi
+			picture = chi_army_corruption3
 
 			modifier = {
 				training_time_factor = -0.1
@@ -82,7 +82,7 @@ ideas = {
 
 		political_guerrillas5 = {
 			name = political_guerrillas4
-			picture = population_yi
+			picture = chi_army_corruption3
 
 			modifier = {
 				conscription = 0.03
@@ -94,7 +94,7 @@ ideas = {
 		}
 
 		political_guerrillas4_luis = {
-			picture = idea_generic_communist_army
+			picture = generic_communist_army
 
 			modifier = {
 				resistance_target_on_our_occupied_states = 0.15
@@ -103,7 +103,7 @@ ideas = {
 		}
 
 		political_guerrillas4_lapham = {
-			picture = population_yi
+			picture = chi_army_corruption3
 
 			modifier = {
 				resistance_target_on_our_occupied_states = 0.1
@@ -208,7 +208,7 @@ ideas = {
 		}
 
 		Juramentados = {
-			picture = idea_tur_kemalist_army_officers_powerful_neutral
+			picture = tur_kemalist_army_officers_powerful_neutral
 
 			modifier = {
 				resistance_damage_to_garrison_on_our_occupied_states = 0.1
@@ -219,7 +219,7 @@ ideas = {
 
 		Juramentados2 = {
 			name = Juramentados
-			picture = idea_tur_kemalist_army_officers_powerful_neutral
+			picture = tur_kemalist_army_officers_powerful_neutral
 
 			modifier = {
 				resistance_damage_to_garrison_on_our_occupied_states = 0.15
@@ -232,7 +232,7 @@ ideas = {
 
 		Juramentados3 = {
 			name = Juramentados
-			picture = idea_tur_kemalist_army_officers_powerful_neutral
+			picture = tur_kemalist_army_officers_powerful_neutral
 
 			modifier = {
 				resistance_damage_to_garrison_on_our_occupied_states = 0.15
@@ -246,7 +246,7 @@ ideas = {
 
 		Juramentados4 = {
 			name = Juramentados
-			picture = idea_tur_kemalist_army_officers_powerful_neutral
+			picture = tur_kemalist_army_officers_powerful_neutral
 
 			modifier = {
 				war_support_weekly = 0.005
@@ -261,7 +261,7 @@ ideas = {
 
 		Juramentados5 = {
 			name = Juramentados
-			picture = idea_tur_kemalist_army_officers_powerful_neutral
+			picture = tur_kemalist_army_officers_powerful_neutral
 
 			modifier = {
 				command_power_gain_mult = 0.2
@@ -277,7 +277,7 @@ ideas = {
 
 		Juramentados6 = {
 			name = Juramentados
-			picture = idea_tur_kemalist_army_officers_powerful_neutral
+			picture = tur_kemalist_army_officers_powerful_neutral
 
 			modifier = {
 				surrender_limit = 0.05
@@ -684,7 +684,7 @@ ideas = {
 		}
 
 		communist_guerrillas_phi = {
-			picture = idea_generic_communist_army
+			picture = generic_communist_army
 			
 			allowed = {
 				always = yes
@@ -730,7 +730,7 @@ ideas = {
 		}
 
 		officer_training_phi = {
-			picture = idea_eng_imperial_conscription
+			picture = eng_imperial_conscription
 
 			modifier = {
 				planning_speed = 0.1
@@ -791,7 +791,7 @@ ideas = {
 
 		unifying_the_filipinos = {
 
-			picture = idea_prc_low_popular_support3
+			picture = prc_low_popular_support3
 
 			allowed = {
 				always = no
@@ -816,7 +816,7 @@ ideas = {
 		}
 
 		land_reform_phi = {
-			picture = idea_generic_agrarian_reform
+			picture = generic_agrarian_reform
 			
 			allowed = {
 				always = yes
@@ -835,7 +835,7 @@ ideas = {
 		}
 
 		a_colony_no_more = {
-			picture = idea_hol_liberation
+			picture = hol_liberation
 			
 			allowed = {
 				always = yes
@@ -854,7 +854,7 @@ ideas = {
 		}
 
 		a_colony_no_more2 = {
-			picture = idea_hol_liberation
+			picture = hol_liberation
 			
 			allowed = {
 				always = yes
@@ -913,7 +913,7 @@ ideas = {
 		}
 
 		american_fort_building = {
-			picture = idea_ast_naval_auxiliary_patrol
+			picture = ast_naval_auxiliary_patrol
 			
 			allowed = {
 				always = yes
